@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on stats n dats</title>
+    <link>/tags/python/</link>
+    <description>Recent content in Python on stats n dats</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 22 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python using RStudio IDE</title>
+      <link>/post/python-using-rstudio-ide/</link>
+      <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/python-using-rstudio-ide/</guid>
+      <description>Today is 7/26
+This is test post to check if Python code works
+library(reticulate)import numpy as npx = [1, 2, 3]print(x)## [1, 2, 3]y = np.mean(x)\(\bar{x}\) is the average, which is defined as \[\bar{x} = \frac{\sum x}{n}\]
+So what is the aveage of y? It is 2.
+x = c(1:5)The value of x is R session is 1, 2, 3, 4, 5.</description>
+    </item>
+    
+  </channel>
+</rss>

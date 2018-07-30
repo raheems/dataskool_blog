@@ -1,0 +1,15 @@
+---
+title: Integrating R with PowerBI
+author: Enayet
+date: '2018-07-26'
+slug: integrating-r-with-powerbi
+categories:
+  - Notes
+  - R
+tags:
+  - PowerBI
+authors: ["enayet"]
+draft: true
+---
+
+Microsoft nicely integrates R with its Power BI desktop. This is a test.

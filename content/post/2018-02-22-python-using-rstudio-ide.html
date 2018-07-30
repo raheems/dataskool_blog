@@ -1,0 +1,70 @@
+---
+title: Python using RStudio IDE
+author: Enayet Raheem
+date: '2018-02-22'
+categories:
+  - Analytics
+tags:
+  - Python
+slug: python-using-rstudio-ide
+draft: no
+mathjax: true
+---
+
+
+
+<p>Today is 7/26</p>
+<p>This is test post to check if Python code works</p>
+<pre class="r"><code>library(reticulate)</code></pre>
+<pre class="python"><code>import numpy as np
+x = [1, 2, 3]
+print(x)</code></pre>
+<pre><code>## [1, 2, 3]</code></pre>
+<pre class="python"><code>y = np.mean(x)</code></pre>
+<p><span class="math inline">\(\bar{x}\)</span> is the average, which is defined as <span class="math display">\[
+\bar{x} = \frac{\sum x}{n}
+\]</span></p>
+<p>So what is the aveage of <code>y</code>? It is <code>2</code>.</p>
+<pre class="r"><code>x = c(1:5)</code></pre>
+<p>The value of x is R session is <code>1, 2, 3, 4, 5</code>.</p>
+<p>More text is to be added.</p>
+<div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<pre class="r"><code>summary(cars)</code></pre>
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00</code></pre>
+<pre class="r"><code>fit &lt;- lm(dist ~ speed, data = cars)
+fit</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
+<p>```</p>
+</div>
+<div id="testing-latex" class="section level1">
+<h1>Testing LaTeX</h1>
+<p>This is an inline test for math content in markdown <span class="math inline">\(\bar{x}\)</span>. And this is a mathe block, defining the average– <span class="math display">\[
+\bar{x} = \frac{\sum x}{n}
+\]</span></p>
+<p>And some more complicated formula</p>
+<p><span class="math display">\[
+y = x_1 \beta_1 + x_2 \beta_2 + \epsilon
+\]</span> is the multiple linear regression model with two covariates <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>.</p>
+<pre class="md"><code>When \\( a \ne 0 \\), there are two solutions to
+
+$$ ax^2 + bx + c = 0 $$
+
+and they are:
+
+\\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \\]</code></pre>
+</div>
