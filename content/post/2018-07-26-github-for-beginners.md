@@ -1,7 +1,7 @@
 ---
 title: Frequently used git commands
-author: Enayetur Raheem
 date: '2018-07-26'
+lastmod: '2018-07-30'
 slug: frequently-used-git-commands
 categories:
   - Notes
@@ -49,7 +49,7 @@ git push origin master
 
 # Syncing a remote repository on two local hosts
 
-Sometime I work on two or three different computers for the same remote project. I want my codes to be synced accross multiple computers. I sometime work from office using a PC. Sommetime I work from home where I use a Mac. So keeyping the repositories in sycned is essential.
+Sometime I work on two or three different computers for the same remote project. So keeyping the repositories in sync is essential. I want my codes to be synced accross multiple computers.
 
 For that I follow these simple steps.
 
@@ -68,4 +68,4 @@ git comit -m "Update message"
 git push origin master
 ```
 
-Last updated: 2018-07-26
+Last updated: 2018-07-30
