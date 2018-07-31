@@ -37,9 +37,9 @@ Copying a remote repository to local To bring a remote repository to your local 
       <guid>/post/python-using-rstudio-ide/</guid>
       <description>Today is 7/26
 This is test post to check if Python code works
-library(reticulate) ## Warning: package &amp;#39;reticulate&amp;#39; was built under R version 3.4.4 import numpy as np x = [1, 2, 3] print(x) ## [1, 2, 3] y = np.mean(x) \(\bar{x}\) is the average, which is defined as \[ \bar{x} = \frac{\sum x}{n} \]
+library(reticulate)## Warning: package &amp;#39;reticulate&amp;#39; was built under R version 3.4.4import numpy as npx = [1, 2, 3]print(x)## [1, 2, 3]y = np.mean(x)\(\bar{x}\) is the average, which is defined as \[\bar{x} = \frac{\sum x}{n}\]
 So what is the aveage of y? It is 2.
-x = c(1:5) The value of x is R session is 1, 2, 3, 4, 5.</description>
+x = c(1:5)The value of x is R session is 1, 2, 3, 4, 5.</description>
     </item>
     
     <item>
@@ -80,9 +80,9 @@ Firstly, I would say this– lies, damn lies, statistics, AND one-page resume.</
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     
     <item>
@@ -93,6 +93,16 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       <guid>/post/testing-equality-of-two-population-variances-using-stata/</guid>
       <description>I was asked if we can do the test of equality of two population variances using Stata. Well, I did not have to do it myself ever, but yes, it is possible to do it. Here is an example. I’ve just made-up the data to show the procedures.
 Suppose we have the following data where the variables may represent two independent samples taken from normally distributed populations. And we want to test if the population variances of the two populations are the same.</description>
+    </item>
+    
+    <item>
+      <title>Poisson approximation of binomial probabilities</title>
+      <link>/post/poisson-approximation-of-binomial-probabilities/</link>
+      <pubDate>Tue, 03 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/poisson-approximation-of-binomial-probabilities/</guid>
+      <description>This is yet another experiment to see how good is the approximation of binomial probability when we use Poisson and normal distributions for scenarios with large n, and p close to zero or one.
+Consider a problem where the random variable \[X\] follows a binomial distribution with a known probability of success \[p\], and number of trials \[n\]. If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.</description>
     </item>
     
   </channel>

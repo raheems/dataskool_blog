@@ -71,5 +71,15 @@ Firstly, I would say this– lies, damn lies, statistics, AND one-page resume.</
 Suppose we have the following data where the variables may represent two independent samples taken from normally distributed populations. And we want to test if the population variances of the two populations are the same.</description>
     </item>
     
+    <item>
+      <title>Poisson approximation of binomial probabilities</title>
+      <link>/post/poisson-approximation-of-binomial-probabilities/</link>
+      <pubDate>Tue, 03 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/poisson-approximation-of-binomial-probabilities/</guid>
+      <description>This is yet another experiment to see how good is the approximation of binomial probability when we use Poisson and normal distributions for scenarios with large n, and p close to zero or one.
+Consider a problem where the random variable \[X\] follows a binomial distribution with a known probability of success \[p\], and number of trials \[n\]. If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.</description>
+    </item>
+    
   </channel>
 </rss>

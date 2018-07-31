@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on stats n&#39; dats</title>
+    <link>/tags/r/</link>
+    <description>Recent content in R on stats n&#39; dats</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 03 Jan 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Poisson approximation of binomial probabilities</title>
+      <link>/post/poisson-approximation-of-binomial-probabilities/</link>
+      <pubDate>Tue, 03 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/poisson-approximation-of-binomial-probabilities/</guid>
+      <description>This is yet another experiment to see how good is the approximation of binomial probability when we use Poisson and normal distributions for scenarios with large n, and p close to zero or one.
+Consider a problem where the random variable \[X\] follows a binomial distribution with a known probability of success \[p\], and number of trials \[n\]. If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.</description>
+    </item>
+    
+  </channel>
+</rss>
