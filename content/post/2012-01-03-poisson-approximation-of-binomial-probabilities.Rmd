@@ -8,6 +8,7 @@ categories:
 tags:
   - R
 authors: ["enayet"]
+mathjax: true
 ---
 
 This is yet another experiment to see how good is the approximation of binomial probability when we use Poisson and normal distributions for scenarios with large n, and p close to zero or one.
