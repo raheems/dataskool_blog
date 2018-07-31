@@ -273,15 +273,15 @@ set.seed(10)
 out &lt;- apprx(n = 200, p = .03, k = 6, R = 1000)
 # windows(6,5)
 plot(1:R, out$prob.pois, type = &quot;l&quot;, col = &quot;green&quot;, xlab = &quot;Runs&quot;, 
-main = expression(paste(&quot;Simulated Probabilities: &quot;, 
-n==200, &quot;, &quot;, p==0.03, sep=&quot;&quot;)),
-ylab = &quot;Probability&quot;, ylim = c(.3, .7))
+     main = expression(paste(&quot;Simulated Probabilities: &quot;, 
+                             n==200, &quot;, &quot;, p==0.03, sep=&quot;&quot;)),
+     ylab = &quot;Probability&quot;, ylim = c(.3, .7))
 abline(h = out$trueval, col=&quot;red&quot;, lty=2)
 lines(1:R, out$prob.zcc, lty = 1, col = &quot;purple&quot;)
 lines(1:R, out$prob.zncc, lty = 1, col = &quot;orange&quot;)
 legend(&quot;bottomleft&quot;, c(&quot;Poisson&quot;, &quot;Normal (with cc)&quot;, 
-&quot;Normal (w/o cc)&quot;),
-lty = c(1), col = c(&quot;green&quot;, &quot;purple&quot;, &quot;orange&quot;))</code></pre>
+                       &quot;Normal (w/o cc)&quot;),
+       lty = c(1), col = c(&quot;green&quot;, &quot;purple&quot;, &quot;orange&quot;))</code></pre>
 <p><img src="/post/2012-01-03-poisson-approximation-of-binomial-probabilities_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>Above figure shows the calculated probabilities for each run of the simulation. The read horizontal line at 0.6 shows the exact probability. The figure shows that the normal approximation, with or without continuity correction, is underestimating the exact probability while Poisson does a better job approximating it for <span class="math inline">\(n=200\)</span> and <span class="math inline">\(p=0.03.\)</span></p>
 <p>Since this plot does not reveal much due to overlapping points, we draw boxplots for the calculated probabilities for <span class="math inline">\(n= 100, 200, 233, 300,\)</span> and <span class="math inline">\(p=0.03.\)</span></p>
@@ -303,6 +303,10 @@ abline(h = out$trueval, col = &quot;red&quot;, lty=2)
 legend(&quot;topleft&quot;, c(&quot;Poisson&quot;, &quot;Normal (with cc)&quot;, &quot;Normal (w/o cc)&quot;), 
        fill = c(&quot;green&quot;, &quot;purple&quot;, &quot;orange&quot;))</code></pre>
 <p><img src="/post/2012-01-03-poisson-approximation-of-binomial-probabilities_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>To summarize, we see that for <span class="math inline">\(n = 200\)</span> and <span class="math inline">\(p = 0.03,\)</span> Poisson does better than the normal with continuity correction. However, for larger sample sizes, especially when n is close to 300, the normal approximation is as good as the Poisson approximation. It is to be mentioned here that the normal based approximation has always narrower spread than the Poisson based approximation. More importantly, the results are true for this particular case when <span class="math inline">\(p=0.03.\)</span></p>
 </div>
 
 </div>

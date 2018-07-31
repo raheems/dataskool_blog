@@ -153,4 +153,6 @@ legend("topleft", c("Poisson", "Normal (with cc)", "Normal (w/o cc)"),
        fill = c("green", "purple", "orange"))
 ```
 
+# Conclusion
 
+To summarize, we see that for $n = 200$ and $p = 0.03,$ Poisson does better than the normal with continuity correction. However, for larger sample sizes, especially when n is close to 300, the normal approximation is as good as the Poisson approximation. It is to be mentioned here that the normal based approximation has always narrower spread than the Poisson based approximation. More importantly, the results are true for this particular case when $p=0.03.$
