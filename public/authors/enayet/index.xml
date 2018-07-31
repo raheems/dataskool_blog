@@ -78,7 +78,7 @@ Suppose we have the following data where the variables may represent two indepen
       
       <guid>/post/poisson-approximation-of-binomial-probabilities/</guid>
       <description>This is yet another experiment to see how good is the approximation of binomial probability when we use Poisson and normal distributions for scenarios with large n, and p close to zero or one.
-Consider a problem where the random variable \[X\] follows a binomial distribution with a known probability of success \[p\], and number of trials \[n\]. If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.</description>
+Consider a problem where the random variable \(X\) follows a binomial distribution with a known probability of success \(p\), and number of trials \(n\). If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.</description>
     </item>
     
   </channel>

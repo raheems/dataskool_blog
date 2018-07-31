@@ -12,21 +12,21 @@ authors: ["enayet"]
 
 This is yet another experiment to see how good is the approximation of binomial probability when we use Poisson and normal distributions for scenarios with large n, and p close to zero or one.
 
-Consider a problem where the random variable $$X$$ follows a binomial distribution with a known probability of success $$p$$, and number of trials $$n$$. If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.
+Consider a problem where the random variable $X$ follows a binomial distribution with a known probability of success $p$, and number of trials $n$. If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.
 
 We can approximate the binomial distribution with a normal distribution or a Poisson distribution.
 
 # An example
 
-The probability that a person will wwwelop an infection even after taking a vaccine that was supposed to prevent the infection is 0.03. In a random sample of 200 people in a community who got the vaccine, what is the probability that six or fewer people will be infected?
+The probability that a person will develop an infection even after taking a vaccine that was supposed to prevent the infection is 0.03. In a random sample of 200 people in a community who got the vaccine, what is the probability that six or fewer people will be infected?
 
 ## Solution
 
-Let $$X$$ denote the number of persons getting infected. Clearly, $$X$$ follows a binomial probability distribution with $$n=200$$ and $$p = 0.03$$. The exact probability of having six or fewer people getting infected is
+Let $X$ denote the number of persons getting infected. Clearly, $X$ follows a binomial probability distribution with $n=200$ and $p = 0.03$. The exact probability of having six or fewer people getting infected is
 
-\\[
+\[
 P(X \leq 6) = \sum_{k=0}^{6} \binom{200}{k} p^k q^{200-k}
-\\]
+\]
 
 
 

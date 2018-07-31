@@ -18,7 +18,7 @@
       <guid>/post/python-using-rstudio-ide/</guid>
       <description>Today is 7/26
 This is test post to check if Python code works
-library(reticulate)## Warning: package &amp;#39;reticulate&amp;#39; was built under R version 3.4.4import numpy as npx = [1, 2, 3]print(x)## [1, 2, 3]y = np.mean(x)\(\bar{x}\) is the average, which is defined as \[\bar{x} = \frac{\sum x}{n}\]
+library(reticulate)import numpy as npx = [1, 2, 3]print(x)## [1, 2, 3]y = np.mean(x)\(\bar{x}\) is the average, which is defined as \[\bar{x} = \frac{\sum x}{n}\]
 So what is the aveage of y? It is 2.
 x = c(1:5)The value of x is R session is 1, 2, 3, 4, 5.</description>
     </item>

@@ -37,7 +37,7 @@ Copying a remote repository to local To bring a remote repository to your local 
       <guid>/post/python-using-rstudio-ide/</guid>
       <description>Today is 7/26
 This is test post to check if Python code works
-library(reticulate)## Warning: package &amp;#39;reticulate&amp;#39; was built under R version 3.4.4import numpy as npx = [1, 2, 3]print(x)## [1, 2, 3]y = np.mean(x)\(\bar{x}\) is the average, which is defined as \[\bar{x} = \frac{\sum x}{n}\]
+library(reticulate)import numpy as npx = [1, 2, 3]print(x)## [1, 2, 3]y = np.mean(x)\(\bar{x}\) is the average, which is defined as \[\bar{x} = \frac{\sum x}{n}\]
 So what is the aveage of y? It is 2.
 x = c(1:5)The value of x is R session is 1, 2, 3, 4, 5.</description>
     </item>
@@ -102,7 +102,7 @@ Suppose we have the following data where the variables may represent two indepen
       
       <guid>/post/poisson-approximation-of-binomial-probabilities/</guid>
       <description>This is yet another experiment to see how good is the approximation of binomial probability when we use Poisson and normal distributions for scenarios with large n, and p close to zero or one.
-Consider a problem where the random variable \[X\] follows a binomial distribution with a known probability of success \[p\], and number of trials \[n\]. If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.</description>
+Consider a problem where the random variable \(X\) follows a binomial distribution with a known probability of success \(p\), and number of trials \(n\). If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.</description>
     </item>
     
   </channel>
