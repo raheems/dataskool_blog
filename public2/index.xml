@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on stats n&#39; dats</title>
+    <link>/</link>
+    <description>Recent content in Home on stats n&#39; dats</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 28 Sep 2017 08:00:00 +0600</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Typography</title>
+      <link>/typography/</link>
+      <pubDate>Thu, 28 Sep 2017 08:00:00 +0600</pubDate>
+      
+      <guid>/typography/</guid>
+      <description>Here is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Heading 2 Another one. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>This site, deepLearner, is not about Deep Learning as we understand in the field of Data Science. Rather, the purpose here is to express deep learning in the sense of learning something at the core. In other words, learning and taking it from shallow to a deeper level of understanding.
+We are all learners. Some of us are deep learner. That’s deepLearnR.
+Of course learning the technologies, i.e., data science, in particular, will be a major focus of our articles.</description>
+    </item>
+    
+    <item>
+      <title>Frequently used git commands</title>
+      <link>/post/frequently-used-git-commands/</link>
+      <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/frequently-used-git-commands/</guid>
+      <description>Github needs no introduction. If you are unfamiliar with git, its a version control system for tracking changes in computer (programming) codes. &amp;ldquo;GitHub Inc. is a web-based hosting service for version control using Git. It is mostly used for computer code. It offers all of the distributed version control and source code management functionality of Git as well as adding its own features.&amp;rdquo;1
+Copying a remote repository to local To bring a remote repository to your local host (computer where you are working), use the git clone command.</description>
+    </item>
+    
+    <item>
+      <title>Integrating R with PowerBI</title>
+      <link>/post/integrating-r-with-powerbi/</link>
+      <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/integrating-r-with-powerbi/</guid>
+      <description>Microsoft nicely integrates R with its Power BI desktop. This is a test.</description>
+    </item>
+    
+    <item>
+      <title>Python using RStudio IDE</title>
+      <link>/post/python-using-rstudio-ide/</link>
+      <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/python-using-rstudio-ide/</guid>
+      <description>Today is 7/26
+This is test post to check if Python code works
+library(reticulate)import numpy as npx = [1, 2, 3]print(x)## [1, 2, 3]y = np.mean(x)\(\bar{x}\) is the average, which is defined as \[\bar{x} = \frac{\sum x}{n}\]
+So what is the aveage of y? It is 2.
+x = c(1:5)The value of x is R session is 1, 2, 3, 4, 5.</description>
+    </item>
+    
+    <item>
+      <title>To the Aspiring Data Scientists</title>
+      <link>/post/to-the-aspiring-data-scientists/</link>
+      <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/to-the-aspiring-data-scientists/</guid>
+      <description>A lot of times interested folks contact me with a question like this: ‘I want to be a data scientist; can you help?’
+Well, I wish I could. The reality is, I won’t be able to unless I really understand what you want and why you want it.
+Firstly because guiding someone is next to impossible in this time and era when everything is so convoluted. People come to learn with preconceived ideas and notions.</description>
+    </item>
+    
+    <item>
+      <title>Statisticians in the Data Science Era</title>
+      <link>/post/statisticians-in-the-data-science-era/</link>
+      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/statisticians-in-the-data-science-era/</guid>
+      <description>If you are exploring the hot field of Data Science today, you probably know by now that there is no unique way to define data science. Everyone’s perspective comes from their respective backgrounds. Statisticians think they are data scientists while CS folks think they are.
+I would not go into the debate.
+Both have truth in their arguments as the typical problems they solve are quite different. There are some exceptions where their workflows overlap.</description>
+    </item>
+    
+    <item>
+      <title>Preparing for statistics jobs in the industry</title>
+      <link>/post/preparing-for-statistics-jobs-in-the-industry/</link>
+      <pubDate>Mon, 20 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/preparing-for-statistics-jobs-in-the-industry/</guid>
+      <description>I would like to share a few things with you from recent experience of my transition from academia to industry. Of course I have a lot more experience than a fresh graduate, but something I’ve experienced that many others may benefit from. I believe this will help you to think at least. I’ve written this with the candidates in the US job market in mind.
+Firstly, I would say this– lies, damn lies, statistics, AND one-page resume.</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title>Testing equality of two population variances using Stata</title>
+      <link>/post/testing-equality-of-two-population-variances-using-stata/</link>
+      <pubDate>Fri, 02 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/testing-equality-of-two-population-variances-using-stata/</guid>
+      <description>I was asked if we can do the test of equality of two population variances using Stata. Well, I did not have to do it myself ever, but yes, it is possible to do it. Here is an example. I’ve just made-up the data to show the procedures.
+Suppose we have the following data where the variables may represent two independent samples taken from normally distributed populations. And we want to test if the population variances of the two populations are the same.</description>
+    </item>
+    
+    <item>
+      <title>Poisson approximation of binomial probabilities</title>
+      <link>/post/poisson-approximation-of-binomial-probabilities/</link>
+      <pubDate>Tue, 03 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/poisson-approximation-of-binomial-probabilities/</guid>
+      <description>This is yet another experiment to see how good is the approximation of binomial probability when we use Poisson and normal distributions for scenarios with large n, and p close to zero or one.
+Consider a problem where the random variable \(X\) follows a binomial distribution with a known probability of success \(p\), and number of trials \(n\). If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/search/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
