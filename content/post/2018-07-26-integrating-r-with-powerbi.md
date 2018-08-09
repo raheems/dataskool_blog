@@ -1,6 +1,6 @@
 ---
 title: Integrating R with Power BI
-author: Enayet
+authors: ["enayet"]
 date: '2018-08-01'
 lastmod: '2018-08-03'
 slug: integrating-r-with-powerbi-desktop
@@ -10,6 +10,7 @@ tags:
   - PowerBI
   - R
 draft: false
+images: ["images/r_with_powerbi"]
 ---
 
 *Microsoft Power BI* Desktop version nicely integrates with **R**. R is an open source software for statistical computing and graphics. R has become popular among the data scientists because of its powerful data analytics and visualization capabilities. *Power BI* is Microsoft's flagship BI tool for creating dashboards and interactive reports. With R as a backend engine for *Power BI Desktop*, you can do many cool things, which can be categorized into three broad applications--
