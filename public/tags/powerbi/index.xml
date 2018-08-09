@@ -5,10 +5,19 @@
     <link>/tags/powerbi/</link>
     <description>Recent content in PowerBI on stats n&#39; dats</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 26 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/powerbi/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Integrating R with Power BI</title>
+      <link>/post/integrating-r-with-powerbi-desktop/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/integrating-r-with-powerbi-desktop/</guid>
+      <description>Microsoft Power BI Desktop version nicely integrates with R. R is an open source software for statistical computing and graphics. R has become popular among the data scientists because of its powerful data analytics and visualization capabilities. Power BI is Microsoft&amp;rsquo;s flagship BI tool for creating dashboards and interactive reports. With R as a backend engine for Power BI Desktop, you can do many cool things, which can be categorized into three broad applications&amp;ndash;</description>
+    </item>
     
     <item>
       <title>Integrating R with PowerBI</title>
