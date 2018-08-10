@@ -30,15 +30,6 @@ Copying a remote repository to local To bring a remote repository to your local 
     </item>
     
     <item>
-      <title>Integrating R with PowerBI</title>
-      <link>/post/integrating-r-with-powerbi/</link>
-      <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/integrating-r-with-powerbi/</guid>
-      <description>Microsoft nicely integrates R with its Power BI desktop. This is a test.</description>
-    </item>
-    
-    <item>
       <title>To the Aspiring Data Scientists</title>
       <link>/post/to-the-aspiring-data-scientists/</link>
       <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
