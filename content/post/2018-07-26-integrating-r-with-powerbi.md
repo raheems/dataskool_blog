@@ -101,7 +101,7 @@ Suppose we've imported a data set with missing vlaues and unusually large number
 
 We use the R code to generate the data
 
-```
+```r
 df <- data.frame(
   name = c("John", "Arif","Samira"),
   sex = c(1, 1, 2),
@@ -111,7 +111,7 @@ df <- data.frame(
 
 We will import this data using the R (discussed in Application 1). Once loaded, we will then do some transformations. To keep it simple, we will just recode the `sex` variable to indicate `Male` for `1` and `Female` for `2`. For that, we use the following codes which we would enter in the R script:
 
-```
+```r
 # 'dataset' holds the input data for this script
 library(dplyr)
 
@@ -169,7 +169,7 @@ This assumes that we already have a dataset in Power BI. For the sake of reprodu
 
 Simply follow the steps in Application 1, using the code entered in the R script window:
 
-```
+```r
 df <- mtcars
 ```
 
@@ -187,7 +187,7 @@ Select the variables you want to use for the visual. In our case, we would need 
 
 Now you are ready to enter the following code in the area where it says "Type or paste your R-script code here". Enter the code below:
 
-```
+```r
 boxplot(mpg ~ cyl, data = dataset, 
         xlab = "Number of Cylinders",
         ylab = "Miles Per Gallon", 

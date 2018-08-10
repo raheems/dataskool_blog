@@ -20,5 +20,14 @@
 Copying a remote repository to local To bring a remote repository to your local host (computer where you are working), use the git clone command.</description>
     </item>
     
+    <item>
+      <title>Integrating R with PowerBI</title>
+      <link>/post/integrating-r-with-powerbi/</link>
+      <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/integrating-r-with-powerbi/</guid>
+      <description>Microsoft nicely integrates R with its Power BI desktop. This is a test.</description>
+    </item>
+    
   </channel>
 </rss>
