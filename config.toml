@@ -1,4 +1,5 @@
-baseURL = "https://dataskoolblog.netlify.com"
+baseURL = "https://blog.dataskool.org"
+
 title = "DataSkool Blog"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
