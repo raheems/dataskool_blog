@@ -1,6 +1,6 @@
 baseURL = "https://blog.dataskool.org"
 
-title = "dataSkool Blog"
+title = "blog.dataskool"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
@@ -21,7 +21,7 @@ pygmentsCodefences = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "statistics and data science"
+description = "statistics and data science blog"
 title404 = "Nothing's here!"
 
 [params.assets]
