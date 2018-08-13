@@ -90,11 +90,11 @@ tag = "tags"
 [permalinks]
 page = "/:slug/"
 
-[[menu.main]]
-name = "DataSkool"
-weight = -10
-identifier = "dataskool"
-url = "https://www.dataskool.org"
+#[[menu.main]]
+#name = "DataSkool"
+#weight = -10
+#identifier = "dataskool"
+#url = "https://www.dataskool.org"
 
 [blackfriday]
 hrefTargetBlank = true
