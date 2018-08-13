@@ -6,7 +6,7 @@ copyright = ""
 
 theme = "minimo"
 
-disqusShortname = "deeplearnr"
+disqusShortname = "schoolofstatisticsorg"
 googleAnalytics = "UA-684495-29"
 
 Paginate = 10
@@ -32,7 +32,7 @@ gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
 prefix = ""
-holder = "Enayetur Raheem"
+holder = "dataSkool.org"
 startYear = "2017"
 suffix = ""
 
@@ -69,15 +69,15 @@ titleSeparator = "•"
 
 [params.social]
 #codepen = "MunifTanjim"
-#email = "contact@example.com"
-facebook = "raheemsOfficial"
+email = "lastname@gmail.com"
+facebook = "dataskool"
 github = "raheems"
 #gitlab = "MunifTanjim"
 #instagram = "MunifTanjim"
 linkedin = "raheems"
 twitter = "eraheem"
 #telegram = "MunifTanjim"
-google_scholar = "_7juYKUAAAAJ"
+# google_scholar = "_7juYKUAAAAJ"
 
 [params.social.config]
 platforms = ["github","facebook","twitter","instagram","email","codepen","gitlab","linkedin","telegram","google_scholar"]
@@ -90,11 +90,11 @@ tag = "tags"
 [permalinks]
 page = "/:slug/"
 
-#[[menu.main]]
-#name = "Repo"
-#weight = -10
-#identifier = "repository"
-#url = "https://github.com/MunifTanjim/minimo"
+[[menu.main]]
+name = "DataSkool"
+weight = -10
+identifier = "dataskool"
+url = "https://www.dataskool.org"
 
 [blackfriday]
 hrefTargetBlank = true
