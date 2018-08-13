@@ -1,13 +1,13 @@
 baseURL = "https://blog.dataskool.org"
 
-title = "DataSkool Blog"
+title = "dataSkool Blog"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
 theme = "minimo"
 
 disqusShortname = "schoolofstatisticsorg"
-googleAnalytics = "UA-684495-29"
+googleAnalytics = "UA-684495-21"
 
 Paginate = 10
 preserveTaxonomyNames = true
@@ -33,7 +33,7 @@ gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 [params.copyright]
 prefix = ""
 holder = "dataSkool.org"
-startYear = "2017"
+startYear = "2015"
 suffix = ""
 
 [params.settings]
