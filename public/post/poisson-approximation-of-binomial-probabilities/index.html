@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='This is yet another experiment to see how good is the approximation of binomial probability when we use Poisson and normal distributions for scenarios with large n, and p close to zero or one.
+Consider a problem where the random variable \(X\) follows a binomial distribution with a known probability of success \(p\), and number of trials \(n\). If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='Poisson approximation of binomial probabilities • Enayetur Raheem'>
+<meta property='og:description' content='This is yet another experiment to see how good is the approximation of binomial probability when we use Poisson and normal distributions for scenarios with large n, and p close to zero or one.
+Consider a problem where the random variable \(X\) follows a binomial distribution with a known probability of success \(p\), and number of trials \(n\). If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.'>
+<meta property='og:url' content='/post/poisson-approximation-of-binomial-probabilities/'>
+<meta property='og:site_name' content='dataSkool Blog'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/823ce4d8ae1f7008c6a02b1546ab5574?s=256'><meta property='article:author' content='https://facebook.com/raheemsOfficial'><meta property='article:section' content='Post'><meta property='article:tag' content='R'><meta property='article:published_time' content='2012-01-03T00:00:00Z'/><meta property='article:modified_time' content='2012-01-03T00:00:00Z'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@eraheem'><meta name='twitter:creator' content='@eraheem'>
+
+<meta name="generator" content="Hugo 0.45.1" />
+
+  <title>Poisson approximation of binomial probabilities • Enayetur Raheem</title>
+  <link rel='canonical' href='/post/poisson-approximation-of-binomial-probabilities/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.809149b6.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-684495-21', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+</head>
+
+
+<body class='page type-post has-sidebar'>
+
+  <div class='site'>
+
+    <div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    dataSkool Blog
+    </h2>
+    <div class='desc'>
+    statistics and data science
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud'><li>
+        <a href='/tags/career' style='font-size:1.5em'>Career</a>
+      </li><li>
+        <a href='/tags/data-science' style='font-size:1em'>Data Science</a>
+      </li><li>
+        <a href='/tags/powerbi' style='font-size:1.5em'>PowerBI</a>
+      </li><li>
+        <a href='/tags/python' style='font-size:1em'>Python</a>
+      </li><li>
+        <a href='/tags/r' style='font-size:2em'>R</a>
+      </li><li>
+        <a href='/tags/r-markdown' style='font-size:1em'>R Markdown</a>
+      </li><li>
+        <a href='/tags/statjobs' style='font-size:1.5em'>StatJobs</a>
+      </li><li>
+        <a href='/tags/git' style='font-size:1em'>Git</a>
+      </li><li>
+        <a href='/tags/plot' style='font-size:1em'>Plot</a>
+      </li><li>
+        <a href='/tags/regression' style='font-size:1em'>Regression</a>
+      </li><li>
+        <a href='/tags/%E0%A6%95%E0%A7%87%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%87%E0%A6%B6%E0%A6%A8' style='font-size:1em'>কোলাবরেশন</a>
+      </li><li>
+        <a href='/tags/%E0%A6%97%E0%A6%AC%E0%A7%87%E0%A6%B7%E0%A6%A3%E0%A6%BE' style='font-size:1em'>গবেষণা</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/post/'>Posts</a>
+      </li><li class='item'>
+        <a href='/about/'>About</a>
+      </li></ul>
+  </div>
+</nav>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>dataSkool Blog</p><p class='desc site-desc'>statistics and data science</p>
+          </div>
+        </div>
+        
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6844136270310089",
+          enable_page_level_ads: true
+     });
+</script>
+
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Poisson approximation of binomial probabilities</h1>
+      
+
+    </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2012-01-03T00:00:00Z'>2012, Jan 03</time>
+</span>
+
+  <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M21,21V20c0-2.76-4-5-9-5s-9,2.24-9,5v1"/>
+  <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
+  
+</svg>
+<span class='screen-reader-text'> by </span><a href='/authors/enayet'>Enayetur Raheem</a></span>
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+5 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  <p>This is yet another experiment to see how good is the approximation of binomial probability when we use Poisson and normal distributions for scenarios with large n, and p close to zero or one.</p>
+<p>Consider a problem where the random variable <span class="math inline">\(X\)</span> follows a binomial distribution with a known probability of success <span class="math inline">\(p\)</span>, and number of trials <span class="math inline">\(n\)</span>. If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.</p>
+<p>We can approximate the binomial distribution with a normal distribution or a Poisson distribution.</p>
+<div id="an-example" class="section level1">
+<h1>An example</h1>
+<p>The probability that a person will develop an infection even after taking a vaccine that was supposed to prevent the infection is 0.03. In a random sample of 200 people in a community who got the vaccine, what is the probability that six or fewer people will be infected?</p>
+<div id="solution" class="section level2">
+<h2>Solution</h2>
+<p>Let <span class="math inline">\(X\)</span> denote the number of persons getting infected. Clearly, <span class="math inline">\(X\)</span> follows a binomial probability distribution with <span class="math inline">\(n=200\)</span> and <span class="math inline">\(p = 0.03\)</span>. The exact probability of having six or fewer people getting infected is</p>
+<p><span class="math display">\[
+P(X \leq 6) = \sum_{k=0}^{6} \binom{200}{k} p^k q^{200-k}
+\]</span></p>
+<p>The probability is 0.6063. We can verify the calculation using R as</p>
+<pre class="r"><code>sum(dbinom(0:6, 200, .03))</code></pre>
+<pre><code>## [1] 0.6063152</code></pre>
+<p>Or alternatively,</p>
+<pre class="r"><code>pbinom(6, 200, .03)</code></pre>
+<pre><code>## [1] 0.6063152</code></pre>
+<p>To avoid such a big calculation by hand, we can approximate the binomial probability using a Poisson distribution or a normal distribution. I will use both and see which one approximates better.</p>
+</div>
+</div>
+<div id="poisson-approximation-to-the-binomial-distribution" class="section level1">
+<h1>Poisson approximation to the binomial distribution</h1>
+<p>To use Poisson approximation to the binomial probabilities, we consider that the random variable <span class="math inline">\(X\)</span> follows a Poisson distribution with rate <span class="math inline">\(\lambda = np = (200)(0.03) = 6.\)</span> Now, we can calculate the probability of having six or fewer infections as</p>
+<p><span class="math display">\[
+P(X &lt; 6) = \sum_{k=0}^{6}\frac{e^{-6} 6^k}{k!} = 0.6063
+\]</span> which turns out to be the same as we obtained with the binomial distribution.</p>
+<p>We can verify the calculation in R</p>
+<pre class="r"><code>ppois(6, lambda = 6)</code></pre>
+<pre><code>## [1] 0.6063028</code></pre>
+<p>Clearly, Poisson approximation is very close to the exact probability.</p>
+</div>
+<div id="normal-approximation-to-the-binomial-distribution" class="section level1">
+<h1>Normal approximation to the binomial distribution</h1>
+<p>We can also calculate the probability using normal approximation to the binomial probabilities. Since binomial distribution is for a discrete random variable and normal distribution is for continuous random variable, we have to make continuity correction to approximate a binomial distribution using the normal distribution.</p>
+<p>For large <span class="math inline">\(n\)</span> and when <span class="math inline">\(np &gt; 5\)</span> and <span class="math inline">\(nq &gt; 5,\)</span> a binomial random variable <span class="math inline">\(X\)</span> with <span class="math inline">\(X \sim Bin(n, p)\)</span> can be approximated by a normal distribution with mean = <span class="math inline">\(np\)</span> and variance = <span class="math inline">\(npq.\)</span> That is, <span class="math inline">\(X \sim N(6, \, 5.82).\)</span></p>
+<p>Therefore, the probability that there will be six or fewer cases of incidences can be calculated as</p>
+<p><span class="math display">\[
+P(X \leq 6) = P\left(z \leq \frac{X-6}{\sqrt{5.82}} \right).
+\]</span> As mentioned earlier, we have to make the continuity correction, and so the above expression will become <span class="math display">\[
+\begin{align*}
+P(X \leq 6) &amp;= P\left(z \leq \frac{(X+0.5) - 6}{\sqrt{5.82}} \right) \\
+&amp;= P\left(z \leq \frac{6.5-6}{\sqrt{5.82}}\right) \\
+&amp;= P(z \leq 0.2072)
+\end{align*}
+\]</span></p>
+<p>Using a standard normal table or using R, we can obtain the probability, which is 0.5821</p>
+<pre class="r"><code>pnorm(.2072)</code></pre>
+<pre><code>## [1] 0.5820732</code></pre>
+<p>We note that the approximation is close to the exact probability 0.6063 but the Poisson approximation does much better.</p>
+</div>
+<div id="simulation" class="section level1">
+<h1>Simulation</h1>
+<p>To see how the good the approximations are in repeated samples, we generate 1000 random sample of size 200 from a normal distribution with mean = 6 and standard wwwiation = 5.82. The generated data are used to approximate the binomial probability using Poison and normal distributions.</p>
+<p>We use the following code to generate the figure below.</p>
+<pre class="r"><code>apprx &lt;- function(n, p, R = 1000, k = 6) {
+     q = 1- p
+     trueval &lt;- pbinom(k, n, p) # true binomial probability
+     prob.zcc &lt;- prob.zncc &lt;- prob.pois &lt;- NULL  
+     for (i in 1:R) {
+          x &lt;- rnorm(n, n * p, sqrt(n * p * q))
+          z.cc &lt;- ((k + .5) - mean(x))/sd(x) # with cont. correction
+          prob.zcc[i] &lt;- pnorm(z.cc)
+          z.ncc &lt;- (k - mean(x))/sd(x) # no cont. correction
+          prob.zncc[i] &lt;- pnorm(z.ncc)    
+          y &lt;- rpois(n, n * p)
+          prob.pois[i] &lt;- length(y[y &lt;= k])/n
+     }
+     list(prob.zcc = prob.zcc, prob.zncc = prob.zncc, 
+          prob.pois = prob.pois, trueval = trueval)
+}</code></pre>
+<pre class="r"><code>R &lt;- 1000
+set.seed(10)
+out &lt;- apprx(n = 200, p = .03, k = 6, R = 1000)
+# windows(6,5)
+plot(1:R, out$prob.pois, type = &quot;l&quot;, col = &quot;green&quot;, xlab = &quot;Runs&quot;, 
+     main = expression(paste(&quot;Simulated Probabilities: &quot;, 
+                             n==200, &quot;, &quot;, p==0.03, sep=&quot;&quot;)),
+     ylab = &quot;Probability&quot;, ylim = c(.3, .7))
+abline(h = out$trueval, col=&quot;red&quot;, lty=2)
+lines(1:R, out$prob.zcc, lty = 1, col = &quot;purple&quot;)
+lines(1:R, out$prob.zncc, lty = 1, col = &quot;orange&quot;)
+legend(&quot;bottomleft&quot;, c(&quot;Poisson&quot;, &quot;Normal (with cc)&quot;, 
+                       &quot;Normal (w/o cc)&quot;),
+       lty = c(1), col = c(&quot;green&quot;, &quot;purple&quot;, &quot;orange&quot;))</code></pre>
+<p><img src="/post/2012-01-03-poisson-approximation-of-binomial-probabilities_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Above figure shows the calculated probabilities for each run of the simulation. The read horizontal line at 0.6 shows the exact probability. The figure shows that the normal approximation, with or without continuity correction, is underestimating the exact probability while Poisson does a better job approximating it for <span class="math inline">\(n=200\)</span> and <span class="math inline">\(p=0.03.\)</span></p>
+<p>Since this plot does not reveal much due to overlapping points, we draw boxplots for the calculated probabilities for <span class="math inline">\(n= 100, 200, 233, 300,\)</span> and <span class="math inline">\(p=0.03.\)</span></p>
+<pre class="r"><code># n = 200
+set.seed(10)
+out &lt;- apprx(n = 200, p = .03, k = 6, R = 1000)
+# windows(6,5)
+boxplot(out$prob.pois, boxwex = 0.25, at = 1:1 - .25,
+        col = &quot;green&quot;,
+        main = expression(paste(&quot;Approximating Binomial Probability: &quot;, 
+                                n==200, &quot;, &quot;, p==0.03, sep=&quot;&quot;)),
+        ylab = &quot;Probablity&quot;, 
+        ylim = c(out$trueval - 0.2, out$trueval + 0.25))
+boxplot(out$prob.zcc, boxwex = 0.25, at = 1:1 + 0, add = T,
+        col = &quot;purple&quot;)
+boxplot(out$prob.zncc, boxwex = 0.25, at = 1:1 + 0.25, add = T,
+        col = &quot;orange&quot; )
+abline(h = out$trueval, col = &quot;red&quot;, lty=2)
+legend(&quot;topleft&quot;, c(&quot;Poisson&quot;, &quot;Normal (with cc)&quot;, &quot;Normal (w/o cc)&quot;), 
+       fill = c(&quot;green&quot;, &quot;purple&quot;, &quot;orange&quot;))</code></pre>
+<p><img src="/post/2012-01-03-poisson-approximation-of-binomial-probabilities_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>To summarize, we see that for <span class="math inline">\(n = 200\)</span> and <span class="math inline">\(p = 0.03,\)</span> Poisson does better than the normal with continuity correction. However, for larger sample sizes, especially when n is close to 300, the normal approximation is as good as the Poisson approximation. It is to be mentioned here that the normal based approximation has always narrower spread than the Poisson based approximation. More importantly, the results are true for this particular case when <span class="math inline">\(p=0.03.\)</span></p>
+</div>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  <div class='categories'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/r'>R</a></div>
+<div class='tags'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/r'>R</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='next-entry sep-before'>
+      <a href='/post/testing-equality-of-two-population-variances-using-stata/'>
+        <span class='screen-reader-text'>Next post: </span>Testing equality of two population variances using Stata<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/raheems' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://facebook.com/dataskool' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Facebook account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/eraheem' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:lastname@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/raheems' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2015-2018 dataSkool.org </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.68cb493a.js'></script><script src='/js/custom.js'></script><script type='text/x-mathjax-config'>
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"processEscapes":true}})
+</script>
+
+<script type='text/javascript' async src='//unpkg.com/mathjax/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
+
+
+</body>
+
+</html>
+
