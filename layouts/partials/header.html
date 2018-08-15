@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.Language.Lang }}'>
+
+{{ partial "head/head" . }}
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6844136270310089",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+<body class='{{ partial "header/bodyClasses" . }}'>
+
+  <div class='site'>
+
+    {{ partial "sidebar/sidebar" . }}
+
+    <div class='main'>
+
+      {{ partial "nav/menus/main" . }}
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'>
+            {{- if eq .Kind "home" -}}
+              <h1 class='site-title title'>{{ .Site.Title }}</h1>
+            {{- else -}}
+              <p class='site-title title'>{{ .Site.Title }}</p>
+            {{- end -}}
+            <p class='desc site-desc'>{{ .Site.Params.info.description }}</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
