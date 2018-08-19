@@ -1,6 +1,6 @@
 baseURL = "https://blog.dataskool.org"
 
-title = "blog.dataskool"
+title = "dataskool blog"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
@@ -32,7 +32,7 @@ gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
 prefix = ""
-holder = "dataSkool.org"
+holder = "dataskool.org"
 startYear = "2015"
 suffix = ""
 
