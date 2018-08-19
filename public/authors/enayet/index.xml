@@ -5,10 +5,19 @@
     <link>/authors/enayet/</link>
     <description>Recent content in Enayet on dataskool blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/authors/enayet/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>প‍্যাশন, প্রফেশনালিজম, ও প্রায়োরিটি</title>
+      <link>/post/passion-professionalism-priority/</link>
+      <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/passion-professionalism-priority/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Power BI single R script for multiple data sets / tables</title>
