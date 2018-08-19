@@ -21,7 +21,7 @@ pygmentsCodefences = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "statistics and data science blog"
+description = "learning statistics and data science"
 title404 = "Nothing's here!"
 
 [params.assets]
