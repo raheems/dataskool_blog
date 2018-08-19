@@ -9,7 +9,7 @@ theme = "minimo"
 disqusShortname = "dataskool"
 googleAnalytics = "UA-684495-21"
 
-Paginate = 10
+Paginate = 20
 preserveTaxonomyNames = true
 
 enableRobotsTXT = true # generate robots.txt
