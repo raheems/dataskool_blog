@@ -10,7 +10,7 @@ tags:
 - পরিসংখ‍্যানবিদ
 draft: false
 toc: false
-images: ["images/dataskool_socialmedia.png"]
+images: ["images/dataskool_socialmedia.png?v=1"]
 ---
 
 ![প্রফেসর ড. হুমায়ূন কবীর (১৯৪৩ – ডিসেম্বর ২৭, ২০১৭)](/images/dr_humayun_kabir_isrt.jpg)
