@@ -57,7 +57,7 @@ footer = ["social_menu"]
 
 [params.opengraph.facebook]
 admins = ["eraheem"] # array of Facebook IDs
-appID = ""
+appID = "326177744624168"
 pageID = "690868570924833"
 
 [params.opengraph.twitter]
