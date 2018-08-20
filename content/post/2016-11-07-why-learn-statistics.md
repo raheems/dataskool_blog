@@ -1,7 +1,7 @@
 ---
 title: পরিসংখ্যানে দক্ষতা অর্জন যে কারণে প্রয়োজন
 authors: ["enayet"]
-date: '2016-10-31'
+date: '2016-11-07'
 lastmod: '2018-08-19'
 slug: why-learn-statistics
 categories:

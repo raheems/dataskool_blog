@@ -1,7 +1,7 @@
 ---
 title: ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি?
 authors: ["enayet"]
-date: '2016-10-31'
+date: '2016-11-19'
 lastmod: '2018-08-19'
 slug: understanding-data-science-job-market
 categories:
