@@ -10,7 +10,7 @@ tags:
 -  পরিসংখ‍্যান
 - কার্টুন
 draft: false
-toc: true
+toc: false
 images: ["images/dataskool_socialmedia.png"]
 ---
 
