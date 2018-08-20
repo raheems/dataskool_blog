@@ -9,6 +9,7 @@ tags:
   - Data Science
 authors: ["enayet"]
 toc: true
+images: ["images/socialmedia.png"]
 ---
 
 A lot of times interested folks contact me with a question like this: ‘I want to be a data scientist; can you help?’

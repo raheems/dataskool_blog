@@ -11,6 +11,7 @@ tags:
 authors: ["enayet"]
 draft: true
 toc: true
+images: ["images/socialmedia.png"]
 ---
 
 Power BI is a great tool for creating interactive statistical tables with the aid of R. When using R as a data connector, you can use a single R script to have multiple data frames loaded into Power BI. 

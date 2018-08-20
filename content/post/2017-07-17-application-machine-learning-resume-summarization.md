@@ -10,7 +10,7 @@ tags:
 - মেশিন লারনিং
 draft: false
 toc: true
-images: ["images/dataskool_socialmedia.png"]
+images: ["images/socialmedia.png"]
 ---
 
 তোমরা যারা মেশিন লারনিং শিখতে চাও। তোমাদের জন্য একটা কাজের আইডিয়া মাথায় এসেছে।

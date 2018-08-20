@@ -7,6 +7,7 @@ categories: []
 tags: []
 authors: ["enayet"]
 draft: false
+images: ["images/socialmedia.png"]
 ---
 
 I was asked if we can do the test of equality of two population variances using Stata. Well, I did not have to do it myself ever, but yes, it is possible to do it. Here is an example. I’ve just made-up the data to show the procedures.

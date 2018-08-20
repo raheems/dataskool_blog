@@ -11,7 +11,7 @@ tags:
   - পরিসংখ‍্যান
 draft: false
 toc: true
-images: ["images/dataskool_socialmedia.png"]
+images: ["images/socialmedia.png"]
 ---
 
 “ড্যাটা ভিত্তিক সিদ্ধান্ত গ্রহণ” শব্দবন্ধটি কিছুদিন আগেও উন্নত বিশ্বে ব্যাপকভাবে আলোচিত হয়েছে। এখন সেখান থেকে আরো গভীরে গিয়ে আলোচিত হচ্ছে আর্টিফিশিয়াল ইন্টেলিজেন্স বা কৃত্রিম বুদ্ধিমত্তার ব্যবহার এবং কিভাবে ড্যাটা থেকে প্যাটার্ন বের করে তা সিদ্ধান্ত গ্রহণে কাজে লাগানো যায়। বলা হচ্ছে [Big data is a big deal](http://iveybusinessjournal.com/publication/why-big-data-is-the-new-competitive-advantage/). অনেক লেখালেখি হয়েছে বিগ ড্যাটা কিভাবে [ব্যবসা বাণিজ্যকে বদলে দেবে](http://www.csc.com/big_data/publications/89362/96477-4_ways_big_data_will_transform_business) এবং আগামী দিনে কারা প্রতিযোগিতায় টিকে থাকবে সেসব নিয়ে। বলা হচ্ছে যারা ড্যাটার সর্বোত্তম ব্যবহার করবে তারাই এগিয়ে যাবে কিংবা তাদেরই টিকে থাকার সম্ভাবনা বেশী হবে।

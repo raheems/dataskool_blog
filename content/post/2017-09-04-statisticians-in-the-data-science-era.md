@@ -11,6 +11,7 @@ slug: statisticians-in-the-data-science-era
 authors:
   - enayet
 toc: true
+images: ["images/socialmedia.png"]
 ---
 
 

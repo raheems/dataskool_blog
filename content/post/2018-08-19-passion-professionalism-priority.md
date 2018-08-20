@@ -9,6 +9,6 @@ categories:
 tags:
   - career
 draft: true
-images: ["images/dataskool_socialmedia.png"]
+images: ["images/socialmedia.png"]
 ---
 
