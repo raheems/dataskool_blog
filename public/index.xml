@@ -38,8 +38,9 @@ Of course learning the technologies, i.e., data science, in particular, will be 
       <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/passion-professionalism-priority/</guid>
-      <description>ভূমিকা কর্মক্ষেত্রে পরিসংখ‍্যানবিদদের ভূমিকা আমরিকা সহ উন্নত দেশগুলিতে পরিসংখ‍্যানবিদদের তাদের কাজের কারণে বেশ গুরুত্ব দেয়া হয়। অর্থাৎ তাদের প্রফেশনাল ভ‍্যালু আছে। ব‍্যাপারটা বাইরে থেকে ততটা সহজে বোঝা সহজ নয়। উদাহরণ দিয়ে বুঝতে সহজ হবে।
-বাংলাদেশে অনেক চাকুরীতে পরিসংখ‍্যানবিদ একটি যোগ‍্যতা হিসেবে চাওয়া হয়। কিন্তু সেখানে পরিসংখ‍্যানের কী ধরনের কাজ থাকে বা এই ব‍্যাকগ্রাউন্ডের কেউ যখন সেই চাকুরীতে প্রবেশ করে তখন তিনি অর্জিত জ্ঞানের কতটা ব‍্যবহার করতে পারেন সে সম্পর্কে আমাদের যা ধারনা হয়েছে তা থেকে বলা যায় অল্পকিছু ব‍্যাতিরেকে পরিসংখ‍্যানবিদ হিসেবে পরিসংখ‍্যানের ছাত্র/ছাত্রীদের অংশগ্রহণ অনেকটা সীমিত।</description>
+      <description>ভূমিকা কর্মক্ষেত্রে পরিসংখ‍্যানবিদদের ভূমিকা আমেরিকা সহ উন্নত দেশগুলিতে পরিসংখ‍্যানবিদদের তাদের কাজের কারণে বেশ গুরুত্ব দেয়া হয়। অর্থাৎ এসব দেশে পরিসংখ্যানবিদদের প্রফেশনাল ভ্যালু আছে। ব‍্যাপারটা বাংলাদেশের প্রেক্ষাপটে চিন্তা করলে বোঝা সহজ নয়।
+উদাহরণ দিলে বুঝতে সহজ হবে।
+বাংলাদেশে অনেক চাকুরীতে পরিসংখ‍্যানবিদ একটি যোগ্যতা হিসেবে চাওয়া হয়। কিন্তু সেখানে পরিসংখ‍্যানের কী ধরনের কাজ থাকে বা এই ব‍্যাকগ্রাউন্ডের কেউ যখন সেই চাকুরীতে প্রবেশ করে তখন তিনি অর্জিত জ্ঞানের কতটা ব‍্যবহার করতে পারেন সে সম্পর্কে আমার যা ধারণা হয়েছে তা থেকে বলা যায় অল্পকিছু ব‍্যাতিরেকে কর্মক্ষেত্রে পরিসংখ‍্যানবিদ হিসেবে পরিসংখ‍্যানের ছাত্র/ছাত্রীদের অংশগ্রহণ অনেকটা সীমিত।</description>
     </item>
     
     <item>
@@ -79,9 +80,9 @@ Copying a remote repository to local To bring a remote repository to your local 
       <guid>/post/python-using-rstudio-ide/</guid>
       <description>Today is 7/26
 This is test post to check if Python code works
-library(reticulate) ## Warning: package &amp;#39;reticulate&amp;#39; was built under R version 3.4.4 import numpy as np x = [1, 2, 3] print(x) ## [1, 2, 3] y = np.mean(x) \(\bar{x}\) is the average, which is defined as \[ \bar{x} = \frac{\sum x}{n} \]
+library(reticulate)## Warning: package &amp;#39;reticulate&amp;#39; was built under R version 3.4.4import numpy as npx = [1, 2, 3]print(x)## [1, 2, 3]y = np.mean(x)\(\bar{x}\) is the average, which is defined as \[\bar{x} = \frac{\sum x}{n}\]
 So what is the aveage of y? It is 2.
-x = c(1:5) The value of x is R session is 1, 2, 3, 4, 5.</description>
+x = c(1:5)The value of x is R session is 1, 2, 3, 4, 5.</description>
     </item>
     
     <item>
@@ -232,9 +233,9 @@ Firstly, I would say this– lies, damn lies, statistics, AND one-page resume.</
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     
     <item>
