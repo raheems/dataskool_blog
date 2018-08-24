@@ -21,7 +21,7 @@ pygmentsCodefences = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "Learning statistics and data science"
+description = "Accessible statistics and data science"
 title404 = "Nothing's here!"
 
 [params.assets]
