@@ -33,7 +33,7 @@ gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 [params.copyright]
 prefix = ""
 holder = "dataskool.org"
-startYear = "2015"
+startYear = "2017"
 suffix = ""
 
 [params.settings]
