@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on dataskool blog</title>
+    <title>Python on DataSkool Blog</title>
     <link>/tags/python/</link>
-    <description>Recent content in Python on dataskool blog</description>
+    <description>Recent content in Python on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 22 Feb 2018 00:00:00 +0000</lastBuildDate>
     
