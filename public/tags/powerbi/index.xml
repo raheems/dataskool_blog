@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerBI on DataSkool Blog</title>
+    <link>/tags/powerbi/</link>
+    <description>Recent content in PowerBI on DataSkool Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 10 Aug 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/powerbi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Power BI single R script for multiple data sets / tables</title>
+      <link>/post/power-bi-single-r-script-for-multiple-data-sets-tables/</link>
+      <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/power-bi-single-r-script-for-multiple-data-sets-tables/</guid>
+      <description>Power BI is a great tool for creating interactive statistical tables with the aid of R. When using R as a data connector, you can use a single R script to have multiple data frames loaded into Power BI.
+Often, as we are developing the report, you will add or remove tables in the single R script. It is convenient to have all the codes in a single table since most of the data frames are derived from the main data set.</description>
+    </item>
+    
+    <item>
+      <title>Integrating R with Power BI</title>
+      <link>/post/integrating-r-with-powerbi-desktop/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/integrating-r-with-powerbi-desktop/</guid>
+      <description>Microsoft Power BI Desktop version nicely integrates with R. R is an open source software for statistical computing and graphics. R has become popular among the data scientists because of its powerful data analytics and visualization capabilities. Power BI is Microsoft&amp;rsquo;s flagship BI tool for creating dashboards and interactive reports. With R as a backend engine for Power BI Desktop, you can do many cool things, which can be categorized into three broad applications&amp;ndash;</description>
+    </item>
+    
+  </channel>
+</rss>
