@@ -3,11 +3,12 @@ title: About
 description: shallow to deep learning!
 menu: main
 weight: -210
+comments: false
 ---
 
-This site, deepLearner, is not about Deep Learning as we understand in the field of Data Science. Rather, the purpose here is to express deep learning in the sense of learning something at the core. In other words, learning and taking it from shallow to a deeper level of understanding.
+This blog is about learning statistics and data science. The core idea is deep learning. However, this is not about deep learning as we understand in the field of Data Science. Rather, the purpose here is to express deep learning in the sense of learning something at the core. In other words, learning and taking it from shallow to a deeper level of understanding.
 
-We are all learners. Some of us are deep learner. That’s deepLearnR.
+We are all learners. Some of us are deep learner.
 
 Of course learning the technologies, i.e., data science, in particular, will be a major focus of our articles. Most importantly, statistical thinking will be at the core.
 

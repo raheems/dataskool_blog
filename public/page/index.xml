@@ -27,9 +27,8 @@ Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proid
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>This site, deepLearner, is not about Deep Learning as we understand in the field of Data Science. Rather, the purpose here is to express deep learning in the sense of learning something at the core. In other words, learning and taking it from shallow to a deeper level of understanding.
-We are all learners. Some of us are deep learner. That’s deepLearnR.
-Of course learning the technologies, i.e., data science, in particular, will be a major focus of our articles.</description>
+      <description>This blog is about learning statistics and data science. The core idea is deep learning. However, this is not about deep learning as we understand in the field of Data Science. Rather, the purpose here is to express deep learning in the sense of learning something at the core. In other words, learning and taking it from shallow to a deeper level of understanding.
+We are all learners. Some of us are deep learner.</description>
     </item>
     
     <item>

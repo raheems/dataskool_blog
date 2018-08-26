@@ -27,9 +27,17 @@ Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proid
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>This site, deepLearner, is not about Deep Learning as we understand in the field of Data Science. Rather, the purpose here is to express deep learning in the sense of learning something at the core. In other words, learning and taking it from shallow to a deeper level of understanding.
-We are all learners. Some of us are deep learner. That’s deepLearnR.
-Of course learning the technologies, i.e., data science, in particular, will be a major focus of our articles.</description>
+      <description>This blog is about learning statistics and data science. The core idea is deep learning. However, this is not about deep learning as we understand in the field of Data Science. Rather, the purpose here is to express deep learning in the sense of learning something at the core. In other words, learning and taking it from shallow to a deeper level of understanding.
+We are all learners. Some of us are deep learner.</description>
+    </item>
+    
+    <item>
+      <title>Integrating Python with Power BI</title>
+      <link>/post/integrating-python-with-powerbi-desktop/</link>
+      <pubDate>Sat, 25 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/integrating-python-with-powerbi-desktop/</guid>
+      <description>Microsoft have recently enabled Python script as a data source. This is still an experimental phase, yet a nice feature for those who uses Python on a day to day basis. Microsoft Power BI Desktop version nicely integrates with Python. Python is an open source general purpose language and has become one of top prigramming language for data science. Power BI is Microsoft’s flagship BI tool for creating dashboards and interactive reports.</description>
     </item>
     
     <item>
