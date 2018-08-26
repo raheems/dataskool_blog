@@ -5,40 +5,38 @@
     <link>/tags/career/</link>
     <description>Recent content in Career on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Nov 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/career/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>প‍্যাশন, প্রফেশনালিজম, ও প্রায়োরিটি</title>
-      <link>/post/passion-professionalism-priority/</link>
-      <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
+      <title>ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি?</title>
+      <link>/post/understanding-data-science-job-market/</link>
+      <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/passion-professionalism-priority/</guid>
-      <description>কর্পোরেট জগতে ডেটা নিয়ে যারা কাজ করে&amp;ndash; যেমন পরিসংখ্যানবিদ, ডেটা সায়েন্টিস্ট&amp;ndash; তাদেরকে অধিকাংশ সময় মাল্টিটাস্ক করতে হয় এবং একই সময় অনেক ক্লায়েন্টদের সাথে ডিল করতে হয়। ক্লায়েন্ট হতে পারে ইন্টারনাল ডিপার্টমেন্টাল ক্লায়েন্ট কিংবা কখনো কখনো এক্সটারনাল। ডেটা নিয়ে কাজ করার কারণে স্বাভাবিকভাবেই ইন্টারনালি পরিসংখ্যানবিদ ও ডেটা সায়েন্টিস্টদের চাহিদা অনেক বেশি। কর্মক্ষেত্রে পরিসংখ্যানবিদ ও ডেটা সায়েন্টিস্টদের তিনটি বিষয়ে অবগত করতে এই আর্টিকেল।
-পরিসংখ‍্যানবিদদের ভূমিকা আমেরিকা সহ উন্নত দেশগুলিতে পরিসংখ‍্যানবিদদের তাদের কাজের কারণে বেশ গুরুত্ব দেয়া হয়। অর্থাৎ এসব দেশে পরিসংখ্যানবিদদের প্রফেশনাল ভ্যালু আছে। ব‍্যাপারটা বাংলাদেশের প্রেক্ষাপটে চিন্তা করলে বোঝা সহজ নয়।</description>
+      <guid>/post/understanding-data-science-job-market/</guid>
+      <description>ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি– এটি আজকের লেখার বিষয়। এটি খুবই গুরুত্বপূর্ণ একটি টপিক। কেননা জব মার্কেটে নামার আগেই জানতে হবে কোন ধরনের জবের সাথে আপনার স্কিলসেট মেলে এবং কোন ধরনের জবের ফাংশন কী।
+হার্ভার্ড বিজনেস রিভিউ ২০১২ সনে লিখেছিল একবিংশ শতাব্দীর সেক্সিয়েস্ট জব হলো ডেটা সায়েন্স। এর সত্যতা প্রমাণের দরকার নেই; চাকরি বাজারে তাকালেই এর সত্যতা মেলে। আগের লেখায় বলেছিলাম ডেটা সায়েন্স এখন হট টপিক। তেমনি হট এর চাকুরির বাজার। আর বাজারের চাহিদা মেটাতে আমেরিকা এবং কানাডার অনেক বিশ্ববিদ্যালয়ে সম্প্রতি ডেটা সায়েন্স প্রোগ্রাম চালু করেছে। ধারণা করা যায় এই অনেকদিন অব্যাহত থাকবে যতদিন না বাজারে ডেটা সায়েন্টিস্টদের চাহিদার সাথে যোগানের সমন্বয় হয়।</description>
     </item>
     
     <item>
-      <title>Statisticians in the Data Science Era</title>
-      <link>/post/statisticians-in-the-data-science-era/</link>
-      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
+      <title>পরিসংখ্যানে দক্ষতা অর্জন যে কারণে প্রয়োজন</title>
+      <link>/post/why-learn-statistics/</link>
+      <pubDate>Mon, 07 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/statisticians-in-the-data-science-era/</guid>
-      <description>If you are exploring the hot field of Data Science today, you probably know by now that there is no unique way to define data science. Everyone’s perspective comes from their respective backgrounds. Statisticians think they are data scientists while CS folks think they are.
-I would not go into the debate.
-Both have truth in their arguments as the typical problems they solve are quite different. There are some exceptions where their workflows overlap.</description>
+      <guid>/post/why-learn-statistics/</guid>
+      <description>“ড্যাটা ভিত্তিক সিদ্ধান্ত গ্রহণ” শব্দবন্ধটি কিছুদিন আগেও উন্নত বিশ্বে ব্যাপকভাবে আলোচিত হয়েছে। এখন সেখান থেকে আরো গভীরে গিয়ে আলোচিত হচ্ছে আর্টিফিশিয়াল ইন্টেলিজেন্স বা কৃত্রিম বুদ্ধিমত্তার ব্যবহার এবং কিভাবে ড্যাটা থেকে প্যাটার্ন বের করে তা সিদ্ধান্ত গ্রহণে কাজে লাগানো যায়। বলা হচ্ছে Big data is a big deal. অনেক লেখালেখি হয়েছে বিগ ড্যাটা কিভাবে ব্যবসা বাণিজ্যকে বদলে দেবে এবং আগামী দিনে কারা প্রতিযোগিতায় টিকে থাকবে সেসব নিয়ে। বলা হচ্ছে যারা ড্যাটার সর্বোত্তম ব্যবহার করবে তারাই এগিয়ে যাবে কিংবা তাদেরই টিকে থাকার সম্ভাবনা বেশী হবে।</description>
     </item>
     
     <item>
-      <title>Preparing for statistics jobs in the industry</title>
-      <link>/post/preparing-for-statistics-jobs-in-the-industry/</link>
-      <pubDate>Mon, 20 Feb 2017 00:00:00 +0000</pubDate>
+      <title>বাংলাদেশে পরিসংখ্যানবিদদের ভবিষ্যৎ</title>
+      <link>/post/future-of-statistics-in-bangladesh/</link>
+      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/preparing-for-statistics-jobs-in-the-industry/</guid>
-      <description>I would like to share a few things with you from recent experience of my transition from academia to industry. Of course I have a lot more experience than a fresh graduate, but something I’ve experienced that many others may benefit from. I believe this will help you to think at least. I’ve written this with the candidates in the US job market in mind.
-Firstly, I would say this– lies, damn lies, statistics, AND one-page resume.</description>
+      <guid>/post/future-of-statistics-in-bangladesh/</guid>
+      <description>একটা বিষয় আমাকে আশাবাদী করে যখন দেখি আমাদের ছাত্র-ছাত্রীরা পরিসংখ্যানে পড়াশুনা করছে এবং তাদের মধ্যে অল্প কয়েকজন বাদে সবাই ডিগ্রী শেষ করছে। স্নাতক পর্যায়ে আমাদের প্রতিটি পাবলিক বিশ্ববিদ্যালয়েই পরিসংখ্যান পড়ানো হয়। সে হিসেবে প্রতি বছর আনুমানিক ২-৪শ’র মতো ছাত্রছাত্রী পরিসংখ্যানে স্নাতক অর্জন করে। সংখ্যাটি একেবারে কম নয়।
+আমি দিনের একটা উল্লেখযোগ্য সময় ফেইসবুকে সময় দেই। এর অন্যতম উদ্যেশ্য আমাদের নতুন-পুরাতন ছাত্র-ছাত্রীদের সাথে যুক্ত থাকা। একটা সময় ছিল যখন শুধু পরিসংখ্যানের কেউ হলেই তাকে আমি ফ্রেন্ড হিসেবে যুক্ত করতাম। এখনো করি তবে এখন পরিসংখ্যানের বাইরেও বন্ধু-সার্কেল বেড়েছে।</description>
     </item>
     
   </channel>
