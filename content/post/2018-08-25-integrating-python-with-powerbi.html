@@ -27,11 +27,12 @@ images: ["images/powerbi_with_python.png"]
 <h1>Application 1: Using Python to import data sets into Power BI</h1>
 <p>Power BI can import data from a variety of sources. For a complete list, please see <a href="https://docs.microsoft.com/en-us/power-bi/desktop-data-sources">here.</a></p>
 <p>Importing Excel <code>.xlsx</code> or <code>.csv</code> files into Power BI is perhaps the most common usage. However, I’ve personally found it to be problematic. In particular, if your source data is continuously updating including addition or removal of columns, then the changes do not get updated when you simply refresh the data sources from Power BI Desktop. This is a problematic when you are developing your interactive report and also when the dashboard is in production.</p>
-<p>A robust solution of importing data is to use Python (or R) script.</p>
+<p>A robust solution of importing data is to use Python (or R) script. If you</p>
 <div id="preparing-the-python-script" class="section level2">
 <h2>Preparing the Python script</h2>
 <pre class="python"><code>import numpy as np
 import pandas as pd
+
 np.random.seed(20)
 df = pd.DataFrame(np.random.randn(50, 2), columns=list(&#39;xy&#39;))
 print(df.head())</code></pre>
@@ -51,13 +52,13 @@ df &lt;- data.frame(
 )
 
 head(df)</code></pre>
-<pre><code>##             x           y
-## 1 -0.34841750  0.09429096
-## 2 -1.17412012  0.63401166
-## 3 -2.09202348  0.49036028
-## 4  0.05178451  1.65604161
-## 5  1.92527499 -0.08889288
-## 6 -2.52562035 -1.38939508</code></pre>
+<pre><code>##             x          y
+## 1 -0.89948582  0.7823253
+## 2 -1.02057173 -1.3046687
+## 3 -1.62911042 -2.8923379
+## 4  0.63518010  2.2853472
+## 5 -0.31127115  0.5387614
+## 6  0.02689428 -1.9234075</code></pre>
 <p>This code creates an R <code>data.frame</code> and saves in an object <code>df</code>. This will be the name of the data when you import into Power BI. You can give the data object any valid R-name you want.</p>
 <p>The above code also shows <code>head(df)</code>, but Power BI only imports <code>data.frame</code>. In this case, it will only import the <code>df</code> object and ignore the rest. So you don’t have to worry about other codes in the script. Just make sure all codes run without error and without any dependencies.</p>
 </div>

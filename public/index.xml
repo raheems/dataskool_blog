@@ -87,9 +87,9 @@ Copying a remote repository to local To bring a remote repository to your local 
       <guid>/post/python-using-rstudio-ide/</guid>
       <description>Today is 7/26
 This is test post to check if Python code works
-library(reticulate) ## Warning: package &amp;#39;reticulate&amp;#39; was built under R version 3.4.4 import numpy as np x = [1, 2, 3] print(x) ## [1, 2, 3] y = np.mean(x) \(\bar{x}\) is the average, which is defined as \[ \bar{x} = \frac{\sum x}{n} \]
+library(reticulate)## Warning: package &amp;#39;reticulate&amp;#39; was built under R version 3.4.4import numpy as npx = [1, 2, 3]print(x)## [1, 2, 3]y = np.mean(x)\(\bar{x}\) is the average, which is defined as \[\bar{x} = \frac{\sum x}{n}\]
 So what is the aveage of y? It is 2.
-x = c(1:5) The value of x is R session is 1, 2, 3, 4, 5.</description>
+x = c(1:5)The value of x is R session is 1, 2, 3, 4, 5.</description>
     </item>
     
     <item>
@@ -240,9 +240,9 @@ Firstly, I would say this– lies, damn lies, statistics, AND one-page resume.</
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     
     <item>

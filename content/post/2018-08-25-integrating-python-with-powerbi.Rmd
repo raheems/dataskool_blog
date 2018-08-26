@@ -30,7 +30,7 @@ Power BI can import data from a variety of sources. For a complete list, please 
 
 Importing Excel `.xlsx` or `.csv` files into Power BI is perhaps the most common usage. However, I've personally found it to be problematic. In particular, if your source data is continuously updating including addition or removal of columns, then the changes do not get updated when you simply refresh the data sources from Power BI Desktop. This is a problematic when you are developing your interactive report and also when the dashboard is in production.
 
-A robust solution of importing data is to use Python (or R) script. 
+A robust solution of importing data is to use Python (or R) script. If you WORKING
 
 ## Preparing the Python script
 
