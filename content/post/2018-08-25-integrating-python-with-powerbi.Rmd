@@ -30,17 +30,24 @@ Power BI can import data from a variety of sources. For a complete list, please 
 
 Importing Excel `.xlsx` or `.csv` files into Power BI is perhaps the most common usage. However, I've personally found it to be problematic. In particular, if your source data is continuously updating including addition or removal of columns, then the changes do not get updated when you simply refresh the data sources from Power BI Desktop. This is a problematic when you are developing your interactive report and also when the dashboard is in production.
 
-A robust solution of importing data is to use Python (or R) script. If you WORKING
+A robust solution of importing data is to use Python (or R) script. If you WORKING here
 
 ## Preparing the Python script
+
+This is the stage you would write your Python script to load your data. You can use any IDE for Python. I use [Jupyter Lab](http://jupyter.org/) for that. The goal is to test your code before using in Power BI.
+
+I am going to create a smiple data set with two columns using the Python codes below. This data is being created for demonstration purposes only so that you can reproduce it when you are learning. 
 
 
 ```{r, echo=FALSE, warning=FALSE}
 library(reticulate)
 ```
 
-
 ```{python}
+
+# Sample dataframe object in Python
+# You need to load Numpy and Pandas libraries
+
 import numpy as np
 import pandas as pd
 
@@ -49,121 +56,104 @@ df = pd.DataFrame(np.random.randn(50, 2), columns=list('xy'))
 print(df.head())
 ```
 
-This is the stage you would write your R script to load your data. I use R studio for that. RStudio is a popular Integrated Development Environment (IDE) for R. If you are not familiar with RStudio, you can use the default R editor or wherever you write your R codes. You do not need any special preparation. Just use the editor to test your code before using in Power BI.
+This code creates a Pandas `DataFrame` and saves in an object `df`. This will be the name of the data when you import into Power BI. You can give the data object any valid Python variable name you want. 
 
-I am going to create a smiple data set with two columns using the R codes below. This data is being created for demonstration purposes only so that you can reproduce it when you are learning. 
+The above code also shows `df.head()`, to demostrate that the data indeed have been generated. Power BI only imports the `DataFrame` obejct. In this case, it will only import the `df` object and ignore the rest. So you don't have to worry about other codes in the script. Just make sure all codes run without error and without any dependencies. 
 
-```{r}
-# Sample data frame object
+## Enable Python script in Power BI
 
-df <- data.frame(
-  x= rnorm(100),
-  y= rnorm(100) + rnorm(100)
-)
+Since Microsoft has recently release the Python option in PowerBI, it is a feature that you have to enable from under Options. Go to *Files > Options and Settings > Options > Preview features*. Check the box for **Python support**. See the image below.
 
-head(df)
-```
+![Fig. Enable Python Preview Feature in Power BI](/images/enable_python_powerbi.png)
 
-This code creates an R `data.frame` and saves in an object `df`. This will be the name of the data when you import into Power BI. You can give the data object any valid R-name you want. 
+Once you enable the Python feature, you may have to close Power BI and reopen to see the **Python scripting** option. Once you restart Power BI, you will go to Python scripting option and then select the path to the location where Python is installed in your PC. For me, I use Anaconda software to manage Python packages. So it was under *C:\Users\Raheem\Anaconda3*. Also, it is optional to set the default IDE for Python. It was set to Visual Studio Code. It doesn't really matter which IDE you use.
 
-The above code also shows `head(df)`, but Power BI only imports `data.frame`. In this case, it will only import the `df` object and ignore the rest. So you don't have to worry about other codes in the script. Just make sure all codes run without error and without any dependencies. 
+![Fig. Set Python path in Power BI](/images/set_python_path_powerbi.png)
 
-## Run your R script and import data
+## Run your Python script and import data
 
-In Power BI Desktop, the R Script data connector is found in Get Data menu. Click on **Get Data > More...**, then select **Other > R script** as shown in the following image:
+In Power BI Desktop, the Python Script data connector is found in Get Data menu. Click on **Get Data > More...**, then select **Other > Python script** as shown in the following image:
 
-![Get Data using R script](/images/get_data_R_script.png)
+![Fig. Get Data using Python script](/images/get_data_python_script.png)
 
-![R script interface in Power BI](/images/r_script_interface_powerbi.png)
-Notice that at the bottom of the above image, the your R installation path is displayed. If you have multiple installation of R, then you would need to go to **Options and Settings > Options > R scripting** and then setting the location of the R installation you would like to use.
+![Fig. Python script interface in Power BI](/images/python_script_interface_powerbi.png)
 
-## Error message 
 
-After you enter the R script and hit OK, you might see a connection error message as follows:
+Notice that at the bottom of the above image, the your Python installation path is displayed. If you have multiple installation of Python, then you would need to go to **Options and Settings > Options > Python scripting** and then setting the location of the Python installation you would like to use.
 
-![R script interface in Power BI](/images/unable_to_connect_r_script.png)
-In that case, you need to click on *Retry* and that will take to you the following message to enable native database query. Click on Run. If you want to know more about risk involved with this option please see the [official documentation](https://support.office.com/en-us/article/import-data-from-database-using-native-database-query-power-query-f4f448ac-70d5-445b-a6ba-302db47a1b00?ui=en-US&rs=en-US&ad=US)
+Click OK, and it should open the Navigator screen as shown below.
 
-![R script interface in Power BI](/images/enable_native_data_base_query_r_script.png)
-After that, it should run without any issue and you should see a window like the following:
+![Fig. Python script interface in Power BI](/images/python_script_navigator_screen.png)
 
-![R script interface in Power BI](/images/r_script_navigator_screen.png)
+
 ## Loading the data
 
-Once you are at this stage, you select the data frame created with the R script (in this case `df`), and then click Load (or Edit if you want). This should load the data in Power BI. You can verify that in the Fields pane that the `df` has indeeded loaded as shown in the folowing:
+Once you are at this stage, you select the data frame created with the Python script (in this case `df`), and then click Load (or Edit if you want). This should load the data in Power BI. You can verify that in the Fields pane that the `df` has indeeded loaded as shown in the folowing:
 
-![R script interface in Power BI](/images/r_script_fields_pane.png)
-Now that you've successfully imported the data using R script, you can use the variables the typical way you would work within Power BI Desktop. If you want to add or edit any new column/variables or anything with the data using the R script, you would need to update the R script and load the data as usual. 
+![Python script interface in Power BI](/images/r_script_fields_pane.png)
 
-When you edit the R script, you should not see any error/warning messages because you've already made those exceptions. 
+Now that you've successfully imported the data using Python script, you can use the variables the typical way you would work within Power BI Desktop. If you want to add or edit any new column/variables or anything with the data using the Python script, you would need to update the Python script and load the data as usual. 
 
-## Updating the R script
+## Updating the Python script
 
-It is obvious that you would be updating the R script since that was the whole purpose of importing the data via R script. You continue to edit the script in RStudio and when you are ready to update the code within Power BI, you need to go to Edit Queries option. 
+It is obvious that you would be updating the Python script since that was the whole purpose of importing the data via Python script. You continue to edit the script in your favorite IDE and when you are ready to update the code within Power BI, you need to go to Edit Queries option. 
 
 Simply right-click on the data under the **FIELDS** pane, and select *Edit query*. This should open the Power Query Editor and you can click on the gear icon ([1] in figure) as shown below:
 
-![Edit R script](/images/edit_r_script.png)
+![Edit Python script](/images/edit_r_script.png)
+
 Clicking that gear icon should open the R script editor where you can replace the existing code with the updated code. When you are ready, click OK, and then click **Close \& Apply** ([2] in the figure) in the Power Query Editor to apply the changes.
 
 
-# Application 2: Using R to query existing data in Power BI
+# Application 2: Using Python to query existing data in Power BI
 
-This application is useful for manipulating an already imported dataset. That is, data have been imported into Power BI Desktop, and now you want to do some cleaning or perform transformations. Essentially, you could do all of those while importing the data (Application 1). Interested readers may find the detailed document available from Microsoft Power BI on [using R in Query Editor.](https://docs.microsoft.com/en-us/power-bi/desktop-r-in-query-editor) 
+This application is useful for manipulating an already imported dataset. That is, data have been imported into Power BI Desktop, and now you want to do some cleaning or perform transformations. Essentially, you could do all of those while importing the data (Application 1). 
+
 I am giving an example to demonstrate how it works.
 
 ## Example to demonstrate re-coding
 
 Suppose we've imported a data set with missing vlaues and unusually large numbers in some of the fields. We want to perform some cleaning. Of course this is a fictitious example just to demonstrate the idea.
 
-We use the R code to generate the data
+We use the Python code to generate the data
 
-```r
-df <- data.frame(
-  name = c("John", "Arif","Samira"),
-  sex = c(1, 1, 2),
-  gpa = c(4, 3.9, 3.95)
-)
+```{python}
+data = {
+    "name" : pd.Series(["John", "Arif", "Samira"]),
+    "sex" : pd.Series([1, 1, 2]),
+    "gpa" : pd.Series([4, 3.9, 3.95])
+    }
+df = pd.DataFrame(data)
+print(df)
 ```
 
-We will import this data using the R (discussed in Application 1). Once loaded, we will then do some transformations. To keep it simple, we will just recode the `sex` variable to indicate `Male` for `1` and `Female` for `2`. For that, we use the following codes which we would enter in the R script:
+We will import this data using the Python (discussed in Application 1). Once loaded, we will then do some transformations. To keep it simple, we will just recode the `sex` variable to indicate `Male` for `1` and `Female` for `2`. For that, we use the following codes which we would enter in the R script:
 
-```r
+```python
 # 'dataset' holds the input data for this script
-library(dplyr)
-
-newcalc <- dataset %>% 
-  mutate(
-    sex = ifelse(sex == 1, "Male", "Female")
-  )
+dataset["sex"] = np.where(datasetdf["sex"] == 1, "Male", "Female")
 ```
 
-## Entering R script to transform data
+## Entering Python script to transform data
 
 - Click on the **Edit Queries** button in Power BI Desktop to open the query editor. 
 - Select the appropriate query under the `Queries[]` menu on the left of the screen.
 - Click on the **Transform** menu above the ribbon. 
-- You will see the **Run R Script** button with the `R` icon. Click that. 
+- You will see the **Run Python Script** button with the `Py` icon. Click that. 
 
-![R script Window](/images/r_script_window.png)
+![Python script Window](/images/python_script_window.png)
 
-Enter the R code that will be used to do the transformation. The screen would look like the following:
+Enter the Python code that will be used to do the transformation. The screen would look like the following:
 
-![R script Window](/images/r_script_trans_code.png)
+![Python script Window](/images/python_script_trans_code.png)
 
-Click OK. If you see any permission error or message like that, follow the prompts and allow the R codes to execute. Once you successfully pass all the prompts (if any), you will get the screen that looks like this--
+Click OK. 
 
-![R script Window](/images/r_script_trans_step1.png)
+The screen would transform to the onces that looks like the following.
 
-Make sure to click on the `Table` field shown with the arrow in the figure. That will create the new step named `newcalc` and the table as shown in figure below.
+![](/images/python_script_trans_step3.png)
 
-![R script Window](/images/r_script_trans_step2.png)
-
-Now you click on the **Home** menu and hit the icon that says **Close & Apply** as shown in the figure below.
-
-![R script Window](/images/r_script_trans_step3.png)
-
-Now the `sex` variable in the table should be a character variable with values `Male` and `Female` instead of `1`s and `2`s.
+Now you click on the **Home** menu and hit the icon that says **Close & Apply**. Now the `sex` variable in the table should be a character variable with values `Male` and `Female` instead of `1`s and `2`s.
 
 And you are done!
 
