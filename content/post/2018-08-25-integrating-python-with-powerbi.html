@@ -1,7 +1,7 @@
 ---
 title: Integrating Python with Power BI
 authors: ["enayet"]
-date: '2018-08-25'
+date: '2018-08-26'
 lastmod: '2018-08-25'
 slug: integrating-python-with-powerbi-desktop
 categories:
@@ -9,13 +9,14 @@ categories:
 tags:
   - PowerBI
   - Python
-draft: true
+draft: false
+toc: false
 images: ["images/powerbi_with_python.png"]
 ---
 
 
 
-<p>Microsoft have recently enabled <strong>Python</strong> script as a data source. This is still an experimental phase, yet a nice feature for those who uses Python on a day to day basis. <em>Microsoft Power BI</em> Desktop version nicely integrates with <strong>Python</strong>. Python is an open source general purpose language and has become one of top prigramming language for data science. <em>Power BI</em> is Microsoft’s flagship BI tool for creating dashboards and interactive reports.</p>
+<p>Microsoft have recently added <strong>Python</strong> support to Power BI Desktop. This is available as a preview feature for Power BI Desktop, yet a nice feature for those who uses Python on a day to day basis. Python is an open source general purpose language and has become one of top prigramming languages for data science. <em>Power BI</em> is Microsoft’s flagship BI tool for creating dashboards and interactive reports.</p>
 <p>Similar to R, with Python as a backend engine for <em>Power BI Desktop</em>, you can do many cool things, which can be categorized into three broad applications–</p>
 <ul>
 <li>using Python to import data into Power BI,</li>
@@ -83,8 +84,8 @@ print(df.head())</code></pre>
 <h2>Loading the data</h2>
 <p>Once you are at this stage, you select the data frame created with the Python script (in this case <code>df</code>), and then click Load (or Edit if you want). This should load the data in Power BI. You can verify that in the Fields pane that the <code>df</code> has indeeded loaded as shown in the folowing:</p>
 <div class="figure">
-<img src="/images/r_script_fields_pane.png" alt="Python script interface in Power BI" />
-<p class="caption">Python script interface in Power BI</p>
+<img src="/images/r_script_fields_pane.png" alt="Fig. Python script interface in Power BI" />
+<p class="caption">Fig. Python script interface in Power BI</p>
 </div>
 <p>Now that you’ve successfully imported the data using Python script, you can use the variables the typical way you would work within Power BI Desktop. If you want to add or edit any new column/variables or anything with the data using the Python script, you would need to update the Python script and load the data as usual.</p>
 </div>
@@ -93,8 +94,8 @@ print(df.head())</code></pre>
 <p>It is obvious that you would be updating the Python script since that was the whole purpose of importing the data via Python script. You continue to edit the script in your favorite IDE and when you are ready to update the code within Power BI, you need to go to Edit Queries option.</p>
 <p>Simply right-click on the data under the <strong>FIELDS</strong> pane, and select <em>Edit query</em>. This should open the Power Query Editor and you can click on the gear icon ([1] in figure) as shown below:</p>
 <div class="figure">
-<img src="/images/edit_r_script.png" alt="Edit Python script" />
-<p class="caption">Edit Python script</p>
+<img src="/images/edit_r_script.png" alt="Fig. Edit Python script" />
+<p class="caption">Fig. Edit Python script</p>
 </div>
 <p>Clicking that gear icon should open the R script editor where you can replace the existing code with the updated code. When you are ready, click OK, and then click <strong>Close &amp; Apply</strong> ([2] in the figure) in the Power Query Editor to apply the changes.</p>
 </div>
@@ -131,13 +132,13 @@ dataset[&quot;sex&quot;] = np.where(datasetdf[&quot;sex&quot;] == 1, &quot;Male&
 <li>You will see the <strong>Run Python Script</strong> button with the <code>Py</code> icon. Click that.</li>
 </ul>
 <div class="figure">
-<img src="/images/python_script_window.png" alt="Python script Window" />
-<p class="caption">Python script Window</p>
+<img src="/images/python_script_window.png" alt="Fig. Python script Window" />
+<p class="caption">Fig. Python script Window</p>
 </div>
 <p>Enter the Python code that will be used to do the transformation. The screen would look like the following:</p>
 <div class="figure">
-<img src="/images/python_script_trans_code.png" alt="Python script Window" />
-<p class="caption">Python script Window</p>
+<img src="/images/python_script_trans_code.png" alt="Fig. Python script Window" />
+<p class="caption">Fig. Python script Window</p>
 </div>
 <p>Click OK.</p>
 <p>The screen would transform to the onces that looks like the following.</p>
@@ -149,48 +150,50 @@ dataset[&quot;sex&quot;] = np.where(datasetdf[&quot;sex&quot;] == 1, &quot;Male&
 <p>And you are done!</p>
 </div>
 </div>
-<div id="application-3-creating-visuals-with-r-script" class="section level1">
-<h1>Application 3: Creating visuals with R script</h1>
-<p>One of the best applications of R with Power BI is that you can harness the power of R to create high quality graphs and display them within your report/dashboard in Power BI. All the filters/slicers will work as usual and the graphs will the dynamically updated when you slice your data.</p>
-<p>You can bring R visual into Power BI in two ways–</p>
-<ul>
-<li>Importing an R visual from [Microsoft AppSource] (<a href="https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals" class="uri">https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals</a>)</li>
-<li>You can wirte you own code to create the visuals.</li>
-</ul>
-<p>In this article, I’ve demonstrated how to use your own code to create visuals with R and display them in Power BI.</p>
-<div id="example-with-mtcars-data" class="section level2">
-<h2>Example with mtcars data</h2>
-<p>This assumes that we already have a dataset in Power BI. For the sake of reproducibility of this example, I will create the data. This time, I will just load a car data set called <code>mtcars</code> available within R.</p>
-<p>Simply follow the steps in Application 1, using the code entered in the R script window:</p>
-<pre class="r"><code>df &lt;- mtcars</code></pre>
+<div id="application-3-creating-visuals-with-python-script" class="section level1">
+<h1>Application 3: Creating visuals with Python script</h1>
+<p>One of the best applications of Python with Power BI is that you can harness the power of two popular librries– matplotlib and seaborn, to create high quality graphs and display them within your report/dashboard in Power BI. All the filters/slicers will work as usual and the graphs will the dynamically updated when you slice your data.</p>
+<p>As of posting of this article, you can only create Python visuals using Python script. I’m certain in the near future some caned visuals will be available from Microsoft AppSource.</p>
+<p>In the following, I’ve demonstrated how to use your own code to create visuals with Python and display them in Power BI.</p>
+<div id="example-with-tips-data" class="section level2">
+<h2>Example with tips data</h2>
+<p>This assumes that we already have a dataset in Power BI. For the sake of reproducibility of this example, I will create the data. This time, I will just load the <code>tips</code> dataset from the <code>seaborn</code> library.</p>
+<p>Simply follow the steps in Application 1, using the code entered in the Python script window:</p>
+<pre class="python"><code>import seaborn as sns
+tips = sns.load_dataset(&quot;tips&quot;)
+print(tips.head())</code></pre>
+<pre><code>##    total_bill   tip     sex smoker  day    time  size
+## 0       16.99  1.01  Female     No  Sun  Dinner     2
+## 1       10.34  1.66    Male     No  Sun  Dinner     3
+## 2       21.01  3.50    Male     No  Sun  Dinner     3
+## 3       23.68  3.31    Male     No  Sun  Dinner     2
+## 4       24.59  3.61  Female     No  Sun  Dinner     4</code></pre>
 <p>This loads the data in Power BI as shown in the figure below.</p>
 <div class="figure">
-<img src="/images/load_mtcars.png" alt="mtcars Data" />
-<p class="caption">mtcars Data</p>
+<img src="/images/load_tips.png" alt="Fig. tips Data from seaborn library" />
+<p class="caption">Fig. <code>tips</code> Data from seaborn library</p>
 </div>
-<p>Now, we would like to create a boxplot of gas mileage (miles per gallon) by cylinder type. We call the</p>
-<p>To creat a R visual, click on the R icon from <strong>VISUALIZATIONS</strong> pane as seen in the above image (the icon is pointed with a red arrow).This should create a placeholder for a visual in the canvas and an <strong>R script editor</strong> will show up at the bottom of the screen.</p>
-<p>Select the variables you want to use for the visual. In our case, we would need <code>cyl</code> and <code>mpg</code>. Once you select them, the R script editor will update with some basic codes (uneditable).</p>
+<p>Now, we would like to create a boxplot of total_bill by the day of the week. The code is given below.</p>
+<p>To creat a Python visual, click on the Py icon from <strong>VISUALIZATIONS</strong> pane as seen in the above image (the icon is pointed with a red arrow).This should create a placeholder for a visual in the canvas and an <strong>Python script editor</strong> will show up at the bottom of the screen.</p>
+<p>Select the variables you want to use for the visual. In our case, we would need <code>total_bill</code> and <code>day</code>. Once you select them, the Python script editor will update with some basic codes (uneditable).</p>
 <div class="figure">
-<img src="/images/r_visual_script_editor.png" alt="R visual script editor" />
-<p class="caption">R visual script editor</p>
+<img src="/images/python_visual_script_editor.png" alt="Fig. Python visual script editor" />
+<p class="caption">Fig. Python visual script editor</p>
 </div>
-<p>Now you are ready to enter the following code in the area where it says “Type or paste your R-script code here”. Enter the code below:</p>
-<pre class="r"><code>boxplot(mpg ~ cyl, data = dataset, 
-        xlab = &quot;Number of Cylinders&quot;,
-        ylab = &quot;Miles Per Gallon&quot;, 
-        main = &quot;Gas Mileage&quot;,
-        notch = FALSE, 
-        varwidth = TRUE, 
-        col = c(&quot;blue&quot;,&quot;green&quot;,&quot;red&quot;),
-        names = c(&quot;High&quot;,&quot;Medium&quot;,&quot;Low&quot;)
-)</code></pre>
+<p>Now you are ready to enter the following code in the editor. Enter the code below:</p>
+<pre class="python"><code>tips = dataset
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.set(style=&quot;whitegrid&quot;)
+ax = sns.boxplot(x=&quot;day&quot;, y=&quot;total_bill&quot;, data=tips)
+plt.show()</code></pre>
+<p>Notice that, you have to name the data as <code>dataset</code> no matter what your data’s name actually is. Since you would normally write the code outside of Power BI for testing/debugging purposes, we would create a new variable <code>tips' and assign the</code>dataset` to it.</p>
 <p>Then click on the little play button near the top of the script-editor to display the plot on canvas.</p>
 <div class="figure">
-<img src="/images/r_visual_script_editor_with_code.png" alt="R visual editor with code" />
-<p class="caption">R visual editor with code</p>
+<img src="/images/python_visual_script_editor_with_code.png" alt="Fig. Python visual editor with code" />
+<p class="caption">Fig. Python visual editor with code</p>
 </div>
-<p>And it’s that easy.</p>
+<p>This will create the visual as expected. Now play with the code and make enhancements as desired.</p>
 <p>Hope this tutorial was useful for you. If you have any question or have some tips, please leave them as a comment.</p>
 <p>I appreciate if you share this via social media. Thank you for reading.</p>
 </div>
