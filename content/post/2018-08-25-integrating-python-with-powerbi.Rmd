@@ -14,7 +14,7 @@ toc: false
 images: ["images/python_with_powerbi.png"]
 ---
 
-Microsoft have recently added **Python** support to Power BI Desktop. This is available as a preview feature for Power BI Desktop, yet a nice feature for those who uses Python on a day to day basis. Python is an open source general purpose language and has become one of top prigramming languages for data science. *Power BI* is Microsoft's flagship BI tool for creating dashboards and interactive reports. 
+Microsoft has recently added **Python** support to Power BI Desktop. This is available as a preview feature for Power BI Desktop, yet a nice feature for those who use Python on a day to day basis. Python is an open source general purpose language and has become one of top programming languages for data science. *Power BI* is Microsoft's flagship BI tool for creating dashboards and interactive reports. 
 
 Similar to R, with Python as a backend engine for *Power BI Desktop*, you can do many cool things, which can be categorized into three broad applications--
 
