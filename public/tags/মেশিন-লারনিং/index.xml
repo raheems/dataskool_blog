@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>মেশিন লারনিং on DataSkool Blog</title>
-    <link>/tags/%E0%A6%AE%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A6%A8-%E0%A6%B2%E0%A6%BE%E0%A6%B0%E0%A6%A8%E0%A6%BF%E0%A6%82/</link>
+    <link>https://blog.dataskool.org/tags/%E0%A6%AE%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A6%A8-%E0%A6%B2%E0%A6%BE%E0%A6%B0%E0%A6%A8%E0%A6%BF%E0%A6%82/</link>
     <description>Recent content in মেশিন লারনিং on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 23 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/%E0%A6%AE%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A6%A8-%E0%A6%B2%E0%A6%BE%E0%A6%B0%E0%A6%A8%E0%A6%BF%E0%A6%82/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.dataskool.org/tags/%E0%A6%AE%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A6%A8-%E0%A6%B2%E0%A6%BE%E0%A6%B0%E0%A6%A8%E0%A6%BF%E0%A6%82/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>উইনিং লিংকডইন প্রোফাইল বা রেজুমে যেভাবে বানাবেন</title>
-      <link>/post/winning-linkedin-profile-resume/</link>
+      <link>https://blog.dataskool.org/post/winning-linkedin-profile-resume/</link>
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/winning-linkedin-profile-resume/</guid>
+      <guid>https://blog.dataskool.org/post/winning-linkedin-profile-resume/</guid>
       <description>উইনিং লিংকডইন প্রোফাইল বানানোর অনেক লেখা ইন্টারনেটে আছে। সে কারণে এ বিষয় নিয়ে আর্টিকেল লেখার কোন ইচ্ছে ছিলনা। কিন্তু দেখছি আমাদের ছেলেপেলেরা এসব লাইনে আসলেই অনেক পিছনে। কেন সেটা বলছি। তার আগে বলে নেই লেখাটিকে কোন প্রফেশনাল রেজুমে রাইটারের মতামতে হিসেবে না নিয়ে আমার ব্যক্তিগত অভিজ্ঞতার প্রতিফলন হিসেবে দেখতে হবে। একেবারে নভিসদের জন্য লিখেছি। তাই যারা ইতোমধ্যে জানেনে কিভাবে উইনিং রেজুমে বা লিংকডইন প্রোফাইল লিখতে হয়া তারা এখান থেকে নতুন কিছু নাও পেতে পারেন।</description>
     </item>
     
     <item>
       <title>রেজুমে সামারি করার রোবট</title>
-      <link>/post/application-machine-learning-resume-summarization/</link>
+      <link>https://blog.dataskool.org/post/application-machine-learning-resume-summarization/</link>
       <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/application-machine-learning-resume-summarization/</guid>
+      <guid>https://blog.dataskool.org/post/application-machine-learning-resume-summarization/</guid>
       <description>তোমরা যারা মেশিন লারনিং শিখতে চাও। তোমাদের জন্য একটা কাজের আইডিয়া মাথায় এসেছে।
 ধরো আমাদের রিসার্চ প্রজেক্টে আগ্রহীদের সিভি আমরা সংগ্রহ করবো। তো আমাদের লোকবল বলে তেমন নাই। মাত্র দুইজন গবেষক যারা তাদের সময়টুকে রিসার্চ প্লানিং আর পেপার লেখায় ব্যয় করতে চায়। তাদের টাকা পয়সাও নাই। সে কারণে চাওয়া মাত্র কারও সহায়তা পাওয়া সহজ নয়। বিনা পয়সায় সবসময় কাজ করার মানুষও পাওয়া যায় না। রিসার্চে সহায়তা করলে তাকে কো-অথর করা যায় কিন্তু এডমিনিস্ট্রেটিভ কাজে আর্থিক বিনিময় দেয়া আমাদের জন্য এই মুহূর্তে অসম্ভব।</description>
     </item>
