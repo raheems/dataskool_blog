@@ -22,7 +22,8 @@ Similar to R, with Python as a backend engine for *Power BI Desktop*, you can do
 * using Python to query existing data in Power BI, and 
 * creating visuals with Python script
 
-In a previous article, I've demonstrated how to use R with Power BI. In this article, I demonstrate how Python can be integrated with Power BI to perform these applications.
+In a [previous article](https://blog.dataskool.org/post/integrating-r-with-powerbi-desktop/), I've demonstrated how to use R with Power BI. In this article, I demonstrate how Python can be integrated with Power BI to perform these applications.
+
 
 
 # Application 1: Using Python to import data sets into Power BI
