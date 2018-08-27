@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Career on DataSkool Blog</title>
-    <link>https://blog.dataskool.org/categories/career/</link>
+    <link>/categories/career/</link>
     <description>Recent content in Career on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 03 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.dataskool.org/categories/career/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/career/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>To the Aspiring Data Scientists</title>
-      <link>https://blog.dataskool.org/post/to-the-aspiring-data-scientists/</link>
+      <link>/post/to-the-aspiring-data-scientists/</link>
       <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/to-the-aspiring-data-scientists/</guid>
+      <guid>/post/to-the-aspiring-data-scientists/</guid>
       <description>A lot of times interested folks contact me with a question like this: ‘I want to be a data scientist; can you help?’
 Well, I wish I could. The reality is, I won’t be able to unless I really understand what you want and why you want it.
 Firstly because guiding someone is next to impossible in this time and era when everything is so convoluted. People come to learn with preconceived ideas and notions.</description>
@@ -23,10 +23,10 @@ Firstly because guiding someone is next to impossible in this time and era when 
     
     <item>
       <title>Statisticians in the Data Science Era</title>
-      <link>https://blog.dataskool.org/post/statisticians-in-the-data-science-era/</link>
+      <link>/post/statisticians-in-the-data-science-era/</link>
       <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/statisticians-in-the-data-science-era/</guid>
+      <guid>/post/statisticians-in-the-data-science-era/</guid>
       <description>If you are exploring the hot field of Data Science today, you probably know by now that there is no unique way to define data science. Everyone’s perspective comes from their respective backgrounds. Statisticians think they are data scientists while CS folks think they are.
 I would not go into the debate.
 Both have truth in their arguments as the typical problems they solve are quite different. There are some exceptions where their workflows overlap.</description>
@@ -34,10 +34,10 @@ Both have truth in their arguments as the typical problems they solve are quite 
     
     <item>
       <title>Preparing for statistics jobs in the industry</title>
-      <link>https://blog.dataskool.org/post/preparing-for-statistics-jobs-in-the-industry/</link>
+      <link>/post/preparing-for-statistics-jobs-in-the-industry/</link>
       <pubDate>Mon, 20 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/preparing-for-statistics-jobs-in-the-industry/</guid>
+      <guid>/post/preparing-for-statistics-jobs-in-the-industry/</guid>
       <description>I would like to share a few things with you from recent experience of my transition from academia to industry. Of course I have a lot more experience than a fresh graduate, but something I’ve experienced that many others may benefit from. I believe this will help you to think at least. I’ve written this with the candidates in the US job market in mind.
 Firstly, I would say this– lies, damn lies, statistics, AND one-page resume.</description>
     </item>

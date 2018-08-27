@@ -4,21 +4,21 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='I would like to share a few things with you from recent experience of my transition from academia to industry. Of course I have a lot more experience than a fresh graduate, but something I’ve experienced that many others may benefit from. I believe this will help you to think at least. I’ve written this with the candidates in the US job market in mind.
-Firstly, I would say this– lies, damn lies, statistics, AND one-page resume.'>
+<meta name='description' content='Power BI is a great tool for creating interactive statistical tables with the aid of R. When using R as a data connector, you can use a single R script to have multiple data frames loaded into Power BI.
+Often, as we are developing the report, you will add or remove tables in the single R script. It is convenient to have all the codes in a single table since most of the data frames are derived from the main data set.'>
 <meta name='theme-color' content='#ffcd00'>
 
-<meta property='og:title' content='Preparing for statistics jobs in the industry • Enayetur Raheem'>
-<meta property='og:description' content='I would like to share a few things with you from recent experience of my transition from academia to industry. Of course I have a lot more experience than a fresh graduate, but something I’ve experienced that many others may benefit from. I believe this will help you to think at least. I’ve written this with the candidates in the US job market in mind.
-Firstly, I would say this– lies, damn lies, statistics, AND one-page resume.'>
-<meta property='og:url' content='/post/preparing-for-statistics-jobs-in-the-industry/'>
+<meta property='og:title' content='Power BI single R script for multiple data sets / tables • Enayetur Raheem'>
+<meta property='og:description' content='Power BI is a great tool for creating interactive statistical tables with the aid of R. When using R as a data connector, you can use a single R script to have multiple data frames loaded into Power BI.
+Often, as we are developing the report, you will add or remove tables in the single R script. It is convenient to have all the codes in a single table since most of the data frames are derived from the main data set.'>
+<meta property='og:url' content='/post/power-bi-single-r-script-for-multiple-data-sets-tables/'>
 <meta property='og:site_name' content='DataSkool Blog'>
-<meta property='og:type' content='article'><meta property='og:image' content='/images/socialmedia.png'><meta property='article:author' content='https://facebook.com/raheemsOfficial'><meta property='article:publisher' content='690868570924833'><meta property='article:section' content='post'><meta property='article:tag' content='Career'><meta property='article:tag' content='StatJobs'><meta property='article:published_time' content='2017-02-20T00:00:00Z'/><meta property='article:modified_time' content='2018-02-20T17:30:00&#43;06:00'/><meta property='fb:app_id' content='326177744624168'><meta property='fb:admins' content='eraheem'><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@eraheem'><meta name='twitter:creator' content='@eraheem'>
+<meta property='og:type' content='article'><meta property='og:image' content='/images/socialmedia.png'><meta property='article:author' content='https://facebook.com/raheemsOfficial'><meta property='article:publisher' content='690868570924833'><meta property='article:section' content='post'><meta property='article:tag' content='R'><meta property='article:tag' content='PowerBI'><meta property='article:published_time' content='2018-08-10T00:00:00Z'/><meta property='article:modified_time' content='2018-08-10T00:00:00Z'/><meta property='fb:app_id' content='326177744624168'><meta property='fb:admins' content='eraheem'><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@eraheem'><meta name='twitter:creator' content='@eraheem'>
 
 <meta name="generator" content="Hugo 0.45.1" />
 
-  <title>Preparing for statistics jobs in the industry • Enayetur Raheem</title>
-  <link rel='canonical' href='/post/preparing-for-statistics-jobs-in-the-industry/'>
+  <title>Power BI single R script for multiple data sets / tables • Enayetur Raheem</title>
+  <link rel='canonical' href='/post/power-bi-single-r-script-for-multiple-data-sets-tables/'>
   
   
   <link rel='icon' href='/favicon.ico'>
@@ -183,7 +183,7 @@ if (!doNotTrack) {
   <header class='header entry-header'>
   <div class='container sep-after'>
     <div class='header-info'>
-      <h1 class='title'>Preparing for statistics jobs in the industry</h1>
+      <h1 class='title'>Power BI single R script for multiple data sets / tables</h1>
       
 
     </div>
@@ -198,7 +198,7 @@ if (!doNotTrack) {
   
 </svg>
 <span class='screen-reader-text'>Posted on </span>
-  <time class='entry-date' datetime='2017-02-20T00:00:00Z'>2017, Feb 20</time>
+  <time class='entry-date' datetime='2018-08-10T00:00:00Z'>2018, Aug 10</time>
 </span>
 
   <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
@@ -215,7 +215,7 @@ if (!doNotTrack) {
   <polyline points="12 6 12 12 15 15"/>
   
 </svg>
-3 mins read
+One min read
 </span>
 
 
@@ -227,18 +227,36 @@ if (!doNotTrack) {
 
   
   
+<details class='container entry-toc'>
+  <summary class='title'>
+    <span>Table of Contents</span>
+  </summary>
+  <nav id="TableOfContents">
+<ul>
+<li><a href="#the-problem">The problem</a></li>
+<li><a href="#solution">Solution</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+</nav>
+</details>
+
 
   <div class='container entry-content'>
-  <p>I would like to share a few things with you from recent experience of my transition from academia to industry. Of course I have a lot more experience than a fresh graduate, but something I’ve experienced that many others may benefit from. I believe this will help you to think at least. I’ve written this with the candidates in the US job market in mind.</p>
-<p>Firstly, I would say this– lies, damn lies, statistics, AND one-page resume. I hope you got what I meant. One-page resume never worked for me. Here’s why.</p>
-<p>Hiring managers rarely review your resume when you apply for a job. It normally goes through an initial round of review by recruiters. Organizations have partnered with recruiting companies and they do these initial screening. Literally, they will never forward any resume that is one-page. Because one-page resume rarely tells what you have accomplished. It’ll only make you look like hundred or thousand others candidates who have the exact same background and experience (R, SAS, courses, etc.) as you have.</p>
-<p>You have to literally describe each of your projects and your contributions. You don’t have to describe every details. In fact you should not reveal every details but sufficient enough so that the recruiter understands it and convinced enough to forward your resume.</p>
-<p>The hiring manager would then scan only your first page, perhaps. So prepare your resume as such.</p>
-<p>Secondly, follow the jobs market closely and regularly. See what the market is looking for. That will put you into the real perspective because as a result of you being well informed, your resume will reflect that.</p>
-<p>Thirdly, you need to submit your well detailed resume to several job sites such as CareerBuilder, Indeed, LinkedIn, Monster, Dice etc. I found CareerBuilder and Indeed to be better for stat (industry) jobs. LinkedIn is also good for finding local opportunities.</p>
-<p>PLEASE spend a lot of time to properly submit your resume to these job sites with all possible keywords appropriate for your discipline. It will take about 2 to 3 weeks before the resume is propagated to various recruiters’ networks. Once recruiters find your resume, they will directly call you. Recruiters get a good amount of commission when they are able to forward a good candidate and the company hires the candidate. So they always try to help you. Often they will suggest you to modify your resume to make it suitable for that particular position.</p>
-<p>Fourth, have patience. A lot of patience. You have to knock every possible door, and only some doors will open.</p>
-<p>Fifth, prepare yourself for the interview. I find Liz Ryan (www.linkedin.com/in/lizryan) to be excellent. You will find her in LinkedIn. Follow her. It’s really really helpful. I wish I would have found her earlier.</p>
+  
+
+<p>Power BI is a great tool for creating interactive statistical tables with the aid of R. When using R as a data connector, you can use a single R script to have multiple data frames loaded into Power BI.</p>
+
+<p>Often, as we are developing the report, you will add or remove tables in the single R script. It is convenient to have all the codes in a single table since most of the data frames are derived from the main data set.</p>
+
+<p>we harness the power of R.</p>
+
+<h1 id="the-problem">The problem</h1>
+
+<p><a href="/post/integrating-r-with-powerbi-desktop/" target="_blank">LInk</a></p>
+
+<h1 id="solution">Solution</h1>
+
+<h1 id="conclusion">Conclusion</h1>
 
 </div>
 
@@ -252,7 +270,7 @@ if (!doNotTrack) {
   
 </svg>
 </span>
-  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/career/'>Career</a></div>
+  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/tutorials/'>Tutorials</a></div>
 <div class='tags'>
   <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
@@ -261,7 +279,7 @@ if (!doNotTrack) {
   
 </svg>
 </span>
-  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/career/'>Career</a>, <a class='tag' href='/tags/statjobs/'>StatJobs</a></div>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/r/'>R</a>, <a class='tag' href='/tags/powerbi/'>PowerBI</a></div>
 
   </div>
 </footer>
@@ -271,7 +289,7 @@ if (!doNotTrack) {
 
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
-      <a href='/post/collaborative-research-workflow/'>
+      <a href='/post/integrating-r-with-powerbi-desktop/'>
         <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="20" y1="12" x2="4" y2="12"/>
@@ -279,10 +297,10 @@ if (!doNotTrack) {
   
 </svg>
  Previous</span>
-        <span class='screen-reader-text'>Previous post: </span>গবেষণা পদ্ধতি ও কোলাবরেটিভ কাজের ধারা</a>
+        <span class='screen-reader-text'>Previous post: </span>Integrating R with Power BI</a>
     </div><div class='next-entry sep-before'>
-      <a href='/post/collaborative-article-google-docs/'>
-        <span class='screen-reader-text'>Next post: </span>গুগল ডকস দিয়ে কোলাবরেটিভ রিসার্চ আর্টিকেল<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+      <a href='/post/passion-professionalism-priority/'>
+        <span class='screen-reader-text'>Next post: </span>প‍্যাশন, প্রফেশনালিজম, ও প্রায়োরিটি<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="4" y1="12" x2="20" y2="12"/>
   <polyline points="14 6 20 12 14 18"/>

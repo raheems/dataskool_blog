@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>পরিসংখ‍্যান on DataSkool Blog</title>
-    <link>https://blog.dataskool.org/tags/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8/</link>
+    <link>/tags/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8/</link>
     <description>Recent content in পরিসংখ‍্যান on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 06 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.dataskool.org/tags/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>কার্টুন – ডেটা ভিত্তিক সিদ্ধান্ত গ্রহণের বছর ২০১৮</title>
-      <link>https://blog.dataskool.org/post/2018-cartoon-statistics-bangla/</link>
+      <link>/post/2018-cartoon-statistics-bangla/</link>
       <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/2018-cartoon-statistics-bangla/</guid>
+      <guid>/post/2018-cartoon-statistics-bangla/</guid>
       <description>ভাবছি নতুন বছরে নতুন কিছু করার। যে কারণে নিজের কিছু ভাবনা এবং পরিসংখ্যানের কনসেপ্ট গুলো নিয়ে কমিক স্ট্রিপ বা কার্টুন প্রকাশের কথা চিন্তা করলাম। নিয়মিত করার চেষ্টা থাকবে তবে কতদিন পর পর প্রকাশ করবো সেটা বলতে পারছিনা কারণ আমি ছবি আঁকায় একেবার আনকোরা। জীবনে কোনদিন বৃত্ত বা সরল লেখা ফ্রি হ্যান্ডে আঁকতে পারিনি। এখানে মূল উদ্দেশ্য ছবির কোয়ালিটি নয় বরং শিক্ষার্থীদের জন্য পরিসংখ্যানের বিষয়গুলো আরেকটু সহজ করে প্রকাশের চেষ্টা মাত্র।</description>
     </item>
     
     <item>
       <title>ডেটা সায়েন্টিস্ট হওয়ার প্রস্ততি</title>
-      <link>https://blog.dataskool.org/post/how-to-become-a-data-scientist/</link>
+      <link>/post/how-to-become-a-data-scientist/</link>
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/how-to-become-a-data-scientist/</guid>
+      <guid>/post/how-to-become-a-data-scientist/</guid>
       <description>ডেটা সায়েন্স এখন হট টপিক। ডেটা সায়েন্টিস্ট-দের জব মার্কেটে অনেক ডিম্যান্ড। বিদেশের মতো বাংলাদেশে ডেটা সায়েন্সের ব্যবহার এখনো সেরকমভাবে শুরু না হলেও ভেতরে ভেতরে তার প্রস্ততি চলছে। মার্কেটের দিকে তাকালেই আমরা সেটি আন্দাজ করতে পারি। বিশেষ করে তরুণ উদ্যোক্তা, ইন্টারনেট-ভিত্তিক ব্যবসা প্রসারের চিন্তাভাবনা, সরকারের সদিচ্ছা এবং তরুণ মন্ত্রী ও উপদেষ্টাদের ডিজিটাল বাংলাদেশ গড়ার প্রচেষ্টায় পজিটিভলি কাজ করা এবং সর্বোপরি ইন্টারনেট ব্যবহারকারিদের এক্সপোনেনশিয়াল বৃদ্ধি অচিরেই আমাদের ব্যবসা, বাণিজ্য, মার্কেটিংকে এমনভাবে বদলে দেবে যা আমরা এই মুহূর্তে অনেকেই বিশ্বাস করতে পারছিনা।</description>
     </item>
     
     <item>
       <title>পরিসংখ্যানে দক্ষতা অর্জন যে কারণে প্রয়োজন</title>
-      <link>https://blog.dataskool.org/post/why-learn-statistics/</link>
+      <link>/post/why-learn-statistics/</link>
       <pubDate>Mon, 07 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/why-learn-statistics/</guid>
+      <guid>/post/why-learn-statistics/</guid>
       <description>“ড্যাটা ভিত্তিক সিদ্ধান্ত গ্রহণ” শব্দবন্ধটি কিছুদিন আগেও উন্নত বিশ্বে ব্যাপকভাবে আলোচিত হয়েছে। এখন সেখান থেকে আরো গভীরে গিয়ে আলোচিত হচ্ছে আর্টিফিশিয়াল ইন্টেলিজেন্স বা কৃত্রিম বুদ্ধিমত্তার ব্যবহার এবং কিভাবে ড্যাটা থেকে প্যাটার্ন বের করে তা সিদ্ধান্ত গ্রহণে কাজে লাগানো যায়। বলা হচ্ছে Big data is a big deal. অনেক লেখালেখি হয়েছে বিগ ড্যাটা কিভাবে ব্যবসা বাণিজ্যকে বদলে দেবে এবং আগামী দিনে কারা প্রতিযোগিতায় টিকে থাকবে সেসব নিয়ে। বলা হচ্ছে যারা ড্যাটার সর্বোত্তম ব্যবহার করবে তারাই এগিয়ে যাবে কিংবা তাদেরই টিকে থাকার সম্ভাবনা বেশী হবে।</description>
     </item>
     
     <item>
       <title>বাংলাদেশে পরিসংখ্যানবিদদের ভবিষ্যৎ</title>
-      <link>https://blog.dataskool.org/post/future-of-statistics-in-bangladesh/</link>
+      <link>/post/future-of-statistics-in-bangladesh/</link>
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/future-of-statistics-in-bangladesh/</guid>
+      <guid>/post/future-of-statistics-in-bangladesh/</guid>
       <description>একটা বিষয় আমাকে আশাবাদী করে যখন দেখি আমাদের ছাত্র-ছাত্রীরা পরিসংখ্যানে পড়াশুনা করছে এবং তাদের মধ্যে অল্প কয়েকজন বাদে সবাই ডিগ্রী শেষ করছে। স্নাতক পর্যায়ে আমাদের প্রতিটি পাবলিক বিশ্ববিদ্যালয়েই পরিসংখ্যান পড়ানো হয়। সে হিসেবে প্রতি বছর আনুমানিক ২-৪শ’র মতো ছাত্রছাত্রী পরিসংখ্যানে স্নাতক অর্জন করে। সংখ্যাটি একেবারে কম নয়।
 আমি দিনের একটা উল্লেখযোগ্য সময় ফেইসবুকে সময় দেই। এর অন্যতম উদ্যেশ্য আমাদের নতুন-পুরাতন ছাত্র-ছাত্রীদের সাথে যুক্ত থাকা। একটা সময় ছিল যখন শুধু পরিসংখ্যানের কেউ হলেই তাকে আমি ফ্রেন্ড হিসেবে যুক্ত করতাম। এখনো করি তবে এখন পরিসংখ্যানের বাইরেও বন্ধু-সার্কেল বেড়েছে।</description>
     </item>

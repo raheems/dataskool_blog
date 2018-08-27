@@ -2,29 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on DataSkool Blog</title>
-    <link>https://blog.dataskool.org/tags/r/</link>
+    <link>/tags/r/</link>
     <description>Recent content in R on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Aug 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.dataskool.org/tags/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Power BI single R script for multiple data sets / tables</title>
+      <link>/post/power-bi-single-r-script-for-multiple-data-sets-tables/</link>
+      <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/power-bi-single-r-script-for-multiple-data-sets-tables/</guid>
+      <description>Power BI is a great tool for creating interactive statistical tables with the aid of R. When using R as a data connector, you can use a single R script to have multiple data frames loaded into Power BI.
+Often, as we are developing the report, you will add or remove tables in the single R script. It is convenient to have all the codes in a single table since most of the data frames are derived from the main data set.</description>
+    </item>
+    
+    <item>
       <title>Integrating R with Power BI</title>
-      <link>https://blog.dataskool.org/post/integrating-r-with-powerbi-desktop/</link>
+      <link>/post/integrating-r-with-powerbi-desktop/</link>
       <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/integrating-r-with-powerbi-desktop/</guid>
+      <guid>/post/integrating-r-with-powerbi-desktop/</guid>
       <description>Microsoft Power BI Desktop version nicely integrates with R. R is an open source software for statistical computing and graphics. R has become popular among the data scientists because of its powerful data analytics and visualization capabilities. Power BI is Microsoft&amp;rsquo;s flagship BI tool for creating dashboards and interactive reports. With R as a backend engine for Power BI Desktop, you can do many cool things, which can be categorized into three broad applications&amp;ndash;</description>
     </item>
     
     <item>
       <title>Poisson approximation of binomial probabilities</title>
-      <link>https://blog.dataskool.org/post/poisson-approximation-of-binomial-probabilities/</link>
+      <link>/post/poisson-approximation-of-binomial-probabilities/</link>
       <pubDate>Tue, 03 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/poisson-approximation-of-binomial-probabilities/</guid>
+      <guid>/post/poisson-approximation-of-binomial-probabilities/</guid>
       <description>This is yet another experiment to see how good is the approximation of binomial probability when we use Poisson and normal distributions for scenarios with large n, and p close to zero or one.
 Consider a problem where the random variable \(X\) follows a binomial distribution with a known probability of success \(p\), and number of trials \(n\). If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.</description>
     </item>

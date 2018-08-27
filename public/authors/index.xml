@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on DataSkool Blog</title>
-    <link>https://blog.dataskool.org/authors/</link>
+    <link>/authors/</link>
     <description>Recent content in Authors on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://blog.dataskool.org/authors/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Enayet</title>
-      <link>https://blog.dataskool.org/authors/enayet/</link>
+      <link>/authors/enayet/</link>
       <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/authors/enayet/</guid>
+      <guid>/authors/enayet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Muniftanjim</title>
-      <link>https://blog.dataskool.org/authors/muniftanjim/</link>
+      <link>/authors/muniftanjim/</link>
       <pubDate>Thu, 28 Sep 2017 08:00:00 +0600</pubDate>
       
-      <guid>https://blog.dataskool.org/authors/muniftanjim/</guid>
+      <guid>/authors/muniftanjim/</guid>
       <description></description>
     </item>
     

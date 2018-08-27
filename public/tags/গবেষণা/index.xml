@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>গবেষণা on DataSkool Blog</title>
-    <link>https://blog.dataskool.org/tags/%E0%A6%97%E0%A6%AC%E0%A7%87%E0%A6%B7%E0%A6%A3%E0%A6%BE/</link>
+    <link>/tags/%E0%A6%97%E0%A6%AC%E0%A7%87%E0%A6%B7%E0%A6%A3%E0%A6%BE/</link>
     <description>Recent content in গবেষণা on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.dataskool.org/tags/%E0%A6%97%E0%A6%AC%E0%A7%87%E0%A6%B7%E0%A6%A3%E0%A6%BE/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E0%A6%97%E0%A6%AC%E0%A7%87%E0%A6%B7%E0%A6%A3%E0%A6%BE/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>গবেষণা পদ্ধতি ও কোলাবরেটিভ কাজের ধারা</title>
-      <link>https://blog.dataskool.org/post/collaborative-research-workflow/</link>
+      <link>/post/collaborative-research-workflow/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/collaborative-research-workflow/</guid>
+      <guid>/post/collaborative-research-workflow/</guid>
       <description>সবকিছুই এখন দ্রুত চলছে — প্রযুক্তির উন্নয়ন হচ্ছে দ্রুত, সামাজিক পরিবর্তন হচ্ছে অনেকটা চোখের সামনেই, বাড়ছে মানুষ, আর সেইসাথে বাড়ছে ডেটা!
 সময়ের প্রয়োজনে গবেষণা এখন হয়ে উঠেছে কোলাবরেটিভ বা সহযোগিতামূলক। এতে সুবিধা অনেক। একসাথে অনেক ফিল্ডের এক্সপার্টরা কাজ করছে যার ফলে প্রোডাক্টিভিটি বেড়েছে। অর্থাৎ অল্প সময়ে দ্রুত প্রোডাক্ট (রিসার্চ পেপার) বের করা সম্ভব হচ্ছে। নব্বইয়ের দশক থেকে শুরু করে তার পরবর্তী সময়কালে কোলাবরেটিভ কাজের সুযোগ ও আগ্রহ দুইই বেড়েছে।</description>
     </item>

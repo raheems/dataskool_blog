@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on DataSkool Blog</title>
-    <link>https://blog.dataskool.org/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 22 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.dataskool.org/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Analytics</title>
-      <link>https://blog.dataskool.org/categories/analytics/</link>
+      <link>/categories/analytics/</link>
       <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/categories/analytics/</guid>
+      <guid>/categories/analytics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>https://blog.dataskool.org/categories/blog/</link>
+      <link>/categories/blog/</link>
       <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/categories/blog/</guid>
+      <guid>/categories/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Career</title>
-      <link>https://blog.dataskool.org/categories/career/</link>
+      <link>/categories/career/</link>
       <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/categories/career/</guid>
+      <guid>/categories/career/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Notes</title>
-      <link>https://blog.dataskool.org/categories/notes/</link>
+      <link>/categories/notes/</link>
       <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/categories/notes/</guid>
+      <guid>/categories/notes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://blog.dataskool.org/categories/r/</link>
+      <link>/categories/r/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>https://blog.dataskool.org/categories/r/</guid>
+      <guid>/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorials</title>
-      <link>https://blog.dataskool.org/categories/tutorials/</link>
+      <link>/categories/tutorials/</link>
       <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/categories/tutorials/</guid>
+      <guid>/categories/tutorials/</guid>
       <description></description>
     </item>
     

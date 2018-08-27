@@ -2,59 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Enayet on DataSkool Blog</title>
-    <link>https://blog.dataskool.org/authors/enayet/</link>
+    <link>/authors/enayet/</link>
     <description>Recent content in Enayet on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 26 Aug 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.dataskool.org/authors/enayet/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/authors/enayet/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Integrating Python with Power BI</title>
-      <link>https://blog.dataskool.org/post/integrating-python-with-powerbi-desktop/</link>
+      <link>/post/integrating-python-with-powerbi-desktop/</link>
       <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/integrating-python-with-powerbi-desktop/</guid>
+      <guid>/post/integrating-python-with-powerbi-desktop/</guid>
       <description>Microsoft have recently added Python support to Power BI Desktop. This is available as a preview feature for Power BI Desktop, yet a nice feature for those who uses Python on a day to day basis. Python is an open source general purpose language and has become one of top prigramming languages for data science. Power BI is Microsoft’s flagship BI tool for creating dashboards and interactive reports.
 Similar to R, with Python as a backend engine for Power BI Desktop, you can do many cool things, which can be categorized into three broad applications–</description>
     </item>
     
     <item>
       <title>প‍্যাশন, প্রফেশনালিজম, ও প্রায়োরিটি</title>
-      <link>https://blog.dataskool.org/post/passion-professionalism-priority/</link>
+      <link>/post/passion-professionalism-priority/</link>
       <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/passion-professionalism-priority/</guid>
+      <guid>/post/passion-professionalism-priority/</guid>
       <description>কর্পোরেট জগতে ডেটা নিয়ে যারা কাজ করে&amp;ndash; যেমন পরিসংখ্যানবিদ, ডেটা সায়েন্টিস্ট&amp;ndash; তাদেরকে অধিকাংশ সময় মাল্টিটাস্ক করতে হয় এবং একই সময় অনেক ক্লায়েন্টদের সাথে ডিল করতে হয়। ক্লায়েন্ট হতে পারে ইন্টারনাল ডিপার্টমেন্টাল ক্লায়েন্ট কিংবা কখনো কখনো এক্সটারনাল। ডেটা নিয়ে কাজ করার কারণে স্বাভাবিকভাবেই ইন্টারনালি পরিসংখ্যানবিদ ও ডেটা সায়েন্টিস্টদের চাহিদা অনেক বেশি। কর্মক্ষেত্রে পরিসংখ্যানবিদ ও ডেটা সায়েন্টিস্টদের তিনটি বিষয়ে অবগত করতে এই আর্টিকেল।
 পরিসংখ‍্যানবিদদের ভূমিকা আমেরিকা সহ উন্নত দেশগুলিতে পরিসংখ‍্যানবিদদের তাদের কাজের কারণে বেশ গুরুত্ব দেয়া হয়। অর্থাৎ এসব দেশে পরিসংখ্যানবিদদের প্রফেশনাল ভ্যালু আছে। ব‍্যাপারটা বাংলাদেশের প্রেক্ষাপটে চিন্তা করলে বোঝা সহজ নয়।</description>
     </item>
     
     <item>
+      <title>Power BI single R script for multiple data sets / tables</title>
+      <link>/post/power-bi-single-r-script-for-multiple-data-sets-tables/</link>
+      <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/power-bi-single-r-script-for-multiple-data-sets-tables/</guid>
+      <description>Power BI is a great tool for creating interactive statistical tables with the aid of R. When using R as a data connector, you can use a single R script to have multiple data frames loaded into Power BI.
+Often, as we are developing the report, you will add or remove tables in the single R script. It is convenient to have all the codes in a single table since most of the data frames are derived from the main data set.</description>
+    </item>
+    
+    <item>
       <title>Integrating R with Power BI</title>
-      <link>https://blog.dataskool.org/post/integrating-r-with-powerbi-desktop/</link>
+      <link>/post/integrating-r-with-powerbi-desktop/</link>
       <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/integrating-r-with-powerbi-desktop/</guid>
+      <guid>/post/integrating-r-with-powerbi-desktop/</guid>
       <description>Microsoft Power BI Desktop version nicely integrates with R. R is an open source software for statistical computing and graphics. R has become popular among the data scientists because of its powerful data analytics and visualization capabilities. Power BI is Microsoft&amp;rsquo;s flagship BI tool for creating dashboards and interactive reports. With R as a backend engine for Power BI Desktop, you can do many cool things, which can be categorized into three broad applications&amp;ndash;</description>
     </item>
     
     <item>
       <title>Frequently used git commands</title>
-      <link>https://blog.dataskool.org/post/frequently-used-git-commands/</link>
+      <link>/post/frequently-used-git-commands/</link>
       <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/frequently-used-git-commands/</guid>
+      <guid>/post/frequently-used-git-commands/</guid>
       <description>Github needs no introduction. If you are unfamiliar with git, its a version control system for tracking changes in computer (programming) codes. &amp;ldquo;GitHub Inc. is a web-based hosting service for version control using Git. It is mostly used for computer code. It offers all of the distributed version control and source code management functionality of Git as well as adding its own features.&amp;rdquo;1
 Copying a remote repository to local To bring a remote repository to your local host (computer where you are working), use the git clone command.</description>
     </item>
     
     <item>
       <title>স্মৃতিতে ড. হুমায়ূন কবীর স্যার</title>
-      <link>https://blog.dataskool.org/post/dr-humayun-kabir-isrt/</link>
+      <link>/post/dr-humayun-kabir-isrt/</link>
       <pubDate>Thu, 08 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/dr-humayun-kabir-isrt/</guid>
+      <guid>/post/dr-humayun-kabir-isrt/</guid>
       <description>প্রফেসর ড. হুমায়ূন কবীর (১৯৪৩ – ডিসেম্বর ২৭, ২০১৭)
 ড. হুমায়ূন কবীর স্যারের স্মৃতিচারণ করতে গিয়ে অনেক কিছুই মনে পড়ছে। কিন্তু ঠিক প্রথম পরিচয়ের কথাটি মনে পড়ছে না। স্যার আমাদের বেসিক স্ট্যাট কোর্সটি পড়াতেন।
 হুমায়ুন কবীর স্যার এক কথায় এক অনন্য ব্যক্তিত্ব ছিলেন। একাধারে গুরুজন, স্কলার, শিক্ষক, অভিভাবক, এবং সর্বোপরি মজার একজন মানুষ। আমরা প্রথম ব্যাচের ছাত্র বলে স্যার আমাদের প্রথম সন্তানের মতো স্নেহ করতেন। নোয়াখালীর একসেন্টে আমাদের সাথে প্রায়ই লেখাপড়ার বাইরের অনেক কিছু নিয়ে আলাপ করতেন। এসবের মূল উদ্দেশ্য থাকতো ক্লাসে আনন্দ দেয়া এবং জীবন সম্পর্কিত এবং জীবনলব্ধ অভিজ্ঞতা শেয়ার করা।</description>
@@ -62,19 +72,19 @@ Copying a remote repository to local To bring a remote repository to your local 
     
     <item>
       <title>কার্টুন – ডেটা ভিত্তিক সিদ্ধান্ত গ্রহণের বছর ২০১৮</title>
-      <link>https://blog.dataskool.org/post/2018-cartoon-statistics-bangla/</link>
+      <link>/post/2018-cartoon-statistics-bangla/</link>
       <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/2018-cartoon-statistics-bangla/</guid>
+      <guid>/post/2018-cartoon-statistics-bangla/</guid>
       <description>ভাবছি নতুন বছরে নতুন কিছু করার। যে কারণে নিজের কিছু ভাবনা এবং পরিসংখ্যানের কনসেপ্ট গুলো নিয়ে কমিক স্ট্রিপ বা কার্টুন প্রকাশের কথা চিন্তা করলাম। নিয়মিত করার চেষ্টা থাকবে তবে কতদিন পর পর প্রকাশ করবো সেটা বলতে পারছিনা কারণ আমি ছবি আঁকায় একেবার আনকোরা। জীবনে কোনদিন বৃত্ত বা সরল লেখা ফ্রি হ্যান্ডে আঁকতে পারিনি। এখানে মূল উদ্দেশ্য ছবির কোয়ালিটি নয় বরং শিক্ষার্থীদের জন্য পরিসংখ্যানের বিষয়গুলো আরেকটু সহজ করে প্রকাশের চেষ্টা মাত্র।</description>
     </item>
     
     <item>
       <title>To the Aspiring Data Scientists</title>
-      <link>https://blog.dataskool.org/post/to-the-aspiring-data-scientists/</link>
+      <link>/post/to-the-aspiring-data-scientists/</link>
       <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/to-the-aspiring-data-scientists/</guid>
+      <guid>/post/to-the-aspiring-data-scientists/</guid>
       <description>A lot of times interested folks contact me with a question like this: ‘I want to be a data scientist; can you help?’
 Well, I wish I could. The reality is, I won’t be able to unless I really understand what you want and why you want it.
 Firstly because guiding someone is next to impossible in this time and era when everything is so convoluted. People come to learn with preconceived ideas and notions.</description>
@@ -82,10 +92,10 @@ Firstly because guiding someone is next to impossible in this time and era when 
     
     <item>
       <title>Statisticians in the Data Science Era</title>
-      <link>https://blog.dataskool.org/post/statisticians-in-the-data-science-era/</link>
+      <link>/post/statisticians-in-the-data-science-era/</link>
       <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/statisticians-in-the-data-science-era/</guid>
+      <guid>/post/statisticians-in-the-data-science-era/</guid>
       <description>If you are exploring the hot field of Data Science today, you probably know by now that there is no unique way to define data science. Everyone’s perspective comes from their respective backgrounds. Statisticians think they are data scientists while CS folks think they are.
 I would not go into the debate.
 Both have truth in their arguments as the typical problems they solve are quite different. There are some exceptions where their workflows overlap.</description>
@@ -93,29 +103,29 @@ Both have truth in their arguments as the typical problems they solve are quite 
     
     <item>
       <title>উইনিং লিংকডইন প্রোফাইল বা রেজুমে যেভাবে বানাবেন</title>
-      <link>https://blog.dataskool.org/post/winning-linkedin-profile-resume/</link>
+      <link>/post/winning-linkedin-profile-resume/</link>
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/winning-linkedin-profile-resume/</guid>
+      <guid>/post/winning-linkedin-profile-resume/</guid>
       <description>উইনিং লিংকডইন প্রোফাইল বানানোর অনেক লেখা ইন্টারনেটে আছে। সে কারণে এ বিষয় নিয়ে আর্টিকেল লেখার কোন ইচ্ছে ছিলনা। কিন্তু দেখছি আমাদের ছেলেপেলেরা এসব লাইনে আসলেই অনেক পিছনে। কেন সেটা বলছি। তার আগে বলে নেই লেখাটিকে কোন প্রফেশনাল রেজুমে রাইটারের মতামতে হিসেবে না নিয়ে আমার ব্যক্তিগত অভিজ্ঞতার প্রতিফলন হিসেবে দেখতে হবে। একেবারে নভিসদের জন্য লিখেছি। তাই যারা ইতোমধ্যে জানেনে কিভাবে উইনিং রেজুমে বা লিংকডইন প্রোফাইল লিখতে হয়া তারা এখান থেকে নতুন কিছু নাও পেতে পারেন।</description>
     </item>
     
     <item>
       <title>রেজুমে সামারি করার রোবট</title>
-      <link>https://blog.dataskool.org/post/application-machine-learning-resume-summarization/</link>
+      <link>/post/application-machine-learning-resume-summarization/</link>
       <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/application-machine-learning-resume-summarization/</guid>
+      <guid>/post/application-machine-learning-resume-summarization/</guid>
       <description>তোমরা যারা মেশিন লারনিং শিখতে চাও। তোমাদের জন্য একটা কাজের আইডিয়া মাথায় এসেছে।
 ধরো আমাদের রিসার্চ প্রজেক্টে আগ্রহীদের সিভি আমরা সংগ্রহ করবো। তো আমাদের লোকবল বলে তেমন নাই। মাত্র দুইজন গবেষক যারা তাদের সময়টুকে রিসার্চ প্লানিং আর পেপার লেখায় ব্যয় করতে চায়। তাদের টাকা পয়সাও নাই। সে কারণে চাওয়া মাত্র কারও সহায়তা পাওয়া সহজ নয়। বিনা পয়সায় সবসময় কাজ করার মানুষও পাওয়া যায় না। রিসার্চে সহায়তা করলে তাকে কো-অথর করা যায় কিন্তু এডমিনিস্ট্রেটিভ কাজে আর্থিক বিনিময় দেয়া আমাদের জন্য এই মুহূর্তে অসম্ভব।</description>
     </item>
     
     <item>
       <title>গুগল ডকস দিয়ে কোলাবরেটিভ রিসার্চ আর্টিকেল</title>
-      <link>https://blog.dataskool.org/post/collaborative-article-google-docs/</link>
+      <link>/post/collaborative-article-google-docs/</link>
       <pubDate>Sun, 11 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/collaborative-article-google-docs/</guid>
+      <guid>/post/collaborative-article-google-docs/</guid>
       <description>একাধিক লেখক একসাথে কোন সায়েন্টিফিক আর্টিকেল লিখতে গেলে গুগল ডকস হতে পারে সবচেয়ে সহজ এবং এফিশিয়েন্ট মাধ্যম। এই আর্টিকেলে গুগল ডকস ব্যবহার করে আর্টিকেল লেখার কাজের ধারা বর্ণনা করব। এটি আমার কোলাবরেটরদের জন্য লেখা। তবে অন্য যারা কোলাবরেটিভ কাজ করেন এবং মাইক্রোসফট ওয়ার্ড ব্যবহার করেন তাদের জন্যও কাজে দেবে।
 যাদের জন্য এই লেখা
 ১। আপনি ফাইনাল আর্টিকেলটি মাইক্রোসফট ওয়ার্ডে তৈরী করবেন এবং জার্নালে সাবমিট করবেন
@@ -124,49 +134,49 @@ Both have truth in their arguments as the typical problems they solve are quite 
     
     <item>
       <title>Preparing for statistics jobs in the industry</title>
-      <link>https://blog.dataskool.org/post/preparing-for-statistics-jobs-in-the-industry/</link>
+      <link>/post/preparing-for-statistics-jobs-in-the-industry/</link>
       <pubDate>Mon, 20 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/preparing-for-statistics-jobs-in-the-industry/</guid>
+      <guid>/post/preparing-for-statistics-jobs-in-the-industry/</guid>
       <description>I would like to share a few things with you from recent experience of my transition from academia to industry. Of course I have a lot more experience than a fresh graduate, but something I’ve experienced that many others may benefit from. I believe this will help you to think at least. I’ve written this with the candidates in the US job market in mind.
 Firstly, I would say this– lies, damn lies, statistics, AND one-page resume.</description>
     </item>
     
     <item>
       <title>গবেষণা পদ্ধতি ও কোলাবরেটিভ কাজের ধারা</title>
-      <link>https://blog.dataskool.org/post/collaborative-research-workflow/</link>
+      <link>/post/collaborative-research-workflow/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/collaborative-research-workflow/</guid>
+      <guid>/post/collaborative-research-workflow/</guid>
       <description>সবকিছুই এখন দ্রুত চলছে — প্রযুক্তির উন্নয়ন হচ্ছে দ্রুত, সামাজিক পরিবর্তন হচ্ছে অনেকটা চোখের সামনেই, বাড়ছে মানুষ, আর সেইসাথে বাড়ছে ডেটা!
 সময়ের প্রয়োজনে গবেষণা এখন হয়ে উঠেছে কোলাবরেটিভ বা সহযোগিতামূলক। এতে সুবিধা অনেক। একসাথে অনেক ফিল্ডের এক্সপার্টরা কাজ করছে যার ফলে প্রোডাক্টিভিটি বেড়েছে। অর্থাৎ অল্প সময়ে দ্রুত প্রোডাক্ট (রিসার্চ পেপার) বের করা সম্ভব হচ্ছে। নব্বইয়ের দশক থেকে শুরু করে তার পরবর্তী সময়কালে কোলাবরেটিভ কাজের সুযোগ ও আগ্রহ দুইই বেড়েছে।</description>
     </item>
     
     <item>
       <title>ডেটা সায়েন্টিস্ট হওয়ার প্রস্ততি</title>
-      <link>https://blog.dataskool.org/post/how-to-become-a-data-scientist/</link>
+      <link>/post/how-to-become-a-data-scientist/</link>
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/how-to-become-a-data-scientist/</guid>
+      <guid>/post/how-to-become-a-data-scientist/</guid>
       <description>ডেটা সায়েন্স এখন হট টপিক। ডেটা সায়েন্টিস্ট-দের জব মার্কেটে অনেক ডিম্যান্ড। বিদেশের মতো বাংলাদেশে ডেটা সায়েন্সের ব্যবহার এখনো সেরকমভাবে শুরু না হলেও ভেতরে ভেতরে তার প্রস্ততি চলছে। মার্কেটের দিকে তাকালেই আমরা সেটি আন্দাজ করতে পারি। বিশেষ করে তরুণ উদ্যোক্তা, ইন্টারনেট-ভিত্তিক ব্যবসা প্রসারের চিন্তাভাবনা, সরকারের সদিচ্ছা এবং তরুণ মন্ত্রী ও উপদেষ্টাদের ডিজিটাল বাংলাদেশ গড়ার প্রচেষ্টায় পজিটিভলি কাজ করা এবং সর্বোপরি ইন্টারনেট ব্যবহারকারিদের এক্সপোনেনশিয়াল বৃদ্ধি অচিরেই আমাদের ব্যবসা, বাণিজ্য, মার্কেটিংকে এমনভাবে বদলে দেবে যা আমরা এই মুহূর্তে অনেকেই বিশ্বাস করতে পারছিনা।</description>
     </item>
     
     <item>
       <title>ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি?</title>
-      <link>https://blog.dataskool.org/post/understanding-data-science-job-market/</link>
+      <link>/post/understanding-data-science-job-market/</link>
       <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/understanding-data-science-job-market/</guid>
+      <guid>/post/understanding-data-science-job-market/</guid>
       <description>ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি– এটি আজকের লেখার বিষয়। এটি খুবই গুরুত্বপূর্ণ একটি টপিক। কেননা জব মার্কেটে নামার আগেই জানতে হবে কোন ধরনের জবের সাথে আপনার স্কিলসেট মেলে এবং কোন ধরনের জবের ফাংশন কী।
 হার্ভার্ড বিজনেস রিভিউ ২০১২ সনে লিখেছিল একবিংশ শতাব্দীর সেক্সিয়েস্ট জব হলো ডেটা সায়েন্স। এর সত্যতা প্রমাণের দরকার নেই; চাকরি বাজারে তাকালেই এর সত্যতা মেলে। আগের লেখায় বলেছিলাম ডেটা সায়েন্স এখন হট টপিক। তেমনি হট এর চাকুরির বাজার। আর বাজারের চাহিদা মেটাতে আমেরিকা এবং কানাডার অনেক বিশ্ববিদ্যালয়ে সম্প্রতি ডেটা সায়েন্স প্রোগ্রাম চালু করেছে। ধারণা করা যায় এই অনেকদিন অব্যাহত থাকবে যতদিন না বাজারে ডেটা সায়েন্টিস্টদের চাহিদার সাথে যোগানের সমন্বয় হয়।</description>
     </item>
     
     <item>
       <title>ডেটা সায়েন্স কী এবং ডেটা সায়েন্টিস্ট কারা?</title>
-      <link>https://blog.dataskool.org/post/what-is-datascience-and-who-are-datascientists/</link>
+      <link>/post/what-is-datascience-and-who-are-datascientists/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/what-is-datascience-and-who-are-datascientists/</guid>
+      <guid>/post/what-is-datascience-and-who-are-datascientists/</guid>
       <description>ডেটা সায়েন্স এখন হট টপিক।
 একাডেমিয়া থেকে ইন্ডাস্ট্রিতে চলে আসার পর প্রথম যে সমস্যা অনুভব করেছি সেটা হলো কাউকে সহজে বোঝানো যায় না আমি কী করি। আমেরিকাতে ইউনিভার্সিটির শিক্ষকদের প্রফেসর বলে। প্রফেসর বললে সবাই বোঝে কাজটা কী। ইন্ডাস্ট্রিতে কাজ করছি ডেটা সায়েন্টিস্ট হিসেবে। কেউ জিজ্ঞেস করলে এক কথায় যদি বলি ডেটা সায়েন্টিস্ট, তখন অবধারিতভাবে মুখের অভিব্যক্তি পরিবর্তিত হয়ে ভাবটা এমন হয় যেন ডেটা সায়েন্টিস্ট– সেটা আবার কী?
 অনেকে প্রশ্ন করে –</description>
@@ -174,39 +184,39 @@ Firstly, I would say this– lies, damn lies, statistics, AND one-page resume.</
     
     <item>
       <title>পরিসংখ্যানে দক্ষতা অর্জন যে কারণে প্রয়োজন</title>
-      <link>https://blog.dataskool.org/post/why-learn-statistics/</link>
+      <link>/post/why-learn-statistics/</link>
       <pubDate>Mon, 07 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/why-learn-statistics/</guid>
+      <guid>/post/why-learn-statistics/</guid>
       <description>“ড্যাটা ভিত্তিক সিদ্ধান্ত গ্রহণ” শব্দবন্ধটি কিছুদিন আগেও উন্নত বিশ্বে ব্যাপকভাবে আলোচিত হয়েছে। এখন সেখান থেকে আরো গভীরে গিয়ে আলোচিত হচ্ছে আর্টিফিশিয়াল ইন্টেলিজেন্স বা কৃত্রিম বুদ্ধিমত্তার ব্যবহার এবং কিভাবে ড্যাটা থেকে প্যাটার্ন বের করে তা সিদ্ধান্ত গ্রহণে কাজে লাগানো যায়। বলা হচ্ছে Big data is a big deal. অনেক লেখালেখি হয়েছে বিগ ড্যাটা কিভাবে ব্যবসা বাণিজ্যকে বদলে দেবে এবং আগামী দিনে কারা প্রতিযোগিতায় টিকে থাকবে সেসব নিয়ে। বলা হচ্ছে যারা ড্যাটার সর্বোত্তম ব্যবহার করবে তারাই এগিয়ে যাবে কিংবা তাদেরই টিকে থাকার সম্ভাবনা বেশী হবে।</description>
     </item>
     
     <item>
       <title>বাংলাদেশে পরিসংখ্যানবিদদের ভবিষ্যৎ</title>
-      <link>https://blog.dataskool.org/post/future-of-statistics-in-bangladesh/</link>
+      <link>/post/future-of-statistics-in-bangladesh/</link>
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/future-of-statistics-in-bangladesh/</guid>
+      <guid>/post/future-of-statistics-in-bangladesh/</guid>
       <description>একটা বিষয় আমাকে আশাবাদী করে যখন দেখি আমাদের ছাত্র-ছাত্রীরা পরিসংখ্যানে পড়াশুনা করছে এবং তাদের মধ্যে অল্প কয়েকজন বাদে সবাই ডিগ্রী শেষ করছে। স্নাতক পর্যায়ে আমাদের প্রতিটি পাবলিক বিশ্ববিদ্যালয়েই পরিসংখ্যান পড়ানো হয়। সে হিসেবে প্রতি বছর আনুমানিক ২-৪শ’র মতো ছাত্রছাত্রী পরিসংখ্যানে স্নাতক অর্জন করে। সংখ্যাটি একেবারে কম নয়।
 আমি দিনের একটা উল্লেখযোগ্য সময় ফেইসবুকে সময় দেই। এর অন্যতম উদ্যেশ্য আমাদের নতুন-পুরাতন ছাত্র-ছাত্রীদের সাথে যুক্ত থাকা। একটা সময় ছিল যখন শুধু পরিসংখ্যানের কেউ হলেই তাকে আমি ফ্রেন্ড হিসেবে যুক্ত করতাম। এখনো করি তবে এখন পরিসংখ্যানের বাইরেও বন্ধু-সার্কেল বেড়েছে।</description>
     </item>
     
     <item>
       <title>Testing equality of two population variances using Stata</title>
-      <link>https://blog.dataskool.org/post/testing-equality-of-two-population-variances-using-stata/</link>
+      <link>/post/testing-equality-of-two-population-variances-using-stata/</link>
       <pubDate>Fri, 02 Mar 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/testing-equality-of-two-population-variances-using-stata/</guid>
+      <guid>/post/testing-equality-of-two-population-variances-using-stata/</guid>
       <description>I was asked if we can do the test of equality of two population variances using Stata. Well, I did not have to do it myself ever, but yes, it is possible to do it. Here is an example. I’ve just made-up the data to show the procedures.
 Suppose we have the following data where the variables may represent two independent samples taken from normally distributed populations. And we want to test if the population variances of the two populations are the same.</description>
     </item>
     
     <item>
       <title>Poisson approximation of binomial probabilities</title>
-      <link>https://blog.dataskool.org/post/poisson-approximation-of-binomial-probabilities/</link>
+      <link>/post/poisson-approximation-of-binomial-probabilities/</link>
       <pubDate>Tue, 03 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dataskool.org/post/poisson-approximation-of-binomial-probabilities/</guid>
+      <guid>/post/poisson-approximation-of-binomial-probabilities/</guid>
       <description>This is yet another experiment to see how good is the approximation of binomial probability when we use Poisson and normal distributions for scenarios with large n, and p close to zero or one.
 Consider a problem where the random variable \(X\) follows a binomial distribution with a known probability of success \(p\), and number of trials \(n\). If n becomes large, it may not be possible to calculate the probabilities by hand calculation or using a calculator.</description>
     </item>
