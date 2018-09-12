@@ -1,0 +1,413 @@
+---
+title: ঢাকা বিশ্ববিদ‍্যালয়ের শিক্ষকদের উচ্চশিক্ষার পরিসংখ‍্যান
+authors: ["enayet"]
+date: '2018-09-09'
+lastmod: '2018-09-09'
+slug: dhaka-university-faculty-statistics-2017
+categories:
+  - Data analysis
+tags:
+  - R
+output:
+  blogdown::html_page:
+    toc: true
+draft: false
+
+images: ["images/socialmedia.png"]
+---
+
+```{r message=FALSE, warning=FALSE, echo = FALSE}
+library(tidyverse)
+library(funModeling)
+library(kableExtra)
+```
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+```
+
+```{r}
+#url <- "https://raw.githubusercontent.com/raheems/asds/master/du_faculty_2017.csv"
+fname <- "/Users/enayetraheem/Dropbox/MyBooks/AppliedStatDataScience/du_faculty_2017.csv"
+df <- read_csv(fname)
+df <- df %>%
+  mutate(
+    Designation = fct_relevel(Designation, "Professor", "Associate Professor",
+                              "Assistant Professor", "Lecturer", "Others")
+)
+```
+
+# লেখার প্রেরণা {#motivation}
+
+এটি আশাব‍্যঞ্জক যে বাংলাদেশের অনেক ডেটা এখন অনলাইনে ফ্রি পাওয়া যায়। বাংলাদেশ সরকার তাদের অফিশিয়াল ডেটা পোর্টাল www.data.gov.bd-এর মাধ‍্যমে অনেক ডেটা রিলিজ করেছে। বেশীরভাগ ডেটা সামারি আকারে আছে যা পত্রিকার রিপোর্টিংএর জন‍্য ভাল। কিন্তু সামারি ডেটা দিয়ে স্ট‍্যাটিসটিক‍্যাল এনালিসিস কিংবা ডেটা সায়েন্সের কিছু করা প্রায় অসম্ভব।
+
+কয়েকদিন এক্সপ্লোর করে বেশ কিছু ডেটা আমি পেয়েছি যেগুলো দিয়ে টুকটাক ভিজুয়ালাইজেশন করা যাবে। ডেটা সায়েন্সের কাজের জন‍্য সেরকম কমপ্লেক্স ডেটা আমি এখনও পাইনি। তবে যতটুকু আছে তার মধ‍্যে থেকেই কিছু করা যায়। দরকার শুধু কৌতূহল আর প্রশ্নের। 
+
+আর সেরকম একটি টপিক পেলাম প্রফেসর কামরুল হাসান মামুন-এর একটি লেখা। [বিশ্ববিদ্যালয়ে শিক্ষক নিয়োগে পিএইচডি বাধ্যতামূলক হবে কবে](https://bit.ly/2x0etCA)। লেখাটি ফেইসবুকে পড়েছি। পরে স্থানীয় একটি পত্রিকাতেও কলাম হিসেবে প্রকাশিত হয়েছে। তাঁর ভাষায়--
+
+>বিশ্ববিদ্যালয়ের শিক্ষক হতে হলে মাস্টার্স এবং পিএইচডি ছাত্র সুপারভাইস করার মত যোগ্যতা ছাড়া বিশ্ববিদ্যালয়ের শিক্ষক হবে কিভাবে। আর এই যোগ্যতার ন্যূনতম মাপকাঠি হলো পিএইচডি। সমস্যা হলো আমাদের বিশ্ববিদ্যালয়গুলোর অনেক হর্তাকর্তাদের পিএইচডি নেই। স্বয়ং ইউজিসির চেয়ারম্যানেরই পিএইচডি নেই। তাহলে আমরা কেমন করে আশা করব যে বিশ্ববিদ্যালয়ে নিয়োগের ক্ষেত্রে পিএইচডি ডিগ্রি বাধ্যতামূলক করা হবে?
+
+এটি একটি গুরুত্বপূর্ণ বিষয় যা ভাবনার দাবী রাখে। প্রশ্ন হল যাদের এই ভাবনা ভাবার কথা তারা সেটা ভাবছে কি?
+
+# ডেটার সূত্র {#data_source}
+
+ঢাকা বিশ্ববিদ‍্যালয়ের বর্তমানে একটিভ সার্ভিসে আছে সেসব শিক্ষকদের শিক্ষাগত যোগ‍্যতা, তাদের ডেজি্নেশন, ডিপার্ডমেন্ট ও ফ‍্যাকাল্টির একটি তালিকা ইউজিসি থেকে রিপোর্ট আকারে প্রকাশিত হয়েছে। 
+
+![Detail Information of Teachers at DU (2017): University Grants Commission of Bangladesh, Report Dated Jul 24, 2018. Data extracted on Sep 9, 2018 from www.data.gov.bd  ](/images/du_faculty_degree_ugc2017.png)
+
+
+# সারাংশ / সীমাবদ্ধতা {#summary}
+
+এই পোস্টের উদ্দেশ‍্য কোন সেসশেন সৃষ্টি করা নয়। নিছক ডেটা নিয়ে খেলা করা বলা যেতে পারে।
+
+প্রথমেই এই লেখাটির সীমাবদ্ধতা সম্পর্কে জানিয়ে দিতে চাই। ডেটা অসম্পূর্ণ থাকায় উচ্চ শিক্ষা সম্পর্কিত পরিসংখ‍্যানগুলো বাস্তবতার সাথে মিল নাও থাকতে পারে। সেক্ষেত্রে শুধুমাত্র যাদের পূর্ণ ডেটা আছে তাদের মধ‍্যে শতকরা (%) বের করা হয়েছে। অনেক সময় চিত্রের উপরে লিখিত আকারে সেটি উল্লেখ করা হয়েছে। এবং ছবির সাথেও নোট আকারে সে তথ‍্য দেয়া হয়েছে। অতএব মন্তব‍্য বা সামাজিক মিডিয়ায় শেয়ার করার সময় ব‍্যাপারগুলো বিবেচনায় রাখতে অনুরোধ করছি।  
+
+২০১৭ সনের হিসাব অনুযায়ি ঢাকা বিশ্ববিদ‍্যালয়ে `r length(unique(df$Faculty))` টি ফ‍্যাকাল্টির `r length(unique(df$Department))` টি ডিপার্টমেন্টে মোট `r length(df$Department)` জন শিক্ষক কর্মরত আছেন। এই রিপোর্টে শুধুমাত্র স্থায়ী পদের শিক্ষকবৃন্দের তালিকা প্রকাশ করা হয়েছে। ইনস্টিটিউটের শিক্ষকদের এতে তালিকাভূক্ত করা হয়নি। 
+
+__শিক্ষকদের এক-তৃতীয়াংশের__ সর্বোচ্চ শিক্ষাগত যোগ‍্যতার তথ‍্য পাওয়া যায়নি। এটি বড় একটি সীমাবদ্ধতা। এটি একটি অবাক ব‍্যাপার যে ইউজিসির কাছে এই তথ‍্য নেই। 
+
+সংক্ষেপে 
+
+- ঢাকা বিশ্ববিদ‍্যালয়ের মোট শিক্ষক সংখ‍্যা ১৬৬৭
+- মোট অনুষদ ১০ টি
+- মোট ডিপার্টমেন্ট ৭২ টি
+- শিক্ষকের সংখ‍্যা অনুযায়ী সবচেয়ে বড় অনুষদ: কলা অনুষদ 
+- শিক্ষকের সংখ‍্যা অনুযায়ী সবচেয়ে বড় ডিপার্টমেন্ট একাউন্টিং এন্ড ইনফরমেশন সিস্টেম
+- শিক্ষকদের ৪০ শতাংশ পুর্ণ অধ‍্যাপক, ২০% সহকারী অধ‍্যাপক, ১৭% সহযোগী অধ‍্যাপক, এবং ১৫% লেকচারার
+- পিএইচডি ডিগ্রীধারী কিন্তু লেকচারার এরকম আছেন ৪ জন
+- অনেক পূর্ণ অধ‍্যাপক আছেন যাদের পিএইচডি নেই (বিস্তারিত নীচে)
+
+
+# শিক্ষকদের পরিসংখ‍্যান {#faculty_stats}
+
+## অনুষদ অনুযায়ী শিক্ষকদের সংখ‍্যা (%) {#by_faculty}
+
+```{r by_faculty, fig.width = 7}
+# Number (%) Faculty within Faculty
+
+tbl_plot <- df %>%
+  group_by(Faculty) %>%
+  rename(
+    category = Faculty
+  ) %>%
+  summarise(
+    n = nrow(df),
+    frequency = n(),
+    percentage = round(frequency/n * 100, 1)
+  ) %>%
+  arrange(-frequency)
+
+#tbl_plot
+
+letter_size = 2.5
+axis_size = 9
+input = "Faculty"
+
+tbl_plot$label = sprintf("%s (%s%%)", tbl_plot$frequency, tbl_plot$percentage)
+tbl_plot$category = factor(tbl_plot$category, 
+                           levels = tbl_plot$category[order(tbl_plot$frequency)])
+
+p = ggplot(tbl_plot, 
+           aes(x = tbl_plot$category, y = tbl_plot$frequency, fill = tbl_plot$category, label = label)) + 
+  geom_bar(stat = "identity") + coord_flip() + theme_bw() + 
+  theme(panel.grid.minor = element_blank(), 
+        panel.grid.major = element_blank(), legend.title = element_blank(), 
+        plot.title = element_text(vjust = 2), axis.ticks.y = element_blank(), 
+        axis.ticks.x = element_blank(), axis.text.x = element_blank(), 
+        axis.text.y = element_text(size = axis_size), 
+        axis.title.x = element_text(size = 12, margin = margin(10, 0, 0, 0)), 
+        axis.title.y = element_text(size = 14, margin = margin(0, 10, 0, 0))) + 
+  ylab("Frequency / (Percentage %)") + 
+  xlab(input) + 
+  geom_text(color = "#151515", size = letter_size, hjust = -0.06) + 
+  guides(fill = F) + scale_y_continuous(expand = c(0, 0), limits = c(0, max(tbl_plot$frequency) * 1.2))
+
+p + labs(title = "Dhaka University Teachers by Faculty (%)", 
+         caption = "NOTE: Percentages are based on total number of teachers in 2017. \nDATA SOURCE: data.gov.bd, ARTICLE: blog.dataskool.org") + 
+  theme(plot.caption = element_text(hjust = 0))
+
+```
+
+## ডিপার্টমেন্ট অনুযায়ী শিক্ষকদের সংখ‍্যা (%) {#by_department}
+
+```{r teachers_by_department, fig.height = 10}
+
+# Number (%) Faculty by Department
+
+tbl_plot <- df %>%
+  group_by(Department) %>%
+  rename(
+    category = Department
+  ) %>%
+  summarise(
+    n = nrow(df),
+    frequency = n(),
+    percentage = round(frequency/n * 100, 1)
+  ) %>%
+  arrange(-frequency)
+
+#tbl_plot
+
+letter_size = 2.5
+axis_size = 9
+input = "Department"
+
+tbl_plot$label = sprintf("%s (%s%%)", tbl_plot$frequency, tbl_plot$percentage)
+tbl_plot$category = factor(tbl_plot$category, 
+                           levels = tbl_plot$category[order(tbl_plot$frequency)])
+
+p = ggplot(tbl_plot, 
+           aes(x = tbl_plot$category, y = tbl_plot$frequency, fill = tbl_plot$category, label = label)) + 
+  geom_bar(stat = "identity") + coord_flip() + theme_bw() + 
+  theme(panel.grid.minor = element_blank(), 
+        panel.grid.major = element_blank(), legend.title = element_blank(), 
+        plot.title = element_text(vjust = 2), axis.ticks.y = element_blank(), 
+        axis.ticks.x = element_blank(), axis.text.x = element_blank(), 
+        axis.text.y = element_text(size = axis_size), 
+        axis.title.x = element_text(size = 12, margin = margin(10, 0, 0, 0)), 
+        axis.title.y = element_text(size = 14, margin = margin(0, 10, 0, 0))) + 
+  ylab("Frequency / (Percentage %)") + 
+  xlab(input) + 
+  geom_text(color = "#151515", size = letter_size, hjust = -0.06) + 
+  guides(fill = F) + scale_y_continuous(expand = c(0, 0), limits = c(0, max(tbl_plot$frequency) * 1.2))
+
+p + labs(title = "Dhaka University Teachers by Department (%)", 
+         caption = "NOTE: Percentages are based on total number of teachers in 2017. \nDATA SOURCE: data.gov.bd, ARTICLE: blog.dataskool.org") +
+  theme(plot.caption = element_text(hjust = 0))
+
+```
+
+## পদমর্যাদা অনুযায়ী শিক্ষকদের সংখ‍্যা (%) {#by_designation}
+
+```{r teachers_by_designation}
+
+# Number (%) Faculty by Designation 
+
+tbl_plot <- df %>%
+  group_by(Designation) %>%
+  rename(
+    category = Designation
+  ) %>%
+  summarise(
+    n = nrow(df),
+    frequency = n(),
+    percentage = round(frequency/n * 100, 1)
+  ) %>%
+  arrange(-frequency)
+
+#tbl_plot
+
+letter_size = 3
+axis_size = 10
+input = "Designation"
+
+tbl_plot$label = sprintf("%s (%s%%)", tbl_plot$frequency, tbl_plot$percentage)
+tbl_plot$category = factor(tbl_plot$category, 
+                           levels = tbl_plot$category[order(tbl_plot$frequency)])
+
+p = ggplot(tbl_plot, 
+           aes(x = tbl_plot$category, y = tbl_plot$frequency, fill = tbl_plot$category, label = label)) + 
+  geom_bar(stat = "identity") + coord_flip() + theme_bw() + 
+  theme(panel.grid.minor = element_blank(), 
+        panel.grid.major = element_blank(), legend.title = element_blank(), 
+        plot.title = element_text(vjust = 2), axis.ticks.y = element_blank(), 
+        axis.ticks.x = element_blank(), axis.text.x = element_blank(), 
+        axis.text.y = element_text(size = axis_size), 
+        axis.title.x = element_text(size = 12, margin = margin(10, 0, 0, 0)), 
+        axis.title.y = element_text(size = 14, margin = margin(0, 10, 0, 0))) + 
+  ylab("Frequency / (Percentage %)") + 
+  xlab(input) + 
+  geom_text(color = "#151515", size = letter_size, hjust = -0.06) + 
+  guides(fill = F) + scale_y_continuous(expand = c(0, 0), limits = c(0, max(tbl_plot$frequency) * 1.2))
+
+p + labs(title = "Dhaka University Teachers by Designation (%)", 
+         caption = "NOTE: Percentages are based on total number of teachers in 2017. \nDATA SOURCE: data.gov.bd, ARTICLE: blog.dataskool.org") +
+  theme(plot.caption = element_text(hjust = 0))
+
+```
+
+## সর্বোচ্চ শিক্ষাগত যোগ‍্যতা অনুযায়ী শিক্ষকদের সংখ‍্যা (%) {#highest_degree}
+
+__সতর্কতা__: এখানে বিরাট ডেটা গ‍্যাপ আছে। এক তৃতীয়াংশ শিক্ষকের সর্বোচ্চ শিক্ষার তথ‍্য নেই।
+
+```{r teachers_by_degree}
+
+# Number (%) Faculty by Highest Degree 
+
+tbl_plot <- df %>%
+  group_by(Highest_Degree) %>%
+  rename(
+    category = Highest_Degree
+  ) %>%
+  summarise(
+    n = nrow(df),
+    frequency = n(),
+    percentage = round(frequency/n * 100, 1)
+  ) %>%
+  arrange(-frequency)
+
+#tbl_plot
+
+letter_size = 3
+axis_size = 10
+input = "Highest Degree"
+
+tbl_plot$label = sprintf("%s (%s%%)", tbl_plot$frequency, tbl_plot$percentage)
+tbl_plot$category = factor(tbl_plot$category, 
+                           levels = tbl_plot$category[order(tbl_plot$frequency)])
+
+p = ggplot(tbl_plot, 
+           aes(x = tbl_plot$category, y = tbl_plot$frequency, fill = tbl_plot$category, label = label)) + 
+  geom_bar(stat = "identity") + coord_flip() + theme_bw() + 
+  theme(panel.grid.minor = element_blank(), 
+        panel.grid.major = element_blank(), legend.title = element_blank(), 
+        plot.title = element_text(vjust = 2), axis.ticks.y = element_blank(), 
+        axis.ticks.x = element_blank(), axis.text.x = element_blank(), 
+        axis.text.y = element_text(size = axis_size), 
+        axis.title.x = element_text(size = 12, margin = margin(10, 0, 0, 0)), 
+        axis.title.y = element_text(size = 14, margin = margin(0, 10, 0, 0))) + 
+  ylab("Frequency / (Percentage %)") + 
+  xlab(input) + 
+  geom_text(color = "#151515", size = letter_size, hjust = -0.06) + 
+  guides(fill = F) + scale_y_continuous(expand = c(0, 0), limits = c(0, max(tbl_plot$frequency) * 1.2))
+
+p + labs(title = "Dhaka University Teachers by Highest Degree (%)", 
+         caption = "NOTE: Percentages are based on total number of teachers in 2017. \nDATA SOURCE: data.gov.bd, ARTICLE: blog.dataskool.org") + 
+  theme(plot.caption = element_text(hjust = 0))
+
+```
+
+# পিএইচডি ডিগ্রীধারী শিক্ষক {#phd_faculty}
+
+## প্রতি ফ‍্যাকাল্টিতে পিএইচডি ডিগ্রীধারী শিক্ষকদের সংখ‍্যা (%) {#phd_within_faculty}
+
+প্রতিটি ফ‍্যাকাল্টিতে পিএইচডি ডিগ্রীধারী শিক্ষকদের সংখ‍্যা ও পিএইচডি শিক্ষকবৃন্দ ঐ ফ‍্যাকাল্টির মোট শিক্ষকদের কত শতাংশ সেটি দেখানো হল। __লক্ষ‍্যণীয় যে যাদের সর্বোচ্চ শিক্ষার ডেটা নেই তাদের বাদ দিয়ে এই শতাংশ বের করা হয়েছে__। অতএব এই ডেটা সতর্কতার সাথে ব‍্যবহার করতে হবে। 
+
+
+```{r phd_within_faculty, fig.height = 7}
+
+# % of phd within each faculty
+tbl_plot <- df %>%
+  filter(Highest_Degree != "Not Available") %>%
+  group_by(Faculty) %>%
+  rename(
+    category = Faculty
+  ) %>%
+  summarise(
+    n = n(),
+    frequency = sum(Highest_Degree == "PhD"),
+    percentage = round(frequency/n * 100, 1)
+  ) %>%
+  arrange(-percentage, frequency)
+
+#tbl_plot
+
+letter_size = 2.5
+axis_size = 9
+input = "Faculty"
+
+tbl_plot$label = sprintf("%s (%s%%)", tbl_plot$frequency, tbl_plot$percentage)
+tbl_plot$category = factor(tbl_plot$category, 
+                           levels = tbl_plot$category[order(tbl_plot$percentage)])
+
+p = ggplot(tbl_plot, 
+           aes(x = tbl_plot$category, y = tbl_plot$percentage, fill = tbl_plot$category, label = label)) + 
+  geom_bar(stat = "identity") + coord_flip() + theme_bw() + 
+  theme(panel.grid.minor = element_blank(), 
+        panel.grid.major = element_blank(), legend.title = element_blank(), 
+        plot.title = element_text(vjust = 2), axis.ticks.y = element_blank(), 
+        axis.ticks.x = element_blank(), axis.text.x = element_blank(), 
+        axis.text.y = element_text(size = axis_size), 
+        axis.title.x = element_text(size = 12, margin = margin(10, 0, 0, 0)), 
+        axis.title.y = element_text(size = 14, margin = margin(0, 10, 0, 0))) + 
+  ylab("PhD / (Percentage %)") + 
+  xlab(input) + 
+  geom_text(color = "#151515", size = letter_size, hjust = -0.06) + 
+  guides(fill = F) + scale_y_continuous(expand = c(0, 0), limits = c(0, max(tbl_plot$percentage) * 1.2))
+
+p + labs(title = "% PhD within Faculty",
+        subtitle = "", 
+         caption = "NOTE: Percentage calculated based on those with known highest education.\nApproximately 1/3rd data did not have information on highest education. \nDATA SOURCE: data.gov.bd, ARTICLE: blog.dataskool.org") +
+         theme(plot.caption = element_text(hjust = 0))
+```
+
+## প্রতি ডিপার্টমেন্টে পিএইচডি ডিগ্রীধারী শিক্ষকদের সংখ‍্যা (%) {#phd_within_department}
+
+প্রতিটি ডিপার্টমেন্টে পিএইচডি ডিগ্রীধারী শিক্ষকদের সংখ‍্যা ও পিএইচডি শিক্ষকবৃন্দ সেই ডিপার্টমেন্টের মোট শিক্ষকদের কত শতাংশ সেটি দেখানো হল। __লক্ষ‍্যণীয় যে যাদের সর্বোচ্চ শিক্ষার ডেটা নেই তাদের বাদ দিয়ে এই শতাংশ বের করা হয়েছে__। অতএব এই ডেটা সতর্কতার সাথে ব‍্যবহার করতে হবে। 
+
+```{r phd_within_department, fig.height = 10}
+# % of phd within each department
+
+tbl_plot <- df %>%
+  filter(Highest_Degree != "Not Available") %>%
+  group_by(Department) %>%
+  rename(
+    category = Department
+  ) %>%
+  summarise(
+    n = n(),
+    frequency = sum(Highest_Degree == "PhD"),
+    percentage = round(frequency/n * 100, 1)
+  ) %>%
+  arrange(-percentage, frequency)
+
+#tbl_plot
+
+tbl_plot$label = sprintf("%s (%s%%)", tbl_plot$frequency, tbl_plot$percentage)
+tbl_plot$category = factor(tbl_plot$category, 
+                           levels = tbl_plot$category[order(tbl_plot$percentage)])
+letter_size = 2
+axis_size = 8
+input = "Department"
+
+p = ggplot(tbl_plot, 
+           aes(x = tbl_plot$category, y = tbl_plot$percentage, fill = tbl_plot$category, label = label)) + 
+  geom_bar(stat = "identity") + coord_flip() + theme_bw() + 
+  theme(panel.grid.minor = element_blank(), 
+        panel.grid.major = element_blank(), legend.title = element_blank(), 
+        plot.title = element_text(vjust = 2), axis.ticks.y = element_blank(), 
+        axis.ticks.x = element_blank(), axis.text.x = element_blank(), 
+        axis.text.y = element_text(size = axis_size), 
+        axis.title.x = element_text(size = 12, margin = margin(10, 0, 0, 0)), 
+        axis.title.y = element_text(size = 14, margin = margin(0, 10, 0, 0))) + 
+  ylab("PhD / (Percentage %)") + 
+  xlab(input) + 
+  geom_text(color = "#151515", size = letter_size, hjust = -0.06) + 
+  guides(fill = F) + scale_y_continuous(expand = c(0, 0), limits = c(0, max(tbl_plot$percentage) * 1.2))
+
+p + labs(title = "% PhD within Department",
+        subtitle = "", 
+         caption = "NOTE: Percentage calculated based on those with known highest education.\nApproximately 1/3rd data did not have information on highest education. \nDATA SOURCE: data.gov.bd, ARTICLE: blog.dataskool.org") +
+         theme(plot.caption = element_text(hjust = 0))
+
+```
+
+## পিএইচডি ডিগ্রীধারী লেকচারার সংখ‍্যা (%) {#lectuter_with_phd}
+
+অধিকাংশ পিএইচডি ডিগ্রীধারী শিক্ষকই পদমর্যাদায় অধ‍্যাপক। তবে বেশ কয়েকজন লেকচারার আছেন যাদের পিএইচডি ডিগ্রী আছে। সেরকম শিক্ষকের সংখ‍্যা ঢাকা বিশ্ববিদ্যালয়ে `r nrow(filter(df, Highest_Degree == "PhD" & Designation == "Lecturer"))` জন।
+
+```{r}
+# PhD & Lecturer by Department
+df %>%
+  filter(Highest_Degree == "PhD" & Designation == "Lecturer") %>%
+  freq(input = c('Department'))
+
+```
+
+## পিএইচডি ডিগ্রীধারী অধ‍্যাপক সংখ‍্যা (%) {#prof_with_phd}
+
+পিএইচডি ডিগ্রীধারী অধ‍্যাপক এরকম শিক্ষক আছেন `r nrow(filter(df, Highest_Degree == "PhD" & Designation == "Professor"))` জন। চিত্রে সবুজ মানে পিএইচডি আছে; আর লাল মানে পিএইচডি নেই।
+
+যাদের শিক্ষাগত যোগ‍্যতার তথ‍্য আছে কেবল তাদের মধ‍্যে শিল্পকলা অনুষদে সবচেয়ে বেশী অধ‍্যাপক আছেন যাদের পিএইচডি নেই। 
+
+```{r prof_with_phd}
+# PhD & Professor by Department
+df %>%
+  filter(Highest_Degree != "Not Available" & 
+           Designation == "Professor") %>%
+  cross_plot(input="Faculty", target="is_phd")
+```
+
+# শেষকথা
+
+কোন প্রশ্ন থাকলে অনুগ্রহ করে মন্তব‍্যে জানাতে অনুরোধ করছি। তথ‍্য কেন বিকৃতি বা অসং্গতি থাকলে সেটি জানাতেও অনুরোধ করছি। সেরকম কিছু হলে দ্রুত শুধরে নেয়ার চেষ্টা থাকবে। ধন‍্যবাদ।
