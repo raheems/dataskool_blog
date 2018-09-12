@@ -56,6 +56,11 @@ df <- df %>%
 
 ![Detail Information of Teachers at DU (2017): University Grants Commission of Bangladesh, Report Dated Jul 24, 2018. Data extracted on Sep 9, 2018 from www.data.gov.bd  ](/images/du_faculty_degree_ugc2017.png)
 
+## ডেটা রিপোজিটরি
+
+আগ্রহী পাঠকের সুবিধার্থে মূল ডেটা ও প্রসেস করার পর প্রাপ্ত ডেটা গিটহাব রিপোজিটরিতে তুলে দিলাম। এই রিপোর্টে যে ডেটা ব‍্যবহার করা হয়েছে সেটি হলো `du_faculty_2017.csv`
+
+প্রোগ্রাম কোড দিয়ে ডেটা পুল করার ইউ আর এল `https://raw.githubusercontent.com/raheems/data/master/du_faculty_2017.csv`
 
 # সারাংশ / সীমাবদ্ধতা {#summary}
 
