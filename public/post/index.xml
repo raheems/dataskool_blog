@@ -5,10 +5,30 @@
     <link>/post/</link>
     <description>Recent content in Posts on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>পরিসংখ্যান পাঠশালা - ডেটাস্কুল - মিশন ও ভিশন</title>
+      <link>/post/dataskool-mission-and-vision/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/dataskool-mission-and-vision/</guid>
+      <description>পরিসংখ্যান পাঠশালা বা ডেটাস্কুল পরিসংখ্যান শেখার বাংলা রিসোর্স।
+মিশন বাংলাভাষী শিক্ষার্থীদের কাছে পরিসংখ্যানকে সহজবোদ্ধ করে উপস্থাপন করা। এক্সেসিবল স্ট্যাটিসটিক্স ইন বাংলা।
+ ভিশন সহজে বোঝা যায় এবং পড়তে ভাল লাগে– পরিসংখ্যানের সেরকম কনটেন্ট তৈরী করা যাতে শিক্ষার্থীরা পরিসংখ্যানের বই পড়ে আনন্দ পায় এবং পরিসংখ্যান কোথায় ব্যবহার করা যায় সে সম্পর্কে সম্মক ধারণা অর্জন করতে সক্ষম হয়। পরিসংখ্যান পাঠশালা থেকে শিক্ষার্থীদের পাশাপাশি আগ্রহী যে কেউই পরিসংখ্যান সম্পর্কে পরিস্কার ধারণা পাবে বলে আশা করি।</description>
+    </item>
+    
+    <item>
+      <title>Teaching Machine Learning Online</title>
+      <link>/post/teaching-machine-learning-online/</link>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/teaching-machine-learning-online/</guid>
+      <description>Premise Traditional vs MOOCs What’s this post about  Designing the course Synchronus Vs Asynchronous  Structuring your Contents Keys to success Structuring a course for online audience  Evaluations     Premise With the influx of many massive open online courses, learning has become barrier free. There is no reason to be not motivated these days when you hear that data science is the sexiest job in the 20th century.</description>
+    </item>
     
     <item>
       <title>ঢাকা বিশ্ববিদ‍্যালয়ের শিক্ষকদের উচ্চশিক্ষার পরিসংখ‍্যান</title>

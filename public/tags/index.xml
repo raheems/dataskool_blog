@@ -5,7 +5,7 @@
     <link>/tags/</link>
     <description>Recent content in Tags on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 19 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>Career</title>
       <link>/tags/career/</link>
-      <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/career/</guid>
       <description></description>
@@ -22,7 +22,7 @@
     <item>
       <title>Career</title>
       <link>/tags/career/</link>
-      <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>/tags/career/</guid>
       <description></description>
@@ -56,11 +56,29 @@
     </item>
     
     <item>
+      <title>DataSkool</title>
+      <link>/tags/dataskool/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dataskool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Git</title>
       <link>/tags/git/</link>
       <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/machine-learning/</guid>
       <description></description>
     </item>
     

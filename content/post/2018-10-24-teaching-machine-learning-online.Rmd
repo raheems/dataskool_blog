@@ -1,0 +1,88 @@
+---
+title: Teaching Machine Learning Online
+authors: ["enayet"]
+date: '2018-10-24'
+lastmod: '2018-10-24'
+slug: teaching-machine-learning-online
+categories:
+  - blog
+tags:
+  - Machine Learning
+draft: true
+output:
+  blogdown::html_page:
+    toc: true
+images: ["images/socialmedia.png"]
+---
+
+# Premise
+
+With the influx of many massive open online courses, learning has become barrier free. There is no reason to be not motivated these days when you hear that data science is the sexiest job in the 20th century.
+
+That was written in 2016. Today, two years after, the demands for data scientists are arguably at its peak with a projected demand to grow by another xx percent by 2020.
+
+With that in the backdrop, countless number of established academic institutions have extended their campuses to distant learners through the MOOCs. [HarvardX](https://www.edx.org/school/harvardx), [ColumbiaX](https://www.edx.org/school/columbiax), [Coursera](https://www.couresra.org) to name a few. 
+
+Besides the prestigious institutions, there are a number of startups backed by industry leaders and entrepreneurs have created platforms through which they are oferring learning opportunities. For example, [Udacity](https://www.udacity.com) founded by [Sebastian Thrun](https://en.wikipedia.org/wiki/Sebastian_Thrun), and [Udemy](https://www.udemy.com) by Eren Bali. 
+
+## Traditional vs MOOCs
+
+With all these MOOCs being available mostly free or for a tiny cost (usually under $100 per course) if you want a certificate of completion, the question arises whether this new mode of learning is threatening traditional mode of learning. 
+
+The short answer is, no. 
+
+And that is because many universities in the US have opened new programs in the past three years oferring formal degrees in Data Science and Machine Learning. 
+
+## What's this post about
+
+In this post, I will outline the pseudo outline of an introductory course on Machine Learning that could be delivered online in a format common among traditional academic institutions. 
+
+# Designing the course
+
+
+
+```{r, echo = FALSE}
+
+DiagrammeR::grViz("digraph {
+
+graph [layout = dot, rankdir = LR]
+
+# define the global styles of the nodes. We can override these in box if we wish
+node [shape = rectangle, style = filled, fillcolor = Linen]
+
+data1 [label = 'Dataset 1', shape = folder, fillcolor = Beige]
+data2 [label = 'Dataset 2', shape = folder, fillcolor = Beige]
+process [label =  'Process \n Data']
+statistical [label = 'Statistical \n Analysis']
+results [label= 'Results']
+
+# edge definitions with the node IDs
+{data1 data2}  -> process -> statistical -> results
+}")
+```
+
+## Synchronus Vs Asynchronous
+# Structuring your Contents 
+## Keys to success
+## Structuring a course for online audience
+# Evaluations
+##
+
+
+প্রিয় সম্পাদক
+
+ 
+
+পরিসংখ্যান পরিচিতি বইয়ের  কভার এর জন্য লেখক পরিচিতি ও বই পরিচিতি দিচ্ছি।
+
+ 
+
+বই পরিচিতি
+
+বিদেশের বিশ্ববিদ‍্যালয়গুলোতে পরিসংখ‍্যান একটি ভীতিকর কিন্তু অত‍্যন্ত দামী একটি সাবজেক্ট। আর বাংলাদেশে পরিসংখ‍্যান একটা অবহেলিত বিষয়। এতই অবহেলিত যে পরিসংখ‍্যান কত কঠিন বা সহজ সেটি নিয়ে তেমন কিছু খুব একটা শোনা যায় না। তবে একটি বিষয় সবাই স্বীকার করে যে ছাত্রাবস্থায় পরিসংখ‍্যান যতই কঠিন আর খারাপ লাগুকনা কেন কর্মক্ষেত্রে যেয়ে অনেকেই পরিসংখ‍্যানের গুরুত্ব বুঝতে পারে। 
+
+লেখক পরিচিতি
+
+ডঃ এনায়েতুর রহীম পরিসংখ্যান নিয়ে কাজ করছেন প্রায় বিশ বছর হল। বর্তমানে আমেরিকাতে একটি হেলথকেয়ার অর্গানাইজেশনে সিনিয়র ডেটা সায়েনটিস্ট হিসেবে কর্মরত। কর্মজীবনের বেশীরভাগ কেটেছে বাংলাদেশ ও আমেরিকার বিভিন্ন বিশ্ববিদ‍্যালয়ে শিক্ষকতার মাধ‍্যমে। কর্মজীবন শুরু ঢাকা বিশ্ববিদ‍্যালয়ে ফলিত পরিসংখ‍্যানে শিক্ষকতার মাধ‍্যমে। এরপর কানাডার ইউনিভার্সিটি অব ইউন্ডজর, আমেরিকার ইউনিভার্সি অব ইউসকনসিন এবং ইউনিভার্সিটি অব নর্দার্ন কলোরাডো-তে শিক্ষকতা করেছেন। একাডেমিয়া থেকে বের হয়ে এখন পুরোদস্তর হেলথকেয়ার ইন্ডাষ্ট্রিতে ফলিত পরিসংখ‍্যানের মাধ‍্যমে ডেটাভিত্তিক সিদ্ধান্ত গ্রহণে গুরুত্বপূর্ণ অবদান রাখছেন। পাশাপাশি ইউনিভার্সিটি অব নর্থ ক‍্যারোলাইনা, শার্লটে এ‍্যাডজাং্কট ফ‍্যাকাল্টি হিসেবে যুক্ত আছেন।
+
+বাংলাদেশের পরিসংখ‍্যানের ছাত্রছাত্রী তথা পরিসংখ‍্যানের সকল ব‍্যবহারকারির কাছে পরিসংখ‍্যানকে সহজবোধ‍্য করে উপস্থাপন করার জন‍্য লেখালেখি ও নতুন বইয়ের কাজ করে যাচ্ছেন। 
