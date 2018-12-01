@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on DataSkool Blog</title>
+    <link>/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on DataSkool Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 24 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Teaching Machine Learning Online</title>
+      <link>/post/teaching-machine-learning-online/</link>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/teaching-machine-learning-online/</guid>
+      <description>Premise Traditional vs MOOCs What’s this post about  Designing the course Synchronus Vs Asynchronous  Structuring your Contents Keys to success Structuring a course for online audience  Evaluations     Premise With the influx of many massive open online courses, learning has become barrier free. There is no reason to be not motivated these days when you hear that data science is the sexiest job in the 20th century.</description>
+    </item>
+    
+  </channel>
+</rss>
