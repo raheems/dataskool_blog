@@ -169,7 +169,7 @@ library(lubridate)
 
 set.seed(19)
 
-# Generate sequence of dates between Nov 1 and Dec 29th, 2018
+# Generate sequence of dates between Aug 1 and Dec 29th, 2018
 
 dt = ymd("2018-08-01") + days(0:150)
 

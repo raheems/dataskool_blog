@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Science on DataSkool Blog</title>
+    <title>Data science on DataSkool Blog</title>
     <link>/tags/data-science/</link>
-    <description>Recent content in Data Science on DataSkool Blog</description>
+    <description>Recent content in Data science on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Nov 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>To the Aspiring Data Scientists</title>
-      <link>/post/to-the-aspiring-data-scientists/</link>
-      <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
+      <title>ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি?</title>
+      <link>/post/understanding-data-science-job-market/</link>
+      <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/to-the-aspiring-data-scientists/</guid>
-      <description>A lot of times interested folks contact me with a question like this: ‘I want to be a data scientist; can you help?’
-Well, I wish I could. The reality is, I won’t be able to unless I really understand what you want and why you want it.
-Firstly because guiding someone is next to impossible in this time and era when everything is so convoluted. People come to learn with preconceived ideas and notions.</description>
-    </item>
-    
-  </channel>
-</rss>�ের সাথে আপনার স্কিলসেট মেলে এবং কোন ধরনের জবের ফাংশন কী।
+      <guid>/post/understanding-data-science-job-market/</guid>
+      <description>ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি– এটি আজকের লেখার বিষয়। এটি খুবই গুরুত্বপূর্ণ একটি টপিক। কেননা জব মার্কেটে নামার আগেই জানতে হবে কোন ধরনের জবের সাথে আপনার স্কিলসেট মেলে এবং কোন ধরনের জবের ফাংশন কী।
 হার্ভার্ড বিজনেস রিভিউ ২০১২ সনে লিখেছিল একবিংশ শতাব্দীর সেক্সিয়েস্ট জব হলো ডেটা সায়েন্স। এর সত্যতা প্রমাণের দরকার নেই; চাকরি বাজারে তাকালেই এর সত্যতা মেলে। আগের লেখায় বলেছিলাম ডেটা সায়েন্স এখন হট টপিক। তেমনি হট এর চাকুরির বাজার। আর বাজারের চাহিদা মেটাতে আমেরিকা এবং কানাডার অনেক বিশ্ববিদ্যালয়ে সম্প্রতি ডেটা সায়েন্স প্রোগ্রাম চালু করেছে। ধারণা করা যায় এই অনেকদিন অব্যাহত থাকবে যতদিন না বাজারে ডেটা সায়েন্টিস্টদের চাহিদার সাথে যোগানের সমন্বয় হয়।</description>
     </item>
     
