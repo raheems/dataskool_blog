@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='এই পোষ্টে আমি ডেটা সায়েন্স নিয়ে যারা আগ্রহি তাদের জন্য একটি প্রজেক্টের আইডিয়া শুরু করা থেকে এর পূর্ণ বাস্তবায়নের প্রকৃয়া সম্পর্কে ধারণা দেয়ার চেষ্টা করব। এই আর্টিকেল যখন লিখছি তখন বাংলাদেশের মানুষ ভোট দেয়ার জন্য প্রস্ততি নিচ্ছে। ডিসেম্বর ৩০ তারিখ, ২০১৮। বাংলাদেশে অনুষ্ঠিত হবে গণভোট।
+আইডিয়া আমাদের দেশে যে সরকারই ক্ষমতায় থাকুক না কেন বিরোধী দলের উপর সরকার তথা সরকার সমর্থক দলের দমনপীড়ন একটি নিত্য ঘটনা। বিশেষ করে নির্বাচনের আগে এর মাত্রা বেড়ে যায় বহুগুনে। তবে এ নিয়ে সংখ্যাতাত্বিকভাবে কাজ হয়েছে কমই। অধিকার নামের এনজিও মানবাধিকার বিষয়ক পরিসংখ্যান রিপোর্ট আকারে প্রকাশ করে।'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='ডেটা সায়েন্স প্রজেক্ট আইডিয়া বাস্তবায়নের ধাপসমূহ • Enayetur Raheem'>
+<meta property='og:description' content='এই পোষ্টে আমি ডেটা সায়েন্স নিয়ে যারা আগ্রহি তাদের জন্য একটি প্রজেক্টের আইডিয়া শুরু করা থেকে এর পূর্ণ বাস্তবায়নের প্রকৃয়া সম্পর্কে ধারণা দেয়ার চেষ্টা করব। এই আর্টিকেল যখন লিখছি তখন বাংলাদেশের মানুষ ভোট দেয়ার জন্য প্রস্ততি নিচ্ছে। ডিসেম্বর ৩০ তারিখ, ২০১৮। বাংলাদেশে অনুষ্ঠিত হবে গণভোট।
+আইডিয়া আমাদের দেশে যে সরকারই ক্ষমতায় থাকুক না কেন বিরোধী দলের উপর সরকার তথা সরকার সমর্থক দলের দমনপীড়ন একটি নিত্য ঘটনা। বিশেষ করে নির্বাচনের আগে এর মাত্রা বেড়ে যায় বহুগুনে। তবে এ নিয়ে সংখ্যাতাত্বিকভাবে কাজ হয়েছে কমই। অধিকার নামের এনজিও মানবাধিকার বিষয়ক পরিসংখ্যান রিপোর্ট আকারে প্রকাশ করে।'>
+<meta property='og:url' content='/post/datascience-project-implementation-steps/'>
+<meta property='og:site_name' content='DataSkool Blog'>
+<meta property='og:type' content='article'><meta property='og:image' content='/images/socialmedia.png'><meta property='article:author' content='https://facebook.com/raheemsOfficial'><meta property='article:publisher' content='690868570924833'><meta property='article:section' content='post'><meta property='article:tag' content='ডেটা সায়েন্স'><meta property='article:published_time' content='2018-12-29T00:00:00Z'/><meta property='article:modified_time' content='2018-12-30T00:00:00Z'/><meta property='fb:app_id' content='326177744624168'><meta property='fb:admins' content='eraheem'><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@eraheem'><meta name='twitter:creator' content='@eraheem'>
+
+<meta name="generator" content="Hugo 0.45.1" />
+
+  <title>ডেটা সায়েন্স প্রজেক্ট আইডিয়া বাস্তবায়নের ধাপসমূহ • Enayetur Raheem</title>
+  <link rel='canonical' href='/post/datascience-project-implementation-steps/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.809149b6.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-684495-21', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+<meta property='og:image' content='/images/socialmedia.png'>
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6844136270310089",
+          enable_page_level_ads: true
+     });
+</script>
+
+</head>
+
+
+
+<body class='page type-post has-sidebar'>
+
+  <div class='site'>
+
+    <div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    DataSkool Blog
+    </h2>
+    <div class='desc'>
+    Accessible statistics and data science
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud'><li>
+        <a href='/tags/career/' style='font-size:1.6666666666666665em'>Career</a>
+      </li><li>
+        <a href='/tags/data-science/' style='font-size:1em'>Data Science</a>
+      </li><li>
+        <a href='/tags/dataskool/' style='font-size:1em'>DataSkool</a>
+      </li><li>
+        <a href='/tags/machine-learning/' style='font-size:1em'>Machine Learning</a>
+      </li><li>
+        <a href='/tags/powerbi/' style='font-size:1.6666666666666665em'>PowerBI</a>
+      </li><li>
+        <a href='/tags/python/' style='font-size:1.3333333333333333em'>Python</a>
+      </li><li>
+        <a href='/tags/r/' style='font-size:2em'>R</a>
+      </li><li>
+        <a href='/tags/r-markdown/' style='font-size:1em'>R Markdown</a>
+      </li><li>
+        <a href='/tags/statjobs/' style='font-size:1.3333333333333333em'>StatJobs</a>
+      </li><li>
+        <a href='/tags/career/' style='font-size:1.6666666666666665em'>Career</a>
+      </li><li>
+        <a href='/tags/data-science/' style='font-size:1.3333333333333333em'>Data science</a>
+      </li><li>
+        <a href='/tags/git/' style='font-size:1em'>Git</a>
+      </li><li>
+        <a href='/tags/plot/' style='font-size:1em'>Plot</a>
+      </li><li>
+        <a href='/tags/regression/' style='font-size:1em'>Regression</a>
+      </li><li>
+        <a href='/tags/%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%9F%E0%A7%81%E0%A6%A8/' style='font-size:1em'>কার্টুন</a>
+      </li><li>
+        <a href='/tags/%E0%A6%95%E0%A7%87%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%87%E0%A6%B6%E0%A6%A8/' style='font-size:1.3333333333333333em'>কোলাবরেশন</a>
+      </li><li>
+        <a href='/tags/%E0%A6%97%E0%A6%AC%E0%A7%87%E0%A6%B7%E0%A6%A3%E0%A6%BE/' style='font-size:1em'>গবেষণা</a>
+      </li><li>
+        <a href='/tags/%E0%A6%A1%E0%A7%87%E0%A6%9F%E0%A6%BE-%E0%A6%B8%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%B8/' style='font-size:2em'>ডেটা সায়েন্স</a>
+      </li><li>
+        <a href='/tags/%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F/' style='font-size:1em'>ঢাকা বিশ্ববিদ‍্যালয়</a>
+      </li><li>
+        <a href='/tags/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8/' style='font-size:2em'>পরিসংখ‍্যান</a>
+      </li><li>
+        <a href='/tags/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A6%AC%E0%A6%BF%E0%A6%A6/' style='font-size:1em'>পরিসংখ‍্যানবিদ</a>
+      </li><li>
+        <a href='/tags/%E0%A6%AE%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A6%A8-%E0%A6%B2%E0%A6%BE%E0%A6%B0%E0%A6%A8%E0%A6%BF%E0%A6%82/' style='font-size:1.3333333333333333em'>মেশিন লারনিং</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/post/'>Posts</a>
+      </li><li class='item'>
+        <a href='/about/'>About</a>
+      </li><li class='item'>
+        <a href='http://www.dataskool.org'>dataskool</a>
+      </li></ul>
+  </div>
+</nav>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>DataSkool Blog</p><p class='desc site-desc'>Accessible statistics and data science</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>ডেটা সায়েন্স প্রজেক্ট আইডিয়া বাস্তবায়নের ধাপসমূহ</h1>
+      
+
+    </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-12-29T00:00:00Z'>2018, Dec 29</time>
+</span>
+
+  <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M21,21V20c0-2.76-4-5-9-5s-9,2.24-9,5v1"/>
+  <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
+  
+</svg>
+<span class='screen-reader-text'> by </span><a href='/authors/enayet'>Enayetur Raheem</a></span>
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+9 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/viz/viz.js"></script>
+<link href="/rmarkdown-libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/grViz-binding/grViz.js"></script>
+
+
+<p>এই পোষ্টে আমি ডেটা সায়েন্স নিয়ে যারা আগ্রহি তাদের জন্য একটি প্রজেক্টের আইডিয়া শুরু করা থেকে এর পূর্ণ বাস্তবায়নের প্রকৃয়া সম্পর্কে ধারণা দেয়ার চেষ্টা করব। এই আর্টিকেল যখন লিখছি তখন বাংলাদেশের মানুষ ভোট দেয়ার জন্য প্রস্ততি নিচ্ছে। ডিসেম্বর ৩০ তারিখ, ২০১৮। বাংলাদেশে অনুষ্ঠিত হবে গণভোট।</p>
+<div class="section level2">
+<h2>আইডিয়া</h2>
+<p>আমাদের দেশে যে সরকারই ক্ষমতায় থাকুক না কেন বিরোধী দলের উপর সরকার তথা সরকার সমর্থক দলের দমনপীড়ন একটি নিত্য ঘটনা। বিশেষ করে নির্বাচনের আগে এর মাত্রা বেড়ে যায় বহুগুনে। তবে এ নিয়ে সংখ্যাতাত্বিকভাবে কাজ হয়েছে কমই। অধিকার নামের এনজিও মানবাধিকার বিষয়ক পরিসংখ্যান রিপোর্ট আকারে প্রকাশ করে।</p>
+<p>এর বাইরে অনেক কিছু করা সম্ভব। বিশেষ করে ইন্টারনেটে বাংলা ভাষায় অনেকগুলো জনপ্রিয় পত্রিকা এখন নিয়মতান্ত্রিকভাবে খবর প্রকাশ করে যাচ্ছে। এই ডেটা ব্যবহার করে ছড়িয়ে থাকা তথ্যগুলোকে আমরা সামারি আকারে প্রকাশ করতে পারি।</p>
+<p>কোন পরিকল্পনা বাস্তবায়নের আগে সেটি কীভাবে করা হবে তার একটি পূর্নাঙ্গ থাপনসমূহ লিখিত আকারে সাজাতে হয়। নীচে সেরকম একটি চিত্র দেখান হল।</p>
+<div id="htmlwidget-1" style="width:672px;height:672px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen, fixedsize = true, width = 2]\n\ndata1 [label = \"ড্রাফট \nআইডিয়া\", shape = folder]\ndata2 [label = \"ড্রাফট \nআইডিয়া\", shape = folder]\nfinal_rq [label = \"আইডিয়া স্থির করা \nমেট্রিক ফিক্স করা\"]\nhypothesis [label = \"হাইপোথিসিস \nস্টেইটমেন্ট\"]\ndata_collection [label =  \"ডেটা কালেকশন\"]\nstatistical [label = \"ডেটা প্রিপ্রসেসিং \nডেটা এনালিসিস \nও ভিজুয়ালাইজেশন\", height = 1, width = 2]\nresults [label= \"ফলাফল \nবিশ্লেষণ\"]\npublication [label = \"ফলাফল প্রকাশ\"]\n\n# edge definitions with the node IDs\n{data1 data2} -> final_rq -> hypothesis -> data_collection -> statistical -> results -> publication\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="section level2">
+<h2>হাইপোথিসিস</h2>
+<p>প্রথমেই আসে কী করতে চাই সে প্রশ্ন। প্রশ্নের আসলে কোন অভাব নেই। চারপাশে অনেক প্রশ্ন, ইচ্ছে করলেই একটা বেছে নেয়া যায়। আপনার মন মত একটি প্রশ্ন ঠিক করে এগুতে পারেন।</p>
+<p>যেমন ধরুন সরকার দাবি করছে বিরোধী দলের উপর কোন রকম দমনপীড়ন করা হচ্ছে না। অন্যদিকে সরকারি দলের নেতা কর্মীরাও দাবি করছে যে তাদের নেতা কর্মীরাই বরং আক্রমনের স্বীকার হচ্ছে।</p>
+<p>আপনি এটিকেই আপনার হাইপোথিসিস ধরে কাজ শুরু করতে পারেন। একটি বিষয় পরিষ্কার করে নেই যে এই হাইপোথিসিসকে পরিসংখ্যানের হাইপোথিসিস টেষ্টের মত করে আমারা টেষ্ট করতে পারি আবার সিম্পলি কিছু পরিসংখ্যান দিয়ে একটা তুলনামূলক চিত্রও তুলে ধরতে পারি। কাজের স্কোপ কী হবে সেটি আপনি আগে থেকে ঠিক করে নিবেন।</p>
+<div id="-" class="section level3">
+<h3>সম্ভাব‍্য হাইপোথিসিস</h3>
+<p>সমস্যা মোটামুটি চিহ্নত হওয়ার পর আপনাকে হাইপোথিসিস-এর স্টেইটমেন্ট আকারে লিখতে হয়। যেমন–</p>
+<blockquote>
+<p>বিরোধীদলের উপর সরকারি দলের সদস‍্যদের দমন পীড়নের মাত্রা সরকারি দলের নেতা কর্মীদের উপর বিরোধী দলের কর্তৃক দমন পীড়নের মাত্রার চেয়ে বেশী।</p>
+</blockquote>
+<p>প্রশ্ন হলো এই দমন পীড়ন কীভাবে পরিমাপ করা হবে। পরিমাপের এই মেট্রিক আমাদের প্রথমেই ঠিক করতে হবে।</p>
+<p>একটি উপায় হতে পারে যে কতবার আক্রমন করা হয়েছে সেটি। আবার হতে পারে আক্রমনের পর হতাহতের সংখ‍্যা। কিংবা হতে পারে মোট আক্রমনের শতাংশের দায় কার কতটুকু। এরকম নানা ভাবে এই মেট্রিক ডিফাইন করা যেতে পারে।</p>
+</div>
+<div id="-" class="section level3">
+<h3>রিফাইন্ড হাইপোথিসিস</h3>
+<p>মেট্রিক নির্ধারন হলে পরে হাইপোথিসিসটিকে আমরা রিফাইন করব।</p>
+<blockquote>
+<p>বিরোধীদলের উপর সরকারি দলের সদস‍্যদের দমন পীড়নের আনুপাতিক হার (প্রপরশন) সরকারি দলের নেতা কর্মীদের উপর বিরোধী দলে কর্তৃক দমন পীড়নের আনুপাতিক হার (প্রপরশন)-এর চেয়ে বেশী।</p>
+</blockquote>
+<p>পরিসংখ্যানের ভাষায় লিখতে গেলে নাল হাইপোথিসিস হবে – দুই গ্রুপের মধ‍্যে মার খাওয়ার অনুপাতের মধ‍্যে পার্থক‍্য নেই। অর্থাৎ এদের অনুপাত সমান। আর অলটারনেটিভ হাইপোথিসিস নানা ভাবে ধরা যেতে পারে। একমুখি হাইপোথিসিস এই ক্ষেত্রে বাস্তবসম্মত; যেটি হবে – বিরোধী দলের কর্মীদের মার খাওয়ার অনুপাত সরকারি দলের কর্মিদের মার খাওয়ার অনুপাতের চেয়ে বেশী।</p>
+</div>
+</div>
+<div id="-" class="section level2">
+<h2>ডেটা কালেকশন</h2>
+<p>হাইপোথিসিস অনুযায়ি আমাদের ডেটাতে দরকার হবে কতগুলো সহিংসতার ঘটনা ঘটেছে তার পরিসং‍খ‍্যান এবং কোন দল কতবার আক্রান্ত হয়েছে তার সংখ‍্যা।</p>
+<p>কিন্তু ডেটা কোথায় পাব?</p>
+<p>ডেটা দুই ভাবে পাওয়া যেতে পারে। প্রথমত কেউ ডেটা সংগ্রহ করেছে তার কাছ থেকে নিতে পারি। এ জন‍্য আপনাকে লিটারেচার রিভিউ করতে হবে। আমাদের দেশে যেহেতু এ ধরনের কাজ খুব একটা হয়না সেজন‍্য লিটারেচার রিভিউ করে বিশেষ কিছু পাওয়া যাবে বলে মনে হয় না। বরং দেশের ভিতরে কোন অর্গানাইজেশন বা সরকারি সংস্থা কর্তৃক প্রকাশিত রিপোর্টকে ভিত্তি ধরে এগুনো যেতে পারে।</p>
+<p>এভেইলেবল ডেটা দিয়ে যদি প্রশ্নের উত্তর পাওয়া না যায় তাহলে নিজেদেরই ডেটা সংগ্রহ করতে হবে।</p>
+<p>নিজেরা সংগ্রহ করতে হলে হয় আমাদের দৈনিক পত্রিকার ওয়েবসাইটে গিয়ে ম‍্যানুয়ালি খবরগুলো সংগ্রহ করতে হবে। আর ম‍্যানুয়ালি করতে না চাইলে কম্পিউটার প্রোগাম লিখে পুরো ব‍্যাপারটা অটোমেশনের মাধ‍‍্যমে করতে হবে।</p>
+<p>ম‍্যানুয়ালি কাজটি করতে গেলে আমাদের অনেক সময় লাগবে এবং কাজটিতে অনেক ভুল ভ্রান্তি হওয়ার সম্ভাবনা থাকবে। যে কারণে অটোমেশনের মাধ‍্যমে করাটা ভালো হবে। কীভাবে সেটি বাস্তবায়ন করা যাবে তার একটি আউটলাইন দিচ্ছি।</p>
+<div id="htmlwidget-2" style="width:672px;height:672px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir =  TB]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen, fixedsize = true, width = 1]\nphase1 [label = \"অটোমেশন/স্ক্রেপিং\", fixedsize = true, width = 2, fillcolor = Beige]\nphase2 [label = \"ম‍্যানুয়াল এ‍্যবস্ট্রাকশন: \n ডিসক্রিট ফিল্ড তৈরী\", fixedsize = true, width = 2, shape = rectangle, fillcolor = Beige]\n\nsource1 [label = \"সোর্স পাতা\", shape = folder]\nsource2 [label = \"...\", shape = folder]\nsource3 [label = \"সোর্স পাতা\", shape = folder]\ncontent [label = \"শিরোনাম, \nমূল আর্টিকেল\nURL, ইত‍্যাদি সংগ্রহ\", width = 2, height = 1]\nstorage [label =  \"মানুষের পড়ার উপযোগি \nফাইলে সেইভ করা, যেমন CSV\", width = 3]\nfinal_data [label= \"ফাইনাল ডেটাসেট\", width = 2]\nstatistical [label = \"এনালিসিস \n ভিজুয়ালাইজেশন\", fixedsize = true, width = 2]\n\n# edge definitions with the node IDs\nphase1 -> {source1, source2, source3} -> content -> storage \nstorage -> phase2\nphase2 ->  final_data\nfinal_data -> statistical\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="--" class="section level3">
+<h3>ডেটা কালেকশন পদ্ধতি</h3>
+<p>যে কোন ডেটা কালেকশন অটোমেইট করার আগে আমাদের মনে রাখতে হবে গবেষণ‍ার উদ্দেশ‍্য এবং কী মেট্রিক আমাদের প্রয়োজন সেগুলো। প্রয়োজনীয় ডেটা যেন বাদ না যায় আর অপ্রয়োজনীয় ডেটা সংগ্রহ করার পিছনে যেন সময় নষ্ট না হয়। অর্থাৎ যতটুকু তথ‍্য আমাদের দরকার ঠিক ততটুকুই সংগ্রহ করা।</p>
+<p>অনেক সময় ডেটা এমনভাবে সংগ্রহ করা হয় যে একই ডেটা পরবর্তী গবেষষণা‍য় ব‍্যবহৃত হবে। সেক্ষত্রে ডেটা কালেকশনের স্কোপ বাড়ানো যেতে পারে।</p>
+</div>
+<div id="-" class="section level3">
+<h3>ডেটা এলিমেন্ট</h3>
+<p>ধরা যাক আমরা সিদ্ধান্ত নিলাম যে অটোমশন স্কৃপ্ট দিয়ে পত্রিকার ওয়েবসাইট থেকে ডেটা সংগ্রহ করব। পত্রিকার সাইটে অনেক খবর থাকে যা থেকে প্রজেক্টের জন‍্য দরকারি তথ‍্য আলাদা করে খুঁজে পাওয়া সহজ নয়। ইংরেজী ভাষায় ন‍্যাচারাল ল‍্যাঙ্গুয়েজ প্রসেসিং অনেক অগ্রসর হলেও বাংলা ভাষায় সেরকম কাজ এখনো হয়নি। তাই ন‍্যাচারাল ল‍্যাঙ্গুয়েজ প্রসেসিং এলগরিদগুলো দিয়ে বাংলা ডকুমেন্ট ক্ল‍্যাসিফিকেশন ততটা সহজে করা যায় না। বরং বাস্তব সম্মত লক্ষ‍্য হবে কিছুটা অটোমেশন আর কিছুটা ম‍্যানুয়াল ইনপুটের মাধ‍্যমে ডেটা সংগ্রহ করা।</p>
+<p>ফ্লো-চার্টের মাধ‍্যমে ডেটা কালেকশনের সম্ভাব‍্য ধাপসমূহ আমি দেখিয়েছি।</p>
+<p>পুর ব‍্যাপারটকে সিম্পল রাখতে চাইলে আমরা শুধুমাত্র আর্টিকেলের শিরোনামগুলো সংগ্রহ করতে পারি। এটি খুব সহজেই ওয়েব স্ক্রেপিং এর মাধ‍্যমে করা সম্ভব।</p>
+<p>প্রথমেই আপনাকে ঠিক করতে হবে কোন পত্রিকা থেকে সংবাদগুলো সংগ্রহ করবেন। একটি সোর্স থেকে সংগ্রহ করলে আপনার কাজ অনেকটাই সহজ হয়ে যাবে কেননা ডুপ্লিকেট খবর নিয়ে চিন্তা করতে হবে না। একাধিক সোর্স থেকে নিলে আপনাকে ম‍্যানুয়ালি ডুপ্লিকেটগুলো বাছাই করে সেগুলো থেকে একটিকে গণনা করতে হবে।</p>
+<p>এরপর সেই পত্রিকার আর্কাইভ সেকশন থেকে প্রতি দিনের খবরগুলোর শিরোনাম কম্পিউটার প্রোগ্রামের মাধ‍্যমে স্ক্রেইপ করে একটি সিএসভি বা এক্সেল ফাইলে সংগ্রহ করা যায়। এর পর ম‍্যানুয়ালি শুধুমাত্র নির্বাচন সংশ্লিষ্ট সহিংসতার খবরগুলোকে বিশেষ কোন ট‍্যাগ দেয়া যাতে এদেরকে ফিল্টার করে আলাদা করা যায়।</p>
+<p>এরপর মেট্রিক অনুযায়ি যতগুলো ডিসক্রিট ফিল্ড যোগ করা দরকার ততগুলো কলাম সেই ফাইলে যোগ করব। ধরি একটি কলামের নাম victim, যার সম্ভাব‍্য মান হতে পারে A অথবা B। আপনি ইচ্ছে হলে অন‍্য ভাবেও ক‍্যাটেগরাইজ করতে পারেন। আমি একটি উপায় দেখালাম।</p>
+<p>তাহলে আপনার ডেটার কলামগুলো এরকম দেখাতে পারে। আমি কাল্পনিক একটি ডেটার প্রথম দুই লাইন দেখাচ্ছি। স্মরণ করা যেতে পারে victim কলামটি খবরের শিরোনাম পড়ে ম‍্যানুয়ালি পূরণ করতে হবে। ডেটা সিমুলেট করা হয়েছে অগাষ্ট থেকে ডিসেম্বর ২৯, ২০১৮ পর্যন্ত।</p>
+<table>
+<thead>
+<tr class="header">
+<th>date</th>
+<th>title</th>
+<th>victim</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2018-08-01</td>
+<td>শিরোনাম</td>
+<td>B</td>
+</tr>
+<tr class="even">
+<td>2018-11-01</td>
+<td>আরেকটি শিরোনাম</td>
+<td>B</td>
+</tr>
+<tr class="odd">
+<td>2018-11-01</td>
+<td>আরেকটি শিরোনাম</td>
+<td>A</td>
+</tr>
+<tr class="even">
+<td>2018-11-01</td>
+<td>আরেকটি শিরোনাম</td>
+<td>A</td>
+</tr>
+<tr class="odd">
+<td>…</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>…</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2018-12-29</td>
+<td></td>
+<td>B</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="-" class="section level2">
+<h2>ডেটা এনালিসিস</h2>
+<p>ডেটা কালেকশন হয়ে গেলে একে আমাদের প্রসেস করতে হবে। এই প্রসেসিংএর ধাপটি একটি ভিন্ন রকম কেননা আমাদের ডেটা হলো টেক্সট যা পত্রিকার ওয়েবসাইট থেকে প্রোগ্রাম লিখে স্ক্রেইপ করা হয়েছে। ফলে প্রাথমিক ক্লিনিং এর ধাপটি আমাদের পার করে আসতে হবে।</p>
+<p>এই প্রজেক্টে আমাদের উদ্দেশ‍্য যদি হয় শুধুমাত্র সহিংসতার ফ্রিকোয়েন্সির তুলনা করা তাহলে সে মোতাবেক ডেটাকে সামারাইজ করে ফেলব। স্ট‍্যাটিসটিকস-এর যে কোন সফটওয়‍্যার দিয়েই ডেটা এনালিসিস এর কাজ করা যাবে। আমি R দিয়ে করছি। কোড ও দিয়ে দিচ্ছি।</p>
+<p>প্রথমেই আমরা কাল্পনিক কিছু ডেটা তৈরী করবো। তারপর সেটি গ্রাফের মাধ‍্যমে দেখাব।</p>
+<div id="-" class="section level3">
+<h3>কাল্পনিক ডেটা</h3>
+<p>আসুন প্রথমেই কাল্পনিক ডেটা তৈরি করি। গবেষণার ক্ষেত্রে এরকম কাল্পনিক ডেটা তৈরী করাকে সিমুলেশন (simulation) বলে। আমরা কাল্পনিক ডেটা তৈরী করছি এটাকে বলা হবে ডেটা সিমুলেট করছি।</p>
+<pre class="r"><code>library(lubridate)
+
+# If you use this seed, your results will be same as mine
+# i.e., results are reproducible
+
+set.seed(19)
+
+# Generate sequence of dates between Nov 1 and Dec 29th, 2018
+
+dt = ymd(&quot;2018-08-01&quot;) + days(0:150)
+
+# Randomly sample (to replicate some dates) from this sequence
+
+dt &lt;- sample(dt, size = 2000, replace = TRUE)
+
+# Generate the victim (A, B) using a given probability
+# We generate three sets of data with varrying probability 
+# and size
+
+victim1 &lt;- sample(c(&quot;A&quot;,&quot;B&quot;), 100, replace=TRUE, prob = c(0.3,0.7))
+victim2 &lt;- sample(c(&quot;A&quot;,&quot;B&quot;), 400, replace=TRUE, prob = c(0.2,0.8))
+victim3 &lt;- sample(c(&quot;A&quot;,&quot;B&quot;), 1500, replace=TRUE, prob = c(0.1,0.9))
+
+# Combining the data sets to make a single data set
+victim &lt;- c(victim1, victim2, victim3)
+
+# Check the proportion of samples by victim type
+prop.table(table(victim))</code></pre>
+<pre><code>## victim
+##     A     B 
+## 0.128 0.872</code></pre>
+<p>এরপর তারিখ এবং সেই তারিখের ভিক্টিম এই কলাম দুটিকে একত্র করে আমরা ডেটা সেটটি তৈরী করব এবং ডেটার প্রথম ১০ টি সারি দেখাব।</p>
+<pre class="r"><code>df = cbind.data.frame(dt, victim)
+head(df, 10)</code></pre>
+<pre><code>##            dt victim
+## 1  2018-08-18      B
+## 2  2018-10-13      B
+## 3  2018-11-07      B
+## 4  2018-08-11      A
+## 5  2018-09-25      A
+## 6  2018-09-03      A
+## 7  2018-09-14      B
+## 8  2018-10-26      B
+## 9  2018-12-05      B
+## 10 2018-11-18      A</code></pre>
+<p>এখন আমাদের গণনা করতে হবে প্রতি দিন কয়জন ভিক্টিম A দলের এবং কতজন B দলের। তারপর সেটি চিত্রের মাধ‍্যমে দেখাব।</p>
+<pre class="r"><code>library(tidyverse)
+
+df_victim &lt;- df %&gt;%
+     group_by(dt, victim) %&gt;%
+     summarise(
+          n = n()
+     )
+
+ggplot(df_victim, aes(x = dt, y = n, color = victim)) + 
+     geom_line() +
+     ggtitle(&quot;Number of victims by party affiliation by day&quot;) +
+     xlab(&quot;Date&quot;) + ylab(&quot;Number of Victims&quot;)</code></pre>
+<p><img src="/post/2018-12-29-datascience-project-implementation-steps_files/figure-html/unnamed-chunk-5-1.png" width="768" /></p>
+<p>উপরের চিত্রে পার্টি ভেদে দৈনিক আক্রান্তের সংখ‍্যা দেখানো হয়েছে। দেখা যাচ্ছে B দলের লোকজন বেশি আক্রান্ত হয়েছে। এটি কাল্পনিক ডেটার তথ‍্য। আসল ডেটাতে এই সংখ‍্যা কী হবে সেটি ডেটা থেকেই জানা যাবে।</p>
+<p>অনেক সময় গত কয়েক মাসে মোট কতজন আক্রান্ত হয়েছে সেটির ক্রমযোজিত সংখ‍্যা আমরা জানতে চাইতে পারি। তার জন‍্য ডেটাকে একটুখানি পরিবর্তন করতে হবে যা নিচের কোড দিয়ে দেখানো হল। এখানে প্রতি দিন পার্টি ভেদে যত সংখ‍্যক আক্রান্ত হয়েছে তাদের ক্রমযোজিত ফল বা cumulative total বের করা হয়েছে। সেটি <code>cn</code> ভ‍্যারিয়েবলে স্টোর করা হয়েছে।</p>
+<pre class="r"><code>df_cumulative &lt;- df_victim %&gt;%
+     group_by(victim) %&gt;%
+     arrange(dt) %&gt;%
+     mutate(
+          cn = cumsum(n)
+     )
+
+ggplot(data = df_cumulative, aes(x = dt, y = cn, col = victim)) + 
+     ylab(&quot;Cumulative Number of Victims&quot;) +
+     xlab(&quot;Date&quot;) +
+     geom_line(aes(y = cn))</code></pre>
+<p><img src="/post/2018-12-29-datascience-project-implementation-steps_files/figure-html/unnamed-chunk-6-1.png" width="768" /></p>
+</div>
+</div>
+<div class="section level2">
+<h2>ডিসকাশন/আলোচনা</h2>
+<p>এই ধাপে ফলাফল বিশ্লেষণ করতে হবে এবং পাঠকের উপযোগি করে লিখতে হবে। যথাসম্ভব টেকনিক‍্যাল টার্মগুলো পরিহার করে সহজবোধ‍্য করে লিখতে হবে। অনেক ক্ষেত্রে সংবাদপত্রে প্রকাশের উদ্দেশ‍্য থাকলে তার জন‍্য আলাদা করে একটি প্রেস রিলিজ তৈরী করতে হবে। পরিশেষে ডেটার কোন সীমাবদ্ধতা থাকলে তা প্রকাশ করতে হবে। মূল উদ্দেশ‍্য থাকবে যেন পাঠকের মনে বিভ্রান্তি সৃষ্টি না হয়।</p>
+<p>পরিসংখ‍্যানের এবিউজ ও মিসইউজ করা যেন লক্ষ‍্য না হয় সেদিকে খেয়াল রাখতে হবে।</p>
+</div>
+<div id="-" class="section level2">
+<h2>শেষ কথা</h2>
+<p>এই আর্টিকেলের উদ্দেশ‍্য ছিল ডেটা সায়েন্সের কোন প্রজেক্ট কিভাবে অর্গানাইজ করতে হয়। প্রত‍্যেকটি প্রজেক্ট অন‍্য প্রজেক্ট থেকে যথেষ্ট আলাদা হয় কিন্তু মূল গঠন এরকমই। অনেক ক্ষেত্রে হাইপোথিসিস টেস্টের পার্টটি থাকে না। সেক্ষেত্রে কেবল ডেসক্রিপ্টিভ সামারি দিয়েই কোন রিপোর্ট হতে পারে। স্ট‍্যাটিসটিক‍্যাল টেস্ট করার জন‍্য প্রয়োজনীয় এসাম্পসন ঠিক আছে কিনা সেগুলো আগে যাচাই করে দেখতে হবে।</p>
+</div>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  <div class='categories'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/blog/'>Blog</a></div>
+<div class='tags'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/%E0%A6%A1%E0%A7%87%E0%A6%9F%E0%A6%BE-%E0%A6%B8%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%B8/'>ডেটা সায়েন্স</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/post/dataskool-mission-and-vision/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>পরিসংখ্যান পাঠশালা - ডেটাস্কুল - মিশন ও ভিশন</a>
+    </div></div>
+</nav>
+
+
+<section id='comments' class='comments'>
+  <div class='container sep-before'>
+    <div class='comments-area'><div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dataskool" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+  </div>
+</section>
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/raheems' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://facebook.com/dataskool' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Facebook account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/eraheem' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:lastname@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/raheems' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2017-2018 dataskool.org </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.68cb493a.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+
