@@ -290,7 +290,7 @@ if (!doNotTrack) {
 <h3>ডেটা এলিমেন্ট</h3>
 <p>ধরা যাক আমরা সিদ্ধান্ত নিলাম যে অটোমশন স্কৃপ্ট দিয়ে পত্রিকার ওয়েবসাইট থেকে ডেটা সংগ্রহ করব। পত্রিকার সাইটে অনেক খবর থাকে যা থেকে প্রজেক্টের জন‍্য দরকারি তথ‍্য আলাদা করে খুঁজে পাওয়া সহজ নয়। ইংরেজী ভাষায় ন‍্যাচারাল ল‍্যাঙ্গুয়েজ প্রসেসিং অনেক অগ্রসর হলেও বাংলা ভাষায় সেরকম কাজ এখনো হয়নি। তাই ন‍্যাচারাল ল‍্যাঙ্গুয়েজ প্রসেসিং এলগরিদগুলো দিয়ে বাংলা ডকুমেন্ট ক্ল‍্যাসিফিকেশন ততটা সহজে করা যায় না। বরং বাস্তব সম্মত লক্ষ‍্য হবে কিছুটা অটোমেশন আর কিছুটা ম‍্যানুয়াল ইনপুটের মাধ‍্যমে ডেটা সংগ্রহ করা।</p>
 <p>ফ্লো-চার্টের মাধ‍্যমে ডেটা কালেকশনের সম্ভাব‍্য ধাপসমূহ আমি দেখিয়েছি।</p>
-<div id="htmlwidget-2" style="width:672px;height:672px;" class="grViz html-widget"></div>
+<div id="htmlwidget-2" style="width:672px;height:480px;" class="grViz html-widget"></div>
 <script type="application/json" data-for="htmlwidget-2">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir =  TB]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen, fixedsize = true, width = 1]\nphase1 [label = \"অটোমেশন/স্ক্রেপিং\", fixedsize = true, width = 2, fillcolor = Beige]\nphase2 [label = \"ম‍্যানুয়াল এ‍্যবস্ট্রাকশন: \n ডিসক্রিট ফিল্ড তৈরী\", fixedsize = true, width = 2, shape = rectangle, fillcolor = Beige]\n\nsource1 [label = \"সোর্স পাতা\", shape = folder]\nsource2 [label = \"...\", shape = folder]\nsource3 [label = \"সোর্স পাতা\", shape = folder]\ncontent [label = \"শিরোনাম, \nমূল আর্টিকেল\nURL, ইত‍্যাদি সংগ্রহ\", width = 2, height = 1]\nstorage [label =  \"মানুষের পড়ার উপযোগি \nফাইলে সেইভ করা, যেমন CSV\", width = 3]\nfinal_data [label= \"ফাইনাল ডেটাসেট\", width = 2]\nstatistical [label = \"এনালিসিস \n ভিজুয়ালাইজেশন\", fixedsize = true, width = 2]\n\n# edge definitions with the node IDs\nphase1 -> {source1, source2, source3} -> content -> storage \nstorage -> phase2\nphase2 ->  final_data\nfinal_data -> statistical\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p>পুর ব‍্যাপারটকে সিম্পল রাখতে চাইলে আমরা শুধুমাত্র আর্টিকেলের শিরোনামগুলো সংগ্রহ করতে পারি। এটি খুব সহজেই ওয়েব স্ক্রেপিং এর মাধ‍্যমে করা সম্ভব।</p>
 <p>প্রথমেই আপনাকে ঠিক করতে হবে কোন পত্রিকা থেকে সংবাদগুলো সংগ্রহ করবেন। একটি সোর্স থেকে সংগ্রহ করলে আপনার কাজ অনেকটাই সহজ হয়ে যাবে কেননা ডুপ্লিকেট খবর নিয়ে চিন্তা করতে হবে না। একাধিক সোর্স থেকে নিলে আপনাকে ম‍্যানুয়ালি ডুপ্লিকেটগুলো বাছাই করে সেগুলো থেকে একটিকে গণনা করতে হবে।</p>
@@ -411,7 +411,7 @@ ggplot(df_victim, aes(x = dt, y = n, color = victim)) +
      geom_line() +
      ggtitle(&quot;Number of victims by party affiliation by day&quot;) +
      xlab(&quot;Date&quot;) + ylab(&quot;Number of Victims&quot;)</code></pre>
-<p><img src="/post/2018-12-29-datascience-project-implementation-steps_files/figure-html/unnamed-chunk-5-1.png" width="768" /></p>
+<p><img src="/post/2018-12-29-datascience-project-implementation-steps_files/figure-html/unnamed-chunk-5-1.png" width="90%" /></p>
 <p>উপরের চিত্রে পার্টি ভেদে দৈনিক আক্রান্তের সংখ‍্যা দেখানো হয়েছে। দেখা যাচ্ছে B দলের লোকজন বেশি আক্রান্ত হয়েছে। এটি কাল্পনিক ডেটার তথ‍্য। আসল ডেটাতে এই সংখ‍্যা কী হবে সেটি ডেটা থেকেই জানা যাবে।</p>
 <p>অনেক সময় গত কয়েক মাসে মোট কতজন আক্রান্ত হয়েছে সেটির ক্রমযোজিত সংখ‍্যা আমরা জানতে চাইতে পারি। তার জন‍্য ডেটাকে একটুখানি পরিবর্তন করতে হবে যা নিচের কোড দিয়ে দেখানো হল। এখানে প্রতি দিন পার্টি ভেদে যত সংখ‍্যক আক্রান্ত হয়েছে তাদের ক্রমযোজিত ফল বা cumulative total বের করা হয়েছে। সেটি <code>cn</code> ভ‍্যারিয়েবলে স্টোর করা হয়েছে।</p>
 <pre class="r"><code>df_cumulative &lt;- df_victim %&gt;%
@@ -558,7 +558,7 @@ ggplot(data = df_cumulative, aes(x = dt, y = cn, col = victim)) +
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2017-2018 dataskool.org </p>
+  <p> &copy; 2017-2019 dataskool.org </p>
 </div>
 
         </div>

@@ -24,7 +24,7 @@ images: ["images/socialmedia.png"]
 কোন পরিকল্পনা বাস্তবায়নের আগে সেটি কীভাবে করা হবে তার একটি পূর্নাঙ্গ থাপনসমূহ লিখিত আকারে সাজাতে হয়। নীচে সেরকম একটি চিত্র দেখান হল।
 
 
-```{r, echo=FALSE, fig.width = 7, fig.height = 7}
+```{r, echo=FALSE, fig.height=7}
 
 DiagrammeR::grViz("digraph {
 
@@ -100,7 +100,7 @@ publication [label = 'ফলাফল প্রকাশ']
 ফ্লো-চার্টের মাধ‍্যমে ডেটা কালেকশনের সম্ভাব‍্য ধাপসমূহ আমি দেখিয়েছি। 
 
 
-```{r, echo=FALSE, fig.width = 7, fig.height = 7}
+```{r, echo=FALSE}
 
 DiagrammeR::grViz("digraph {
 
@@ -202,7 +202,7 @@ head(df, 10)
 
 এখন আমাদের গণনা করতে হবে প্রতি দিন কয়জন ভিক্টিম A দলের এবং কতজন B দলের। তারপর সেটি চিত্রের মাধ‍্যমে দেখাব।
 
-```{r, warning = FALSE, message = FALSE, fig.width = 8}
+```{r, warning = FALSE, message = FALSE, out.width = "90%"}
 library(tidyverse)
 
 df_victim <- df %>%
