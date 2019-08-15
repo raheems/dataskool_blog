@@ -9,4 +9,4 @@ command = "hugo -b $DEPLOY_PRIME_URL --buildFuture"
 
 [build.environment]
 HUGO_THEMESDIR = "../.."
-HUGO_VERSION = "0.55.4"
+HUGO_VERSION = "0.57.0"
