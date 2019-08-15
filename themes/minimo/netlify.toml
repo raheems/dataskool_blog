@@ -1,5 +1,5 @@
 [build]
-publish = "exampleSite/public"
+publish = "../../public"
 
 [context.production]
 command = "ln -s ${PWD} ../minimo && hugo --source=exampleSite --baseURL=${URL}"
