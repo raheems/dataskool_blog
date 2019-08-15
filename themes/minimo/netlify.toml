@@ -1,14 +1,11 @@
 [build]
 publish = "../../public"
 
-[context.production]
-command = "ln -s ${PWD} ../minimo && hugo --source=exampleSite --baseURL=${URL}"
+[context.deploy-preview]
+command = "hugo -b $DEPLOY_PRIME_URL --buildFuture"
 
 [context.branch-deploy]
-command = "ln -s ${PWD} ../minimo && hugo --source=exampleSite --baseURL=${DEPLOY_PRIME_URL}"
-
-[context.deploy-preview]
-command = "ln -s ${PWD} ../minimo && hugo --source=exampleSite --baseURL=${DEPLOY_PRIME_URL}"
+command = "hugo -b $DEPLOY_PRIME_URL --buildFuture"
 
 [build.environment]
 HUGO_THEMESDIR = "../.."
