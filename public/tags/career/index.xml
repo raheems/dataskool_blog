@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Career on DataSkool Blog</title>
+    <title>career on DataSkool Blog</title>
     <link>/tags/career/</link>
-    <description>Recent content in Career on DataSkool Blog</description>
+    <description>Recent content in career on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 19 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/career/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>প‍্যাশন, প্রফেশনালিজম, ও প্রায়োরিটি</title>
+      <link>/post/passion-professionalism-priority/</link>
+      <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/passion-professionalism-priority/</guid>
+      <description>কর্পোরেট জগতে ডেটা নিয়ে যারা কাজ করে&amp;ndash; যেমন পরিসংখ্যানবিদ, ডেটা সায়েন্টিস্ট&amp;ndash; তাদেরকে অধিকাংশ সময় মাল্টিটাস্ক করতে হয় এবং একই সময় অনেক ক্লায়েন্টদের সাথে ডিল করতে হয়। ক্লায়েন্ট হতে পারে ইন্টারনাল ডিপার্টমেন্টাল ক্লায়েন্ট কিংবা কখনো কখনো এক্সটারনাল। ডেটা নিয়ে কাজ করার কারণে স্বাভাবিকভাবেই ইন্টারনালি পরিসংখ্যানবিদ ও ডেটা সায়েন্টিস্টদের চাহিদা অনেক বেশি। কর্মক্ষেত্রে পরিসংখ্যানবিদ ও ডেটা সায়েন্টিস্টদের তিনটি বিষয়ে অবগত করতে এই আর্টিকেল।
+পরিসংখ‍্যানবিদদের ভূমিকা আমেরিকা সহ উন্নত দেশগুলিতে পরিসংখ‍্যানবিদদের তাদের কাজের কারণে বেশ গুরুত্ব দেয়া হয়। অর্থাৎ এসব দেশে পরিসংখ্যানবিদদের প্রফেশনাল ভ্যালু আছে। ব‍্যাপারটা বাংলাদেশের প্রেক্ষাপটে চিন্তা করলে বোঝা সহজ নয়।</description>
+    </item>
+    
+    <item>
+      <title>Statisticians in the Data Science Era</title>
+      <link>/post/statisticians-in-the-data-science-era/</link>
+      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/statisticians-in-the-data-science-era/</guid>
+      <description>If you are exploring the hot field of Data Science today, you probably know by now that there is no unique way to define data science. Everyone’s perspective comes from their respective backgrounds. Statisticians think they are data scientists while CS folks think they are.
+I would not go into the debate.
+Both have truth in their arguments as the typical problems they solve are quite different. There are some exceptions where their workflows overlap.</description>
+    </item>
+    
+    <item>
+      <title>Preparing for statistics jobs in the industry</title>
+      <link>/post/preparing-for-statistics-jobs-in-the-industry/</link>
+      <pubDate>Mon, 20 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/preparing-for-statistics-jobs-in-the-industry/</guid>
+      <description>I would like to share a few things with you from recent experience of my transition from academia to industry. Of course I have a lot more experience than a fresh graduate, but something I’ve experienced that many others may benefit from. I believe this will help you to think at least. I’ve written this with the candidates in the US job market in mind.
+Firstly, I would say this– lies, damn lies, statistics, AND one-page resume.</description>
+    </item>
     
     <item>
       <title>ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি?</title>

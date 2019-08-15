@@ -4,7 +4,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-09-28T08:00:00+06:00</lastmod>
+    <lastmod>2018-12-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -22,8 +22,49 @@
   </url>
   
   <url>
+    <loc>/authors/</loc>
+    <lastmod>2018-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/blog/</loc>
+    <lastmod>2018-12-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2018-12-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2018-12-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/enayet/</loc>
+    <lastmod>2018-12-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E0%A6%A1%E0%A7%87%E0%A6%9F%E0%A6%BE-%E0%A6%B8%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%B8/</loc>
+    <lastmod>2018-12-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/datascience-project-implementation-steps/</loc>
     <lastmod>2018-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dataskool/</loc>
+    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -32,8 +73,32 @@
   </url>
   
   <url>
+    <loc>/tags/machine-learning/</loc>
+    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/teaching-machine-learning-online/</loc>
     <lastmod>2018-10-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/data-analysis/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -44,6 +109,30 @@
   <url>
     <loc>/post/integrating-python-with-powerbi-desktop/</loc>
     <lastmod>2018-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/powerbi/</loc>
+    <lastmod>2018-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/python/</loc>
+    <lastmod>2018-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/tutorials/</loc>
+    <lastmod>2018-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/career/</loc>
+    <lastmod>2018-08-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -67,8 +156,32 @@
   </url>
   
   <url>
+    <loc>/categories/notes/</loc>
+    <lastmod>2018-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/git/</loc>
+    <lastmod>2018-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/analytics/</loc>
+    <lastmod>2018-02-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/python-using-rstudio-ide/</loc>
     <lastmod>2018-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A6%AC%E0%A6%BF%E0%A6%A6/</loc>
+    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -77,13 +190,55 @@
   </url>
   
   <url>
+    <loc>/tags/%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%9F%E0%A7%81%E0%A6%A8/</loc>
+    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/2018-cartoon-statistics-bangla/</loc>
     <lastmod>2018-08-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8/</loc>
+    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/career/</loc>
+    <lastmod>2018-02-20T17:30:00+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/to-the-aspiring-data-scientists/</loc>
     <lastmod>2017-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-science/</loc>
+    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/page/</loc>
+    <lastmod>2017-09-28T08:00:00+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/muniftanjim/</loc>
+    <lastmod>2017-09-28T08:00:00+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/statjobs/</loc>
+    <lastmod>2018-02-20T17:30:00+06:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -97,8 +252,20 @@
   </url>
   
   <url>
+    <loc>/tags/%E0%A6%AE%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A6%A8-%E0%A6%B2%E0%A6%BE%E0%A6%B0%E0%A6%A8%E0%A6%BF%E0%A6%82/</loc>
+    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/application-machine-learning-resume-summarization/</loc>
     <lastmod>2018-08-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E0%A6%95%E0%A7%87%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%87%E0%A6%B6%E0%A6%A8/</loc>
+    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -109,6 +276,12 @@
   <url>
     <loc>/post/preparing-for-statistics-jobs-in-the-industry/</loc>
     <lastmod>2018-02-20T17:30:00+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E0%A6%97%E0%A6%AC%E0%A7%87%E0%A6%B7%E0%A6%A3%E0%A6%BE/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -147,161 +320,19 @@
   </url>
   
   <url>
-    <loc>/post/testing-equality-of-two-population-variances-using-stata/</loc>
-    <lastmod>2012-03-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/poisson-approximation-of-binomial-probabilities/</loc>
-    <lastmod>2012-01-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/analytics/</loc>
-    <lastmod>2018-02-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/blog/</loc>
-    <lastmod>2018-12-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/blog/</loc>
-    <lastmod>2018-12-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/career/</loc>
-    <lastmod>2017-11-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/career/</loc>
-    <lastmod>2018-08-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/career/</loc>
-    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2018-02-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/config/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/data-science/</loc>
-    <lastmod>2017-11-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/data-analysis/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/data-science/</loc>
-    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/dataskool/</loc>
-    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/enayet/</loc>
-    <lastmod>2018-12-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/git/</loc>
-    <lastmod>2018-07-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/machine-learning/</loc>
-    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/muniftanjim/</loc>
-    <lastmod>2017-09-28T08:00:00+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/notes/</loc>
-    <lastmod>2018-07-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/og/</loc>
-  </url>
-  
-  <url>
-    <loc>/page/</loc>
-    <lastmod>2017-09-28T08:00:00+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/plot/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/powerbi/</loc>
-    <lastmod>2018-08-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/python/</loc>
-    <lastmod>2018-08-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/r/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <loc>/tags/r-markdown/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/r-markdown/</loc>
+    <loc>/tags/plot/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -313,73 +344,25 @@
   </url>
   
   <url>
+    <loc>/post/testing-equality-of-two-population-variances-using-stata/</loc>
+    <lastmod>2012-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/poisson-approximation-of-binomial-probabilities/</loc>
+    <lastmod>2012-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/config/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/og/</loc>
+  </url>
+  
+  <url>
     <loc>/search/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/statjobs/</loc>
-    <lastmod>2017-09-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2018-08-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/tutorials/</loc>
-    <lastmod>2018-08-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%9F%E0%A7%81%E0%A6%A8/</loc>
-    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/%E0%A6%95%E0%A7%87%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%87%E0%A6%B6%E0%A6%A8/</loc>
-    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/%E0%A6%97%E0%A6%AC%E0%A7%87%E0%A6%B7%E0%A6%A3%E0%A6%BE/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/%E0%A6%A1%E0%A7%87%E0%A6%9F%E0%A6%BE-%E0%A6%B8%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%B8/</loc>
-    <lastmod>2018-12-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8/</loc>
-    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A6%AC%E0%A6%BF%E0%A6%A6/</loc>
-    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/%E0%A6%AE%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A6%A8-%E0%A6%B2%E0%A6%BE%E0%A6%B0%E0%A6%A8%E0%A6%BF%E0%A6%82/</loc>
-    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
