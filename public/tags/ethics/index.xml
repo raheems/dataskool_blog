@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ethics on DataSkool Blog</title>
+    <link>/tags/ethics/</link>
+    <description>Recent content in Ethics on DataSkool Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ethics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>গবেষণায় এথিক্যাল ব্যাপার স্যাপার</title>
+      <link>/post/ethical-standard-in-human-subject-research/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ethical-standard-in-human-subject-research/</guid>
+      <description>তিনটি দৃশ্য কল্পনা করুন —
+১। খবরে প্রকাশ, কে বা কারা জরিপের নাম করে মানুষের বায়োমেট্রিক তথ্য যেমন ফিঙ্গারপ্রিন্ট সংগ্রহ করছে¹
+২। ফেসবুকে আপনার বন্ধু একটি লিংক শেয়ার করেছে যাতে অজানা অচেনা একটি প্রতিষ্ঠান তাদের জরিপে অংশগ্রহণের আহ্বান করেছে
+৩। বিশ্ববিদ্যালয়ের সহপাঠী তার বন্ধুর একাডেমিক গবেষণার জন্য পরিচালিত জরিপে অংশ নেয়ার আহ্বান জানিয়েছে উল্লিখিত তিনটি দৃশ্যেই একটি বিষয় কমন রয়েছে। সেটি হল এরা আপনার কাছ থেকে তথ্য চায়। অর্থাৎ আপনাকে তাদের সম্ভাব্য গবেষণার বিষয়বস্তু বা সাবজেক্ট বানিয়ে তথ্য সংগ্রহ করতে চাইছে।</description>
+    </item>
+    
+  </channel>
+</rss>

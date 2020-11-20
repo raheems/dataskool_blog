@@ -15,7 +15,7 @@ Suppose we have the following data where the variables may represent two indepen
 <meta property='og:site_name' content='DataSkool Blog'>
 <meta property='og:type' content='article'><meta property='og:image' content='/images/socialmedia.png'><meta property='article:author' content='https://facebook.com/raheemsOfficial'><meta property='article:publisher' content='690868570924833'><meta property='article:section' content='post'><meta property='article:published_time' content='2012-03-02T00:00:00Z'/><meta property='article:modified_time' content='2012-03-02T00:00:00Z'/><meta property='fb:app_id' content='326177744624168'><meta property='fb:admins' content='eraheem'><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@eraheem'><meta name='twitter:creator' content='@eraheem'>
 
-<meta name="generator" content="Hugo 0.56.3" />
+<meta name="generator" content="Hugo 0.65.3" />
 
   <title>Testing equality of two population variances using Stata • Enayetur Raheem</title>
   <link rel='canonical' href='/post/testing-equality-of-two-population-variances-using-stata/'>
@@ -92,6 +92,8 @@ if (!doNotTrack) {
       </li><li>
         <a href='/tags/dataskool/' style='font-size:1em'>DataSkool</a>
       </li><li>
+        <a href='/tags/ethics/' style='font-size:1em'>Ethics</a>
+      </li><li>
         <a href='/tags/git/' style='font-size:1em'>git</a>
       </li><li>
         <a href='/tags/machine-learning/' style='font-size:1em'>Machine Learning</a>
@@ -107,6 +109,8 @@ if (!doNotTrack) {
         <a href='/tags/r-markdown/' style='font-size:1em'>R Markdown</a>
       </li><li>
         <a href='/tags/regression/' style='font-size:1em'>regression</a>
+      </li><li>
+        <a href='/tags/research/' style='font-size:1em'>Research</a>
       </li><li>
         <a href='/tags/statjobs/' style='font-size:1.2em'>StatJobs</a>
       </li><li>
@@ -231,136 +235,134 @@ if (!doNotTrack) {
   
 
   <div class='container entry-content'>
-  
-
-<p>I was asked if we can do the test of equality of two population variances using Stata. Well, I did not have to do it myself ever, but yes, it is possible to do it. Here is an example. I’ve just made-up the data to show the procedures.</p>
-
+  <p>I was asked if we can do the test of equality of two population variances using Stata. Well, I did not have to do it myself ever, but yes, it is possible to do it. Here is an example. I’ve just made-up the data to show the procedures.</p>
 <p>Suppose we have the following data where the variables may represent two independent samples taken from normally distributed populations. And we want to test if the population variances of the two populations are the same. We will use the sample variances to do the testing.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#f92672">/*</span> A fictitious data <span style="color:#f92672">*/</span>
+<pre><code class="language-{r}" data-lang="{r}">/* A fictitious data */
 input x y 
-<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>
-<span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>
-<span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span>
-<span style="color:#ae81ff">3</span> <span style="color:#ae81ff">5</span>
-<span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>
-<span style="color:#ae81ff">4</span> <span style="color:#ae81ff">6</span>
-end;</code></pre></div>
-<p>To test if the variances are the same, run the following</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#ae81ff">.</span> sdtest x <span style="color:#f92672">=</span> y
+1 2
+2 3
+2 4
+3 5
+3 4
+4 6
+end;
+</code></pre><p>To test if the variances are the same, run the following</p>
+<pre><code class="language-{r}" data-lang="{r}">. sdtest x = y
  
 Variance ratio test
-<span style="color:#f92672">------------------------------------------------------------------------------</span>
-Variable <span style="color:#f92672">|</span>     Obs        Mean    Std. Err.   Std. Dev.   [<span style="color:#ae81ff">95</span>% Conf. Interval]
-<span style="color:#f92672">---------+--------------------------------------------------------------------</span>
-       x <span style="color:#f92672">|</span>       <span style="color:#ae81ff">6</span>         <span style="color:#ae81ff">2.5</span>    <span style="color:#ae81ff">.4281744</span>    <span style="color:#ae81ff">1.048809</span>    <span style="color:#ae81ff">1.399343</span>    <span style="color:#ae81ff">3.600657</span>
-       y <span style="color:#f92672">|</span>       <span style="color:#ae81ff">6</span>           <span style="color:#ae81ff">4</span>    <span style="color:#ae81ff">.5773503</span>    <span style="color:#ae81ff">1.414214</span>    <span style="color:#ae81ff">2.515874</span>    <span style="color:#ae81ff">5.484126</span>
-<span style="color:#f92672">---------+--------------------------------------------------------------------</span>
-combined <span style="color:#f92672">|</span>      <span style="color:#ae81ff">12</span>        <span style="color:#ae81ff">3.25</span>    <span style="color:#ae81ff">.4105613</span>    <span style="color:#ae81ff">1.422226</span>    <span style="color:#ae81ff">2.346361</span>    <span style="color:#ae81ff">4.153639</span>
-<span style="color:#f92672">------------------------------------------------------------------------------</span>
-    ratio <span style="color:#f92672">=</span> sd(x) <span style="color:#f92672">/</span> sd(y)                                         f <span style="color:#f92672">=</span>   <span style="color:#ae81ff">0.5500</span>
-Ho<span style="color:#f92672">:</span> ratio <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>                                    degrees of freedom <span style="color:#f92672">=</span>     <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>
+------------------------------------------------------------------------------
+Variable |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+       x |       6         2.5    .4281744    1.048809    1.399343    3.600657
+       y |       6           4    .5773503    1.414214    2.515874    5.484126
+---------+--------------------------------------------------------------------
+combined |      12        3.25    .4105613    1.422226    2.346361    4.153639
+------------------------------------------------------------------------------
+    ratio = sd(x) / sd(y)                                         f =   0.5500
+Ho: ratio = 1                                    degrees of freedom =     5, 5
  
-    Ha<span style="color:#f92672">:</span> ratio <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1</span>               Ha<span style="color:#f92672">:</span> ratio <span style="color:#f92672">!=</span> <span style="color:#ae81ff">1</span>                 Ha<span style="color:#f92672">:</span> ratio <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>
-  Pr(F <span style="color:#f92672">&lt;</span> f) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2638</span>         <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>Pr(F <span style="color:#f92672">&lt;</span> f) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5276</span>           Pr(F <span style="color:#f92672">&gt;</span> f) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7362</span></code></pre></div>
-<p>There is another way to do this in case if the mean, standard wwwiation and the sample size are available</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#f92672">/*</span> first, extract the mean and standard wwwiations of the variables <span style="color:#f92672">*/</span>
+    Ha: ratio &lt; 1               Ha: ratio != 1                 Ha: ratio &gt; 1
+  Pr(F &lt; f) = 0.2638         2*Pr(F &lt; f) = 0.5276           Pr(F &gt; f) = 0.7362
+
+</code></pre><p>There is another way to do this in case if the mean, standard wwwiation and the sample size are available</p>
+<pre><code class="language-{r}" data-lang="{r}">/* first, extract the mean and standard wwwiations of the variables */
  
-<span style="color:#ae81ff">.</span> summarize <span style="color:#f92672">//</span> to extract the mean and standard wwwiations of the variables
+. summarize // to extract the mean and standard wwwiations of the variables
  
-    Variable <span style="color:#f92672">|</span>       Obs        Mean    Std. Dev.       Min        Max
-<span style="color:#f92672">-------------+--------------------------------------------------------</span>
-           x <span style="color:#f92672">|</span>         <span style="color:#ae81ff">6</span>         <span style="color:#ae81ff">2.5</span>    <span style="color:#ae81ff">1.048809</span>          <span style="color:#ae81ff">1</span>          <span style="color:#ae81ff">4</span>
-           y <span style="color:#f92672">|</span>         <span style="color:#ae81ff">6</span>           <span style="color:#ae81ff">4</span>    <span style="color:#ae81ff">1.414214</span>          <span style="color:#ae81ff">2</span>          <span style="color:#ae81ff">6</span>
+    Variable |       Obs        Mean    Std. Dev.       Min        Max
+-------------+--------------------------------------------------------
+           x |         6         2.5    1.048809          1          4
+           y |         6           4    1.414214          2          6
  
-<span style="color:#ae81ff">.</span> sdtesti <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">2.5</span> <span style="color:#ae81ff">1.04</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">1.41</span>
+. sdtesti 6 2.5 1.04 6 4 1.41
  
 Variance ratio test
-<span style="color:#f92672">------------------------------------------------------------------------------</span>
-         <span style="color:#f92672">|</span>     Obs        Mean    Std. Err.   Std. Dev.   [<span style="color:#ae81ff">95</span>% Conf. Interval]
-<span style="color:#f92672">---------+--------------------------------------------------------------------</span>
-       x <span style="color:#f92672">|</span>       <span style="color:#ae81ff">6</span>         <span style="color:#ae81ff">2.5</span>    <span style="color:#ae81ff">.4245782</span>        <span style="color:#ae81ff">1.04</span>    <span style="color:#ae81ff">1.408587</span>    <span style="color:#ae81ff">3.591413</span>
-       y <span style="color:#f92672">|</span>       <span style="color:#ae81ff">6</span>           <span style="color:#ae81ff">4</span>    <span style="color:#ae81ff">.5756301</span>        <span style="color:#ae81ff">1.41</span>    <span style="color:#ae81ff">2.520296</span>    <span style="color:#ae81ff">5.479704</span>
-<span style="color:#f92672">---------+--------------------------------------------------------------------</span>
-combined <span style="color:#f92672">|</span>      <span style="color:#ae81ff">12</span>        <span style="color:#ae81ff">3.25</span>    <span style="color:#ae81ff">.4091612</span>    <span style="color:#ae81ff">1.417376</span>    <span style="color:#ae81ff">2.349442</span>    <span style="color:#ae81ff">4.150558</span>
-<span style="color:#f92672">------------------------------------------------------------------------------</span>
-    ratio <span style="color:#f92672">=</span> sd(x) <span style="color:#f92672">/</span> sd(y)                                         f <span style="color:#f92672">=</span>   <span style="color:#ae81ff">0.5440</span>
-Ho<span style="color:#f92672">:</span> ratio <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>                                    degrees of freedom <span style="color:#f92672">=</span>     <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>
+------------------------------------------------------------------------------
+         |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+       x |       6         2.5    .4245782        1.04    1.408587    3.591413
+       y |       6           4    .5756301        1.41    2.520296    5.479704
+---------+--------------------------------------------------------------------
+combined |      12        3.25    .4091612    1.417376    2.349442    4.150558
+------------------------------------------------------------------------------
+    ratio = sd(x) / sd(y)                                         f =   0.5440
+Ho: ratio = 1                                    degrees of freedom =     5, 5
  
-    Ha<span style="color:#f92672">:</span> ratio <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1</span>               Ha<span style="color:#f92672">:</span> ratio <span style="color:#f92672">!=</span> <span style="color:#ae81ff">1</span>                 Ha<span style="color:#f92672">:</span> ratio <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>
-  Pr(F <span style="color:#f92672">&lt;</span> f) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2601</span>         <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>Pr(F <span style="color:#f92672">&lt;</span> f) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5202</span>           Pr(F <span style="color:#f92672">&gt;</span> f) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7399</span>
+    Ha: ratio &lt; 1               Ha: ratio != 1                 Ha: ratio &gt; 1
+  Pr(F &lt; f) = 0.2601         2*Pr(F &lt; f) = 0.5202           Pr(F &gt; f) = 0.7399
  
-<span style="color:#ae81ff">.</span></code></pre></div>
-<h1 id="unbalanced-data">Unbalanced Data</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">input grade section
-<span style="color:#ae81ff">79</span> <span style="color:#ae81ff">1</span>
-<span style="color:#ae81ff">80</span> <span style="color:#ae81ff">1</span>
-<span style="color:#ae81ff">65</span> <span style="color:#ae81ff">1</span>
-<span style="color:#ae81ff">90</span> <span style="color:#ae81ff">1</span>
-<span style="color:#ae81ff">67</span> <span style="color:#ae81ff">1</span>
-<span style="color:#ae81ff">77</span> <span style="color:#ae81ff">1</span>
-<span style="color:#ae81ff">80</span> <span style="color:#ae81ff">1</span>
-<span style="color:#ae81ff">45</span> <span style="color:#ae81ff">1</span>
-<span style="color:#ae81ff">86</span> <span style="color:#ae81ff">1</span>
-<span style="color:#ae81ff">99</span> <span style="color:#ae81ff">2</span>
-<span style="color:#ae81ff">78</span> <span style="color:#ae81ff">2</span>
-<span style="color:#ae81ff">36</span> <span style="color:#ae81ff">2</span>
-<span style="color:#ae81ff">67</span> <span style="color:#ae81ff">2</span>
-<span style="color:#ae81ff">78</span> <span style="color:#ae81ff">2</span>
-<span style="color:#ae81ff">81</span> <span style="color:#ae81ff">2</span>
+.
+</code></pre><h1 id="unbalanced-data">Unbalanced Data</h1>
+<pre><code class="language-{r}" data-lang="{r}">input grade section
+79 1
+80 1
+65 1
+90 1
+67 1
+77 1
+80 1
+45 1
+86 1
+99 2
+78 2
+36 2
+67 2
+78 2
+81 2
 end;
  
-<span style="color:#ae81ff">.</span> 
-<span style="color:#ae81ff">.</span> <span style="color:#f92672">/*</span> To see how many grades <span style="color:#66d9ef">in</span> each section<span style="color:#f92672">*/</span>
+. 
+. /* To see how many grades in each section*/
  
-<span style="color:#ae81ff">.</span> tab section 
+. tab section 
  
-    section <span style="color:#f92672">|</span>      Freq.     Percent        Cum.
-<span style="color:#f92672">------------+-----------------------------------</span>
-          <span style="color:#ae81ff">1</span> <span style="color:#f92672">|</span>          <span style="color:#ae81ff">9</span>       <span style="color:#ae81ff">60.00</span>       <span style="color:#ae81ff">60.00</span>
-          <span style="color:#ae81ff">2</span> <span style="color:#f92672">|</span>          <span style="color:#ae81ff">6</span>       <span style="color:#ae81ff">40.00</span>      <span style="color:#ae81ff">100.00</span>
-<span style="color:#f92672">------------+-----------------------------------</span>
-      Total <span style="color:#f92672">|</span>         <span style="color:#ae81ff">15</span>      <span style="color:#ae81ff">100.00</span>
+    section |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          1 |          9       60.00       60.00
+          2 |          6       40.00      100.00
+------------+-----------------------------------
+      Total |         15      100.00
  
-<span style="color:#ae81ff">.</span> 
-<span style="color:#ae81ff">.</span> <span style="color:#f92672">/*</span> Doing the variance test <span style="color:#f92672">*/</span>
-<span style="color:#ae81ff">.</span> sdtest grade, <span style="color:#66d9ef">by</span>(section)
+. 
+. /* Doing the variance test */
+. sdtest grade, by(section)
  
 Variance ratio test
-<span style="color:#f92672">------------------------------------------------------------------------------</span>
-   Group <span style="color:#f92672">|</span>     Obs        Mean    Std. Err.   Std. Dev.   [<span style="color:#ae81ff">95</span>% Conf. Interval]
-<span style="color:#f92672">---------+--------------------------------------------------------------------</span>
-       <span style="color:#ae81ff">1</span> <span style="color:#f92672">|</span>       <span style="color:#ae81ff">9</span>    <span style="color:#ae81ff">74.33333</span>    <span style="color:#ae81ff">4.527693</span>    <span style="color:#ae81ff">13.58308</span>    <span style="color:#ae81ff">63.89246</span>    <span style="color:#ae81ff">84.77421</span>
-       <span style="color:#ae81ff">2</span> <span style="color:#f92672">|</span>       <span style="color:#ae81ff">6</span>    <span style="color:#ae81ff">73.16667</span>    <span style="color:#ae81ff">8.553427</span>    <span style="color:#ae81ff">20.95153</span>    <span style="color:#ae81ff">51.17938</span>    <span style="color:#ae81ff">95.15395</span>
-<span style="color:#f92672">---------+--------------------------------------------------------------------</span>
-combined <span style="color:#f92672">|</span>      <span style="color:#ae81ff">15</span>    <span style="color:#ae81ff">73.86667</span>    <span style="color:#ae81ff">4.183717</span>    <span style="color:#ae81ff">16.20347</span>    <span style="color:#ae81ff">64.89349</span>    <span style="color:#ae81ff">82.83985</span>
-<span style="color:#f92672">------------------------------------------------------------------------------</span>
-    ratio <span style="color:#f92672">=</span> sd(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">/</span> sd(<span style="color:#ae81ff">2</span>)                                         f <span style="color:#f92672">=</span>   <span style="color:#ae81ff">0.4203</span>
-Ho<span style="color:#f92672">:</span> ratio <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>                                    degrees of freedom <span style="color:#f92672">=</span>     <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">5</span>
+------------------------------------------------------------------------------
+   Group |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+       1 |       9    74.33333    4.527693    13.58308    63.89246    84.77421
+       2 |       6    73.16667    8.553427    20.95153    51.17938    95.15395
+---------+--------------------------------------------------------------------
+combined |      15    73.86667    4.183717    16.20347    64.89349    82.83985
+------------------------------------------------------------------------------
+    ratio = sd(1) / sd(2)                                         f =   0.4203
+Ho: ratio = 1                                    degrees of freedom =     8, 5
  
-    Ha<span style="color:#f92672">:</span> ratio <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1</span>               Ha<span style="color:#f92672">:</span> ratio <span style="color:#f92672">!=</span> <span style="color:#ae81ff">1</span>                 Ha<span style="color:#f92672">:</span> ratio <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>
-  Pr(F <span style="color:#f92672">&lt;</span> f) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1322</span>         <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>Pr(F <span style="color:#f92672">&lt;</span> f) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2645</span>           Pr(F <span style="color:#f92672">&gt;</span> f) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.8678</span>
+    Ha: ratio &lt; 1               Ha: ratio != 1                 Ha: ratio &gt; 1
+  Pr(F &lt; f) = 0.1322         2*Pr(F &lt; f) = 0.2645           Pr(F &gt; f) = 0.8678
  
-<span style="color:#ae81ff">.</span> 
-end of do<span style="color:#f92672">-</span><span style="color:#66d9ef">file</span>
+. 
+end of do-file
  
-<span style="color:#ae81ff">.</span> </code></pre></div>
-<h1 id="syntax">Syntax</h1>
-
+. 
+</code></pre><h1 id="syntax">Syntax</h1>
 <p>The syntax of the Stata commands can be found in the Stata help file. Run the following commands in your Stata command prompt, and you will see many examples showing the usage of these commands.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">help sdtest
-help sdtesti</code></pre></div>
-<p>The syntax for <code>sdtesti</code> for testing the equality of variances for <code>variable1</code> and <code>variable2</code> is</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#f92672">/*</span> <span style="color:#66d9ef">for</span> testing variance of two variables <span style="color:#f92672">*/</span>
-sdtest variable1 <span style="color:#f92672">=</span> variable2
+<pre><code class="language-{r}" data-lang="{r}">help sdtest
+help sdtesti
+</code></pre><p>The syntax for <code>sdtesti</code> for testing the equality of variances for <code>variable1</code> and <code>variable2</code> is</p>
+<pre><code class="language-{r}" data-lang="{r}">/* for testing variance of two variables */
+sdtest variable1 = variable2
  
-<span style="color:#f92672">/*</span> <span style="color:#66d9ef">for</span> testing variance of a single variable <span style="color:#f92672">*/</span>
-sdtesti obs <span style="color:#ae81ff">.</span> ave stwww <span style="color:#f92672">//</span> note the dot (<span style="color:#ae81ff">.</span>) after obs
+/* for testing variance of a single variable */
+sdtesti obs . ave stwww // note the dot (.) after obs
  
-<span style="color:#f92672">/*</span> <span style="color:#66d9ef">for</span> testing variance of two variables <span style="color:#f92672">*/</span>
-sdtesti obs1 ave1 stwww1 obs2 ave2 stwww2  <span style="color:#f92672">//</span> there is no dot (<span style="color:#ae81ff">.</span>) here
+/* for testing variance of two variables */
+sdtesti obs1 ave1 stwww1 obs2 ave2 stwww2  // there is no dot (.) here
  
-<span style="color:#f92672">/*</span> <span style="color:#66d9ef">for</span> testing variance of a single variable to some fixed value <span style="color:#f92672">*/</span>
-sdtest grade <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span></code></pre></div>
+/* for testing variance of a single variable to some fixed value */
+sdtest grade = 2
+</code></pre>
 </div>
 
   
@@ -474,7 +476,7 @@ sdtest grade <span style="color:#f92672">=</span> <span style="color:#ae81ff">2<
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2017-2019 dataskool.org </p>
+  <p> &copy; 2017-2020 dataskool.org </p>
 </div>
 
         </div>

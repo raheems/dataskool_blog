@@ -1,14 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on DataSkool Blog</title>
     <link>/post/</link>
     <description>Recent content in Posts on DataSkool Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 29 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>গবেষণায় এথিক্যাল ব্যাপার স্যাপার</title>
+      <link>/post/ethical-standard-in-human-subject-research/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ethical-standard-in-human-subject-research/</guid>
+      <description>তিনটি দৃশ্য কল্পনা করুন —
+১। খবরে প্রকাশ, কে বা কারা জরিপের নাম করে মানুষের বায়োমেট্রিক তথ্য যেমন ফিঙ্গারপ্রিন্ট সংগ্রহ করছে¹
+২। ফেসবুকে আপনার বন্ধু একটি লিংক শেয়ার করেছে যাতে অজানা অচেনা একটি প্রতিষ্ঠান তাদের জরিপে অংশগ্রহণের আহ্বান করেছে
+৩। বিশ্ববিদ্যালয়ের সহপাঠী তার বন্ধুর একাডেমিক গবেষণার জন্য পরিচালিত জরিপে অংশ নেয়ার আহ্বান জানিয়েছে উল্লিখিত তিনটি দৃশ্যেই একটি বিষয় কমন রয়েছে। সেটি হল এরা আপনার কাছ থেকে তথ্য চায়। অর্থাৎ আপনাকে তাদের সম্ভাব্য গবেষণার বিষয়বস্তু বা সাবজেক্ট বানিয়ে তথ্য সংগ্রহ করতে চাইছে।</description>
+    </item>
     
     <item>
       <title>ডেটা সায়েন্স প্রজেক্ট আইডিয়া বাস্তবায়নের ধাপসমূহ</title>
@@ -94,7 +106,7 @@ Often, as we are developing the report, you will add or remove tables in the sin
       <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/frequently-used-git-commands/</guid>
-      <description>Github needs no introduction. If you are unfamiliar with git, its a version control system for tracking changes in computer (programming) codes. &amp;ldquo;GitHub Inc. is a web-based hosting service for version control using Git. It is mostly used for computer code. It offers all of the distributed version control and source code management functionality of Git as well as adding its own features.&amp;rdquo;1
+      <description>Github needs no introduction. If you are unfamiliar with git, its a version control system for tracking changes in computer (programming) codes. &amp;ldquo;GitHub Inc. is a web-based hosting service for version control using Git. It is mostly used for computer code. It offers all of the distributed version control and source code management functionality of Git as well as adding its own features.&amp;quot;1
 Copying a remote repository to local To bring a remote repository to your local host (computer where you are working), use the git clone command.</description>
     </item>
     
@@ -201,7 +213,8 @@ Firstly, I would say this– lies, damn lies, statistics, AND one-page resume.</
       
       <guid>/post/collaborative-research-workflow/</guid>
       <description>সবকিছুই এখন দ্রুত চলছে — প্রযুক্তির উন্নয়ন হচ্ছে দ্রুত, সামাজিক পরিবর্তন হচ্ছে অনেকটা চোখের সামনেই, বাড়ছে মানুষ, আর সেইসাথে বাড়ছে ডেটা!
-সময়ের প্রয়োজনে গবেষণা এখন হয়ে উঠেছে কোলাবরেটিভ বা সহযোগিতামূলক। এতে সুবিধা অনেক। একসাথে অনেক ফিল্ডের এক্সপার্টরা কাজ করছে যার ফলে প্রোডাক্টিভিটি বেড়েছে। অর্থাৎ অল্প সময়ে দ্রুত প্রোডাক্ট (রিসার্চ পেপার) বের করা সম্ভব হচ্ছে। নব্বইয়ের দশক থেকে শুরু করে তার পরবর্তী সময়কালে কোলাবরেটিভ কাজের সুযোগ ও আগ্রহ দুইই বেড়েছে।</description>
+সময়ের প্রয়োজনে গবেষণা এখন হয়ে উঠেছে কোলাবরেটিভ বা সহযোগিতামূলক। এতে সুবিধা অনেক। একসাথে অনেক ফিল্ডের এক্সপার্টরা কাজ করছে যার ফলে প্রোডাক্টিভিটি বেড়েছে। অর্থাৎ অল্প সময়ে দ্রুত প্রোডাক্ট (রিসার্চ পেপার) বের করা সম্ভব হচ্ছে। নব্বইয়ের দশক থেকে শুরু করে তার পরবর্তী সময়কালে কোলাবরেটিভ কাজের সুযোগ ও আগ্রহ দুইই বেড়েছে।
+তরুণ গবেষকদের কোলাবরেটিভ কাজ শুরু করার প্রাথমিক ধাপ হলো রিসার্চ কীভাবে করে সে সম্পর্কে ধারণা থাকা। আমাদের দেশের বিশ্ববিদ্যালয়গুলোতে রিসার্চ মেথডলজি নামে একটি বিষয় পড়ানো হয়। গবেষণা পদ্ধতি জানতে এবং তার ব্যবহারিক রূপ দেখতে এই কোর্সের কোন বিকল্প নেই। কাজ করে করে কাজ শেখা যায় তবে সেটি আরো এফিসিয়েন্ট হয় যদি তাত্ত্বিক জ্ঞান অর্জন করা থাকে। যেটি সম্ভব হয় এরকম কোর্স করার মাধ্যমে।</description>
     </item>
     
     <item>
